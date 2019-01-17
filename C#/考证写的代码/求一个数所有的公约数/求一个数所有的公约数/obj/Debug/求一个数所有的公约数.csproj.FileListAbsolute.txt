@@ -1,6 +1,0 @@
-C:\Users\Mr-Wu\Desktop\C#程序代码\求一个数所有的公约数\求一个数所有的公约数\bin\Debug\求一个数所有的公约数.exe.config
-C:\Users\Mr-Wu\Desktop\C#程序代码\求一个数所有的公约数\求一个数所有的公约数\obj\Debug\求一个数所有的公约数.csprojResolveAssemblyReference.cache
-C:\Users\Mr-Wu\Desktop\C#程序代码\求一个数所有的公约数\求一个数所有的公约数\bin\Debug\求一个数所有的公约数.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\求一个数所有的公约数\求一个数所有的公约数\bin\Debug\求一个数所有的公约数.pdb
-C:\Users\Mr-Wu\Desktop\C#程序代码\求一个数所有的公约数\求一个数所有的公约数\obj\Debug\求一个数所有的公约数.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\求一个数所有的公约数\求一个数所有的公约数\obj\Debug\求一个数所有的公约数.pdb

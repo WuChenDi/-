@@ -1,6 +1,0 @@
-C:\Users\Mr-Wu\Desktop\C#程序代码\由基类Animal创建派生类Dog、Cat\由基类Animal创建派生类Dog、Cat\bin\Debug\由基类Animal创建派生类Dog、Cat.exe.config
-C:\Users\Mr-Wu\Desktop\C#程序代码\由基类Animal创建派生类Dog、Cat\由基类Animal创建派生类Dog、Cat\bin\Debug\由基类Animal创建派生类Dog、Cat.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\由基类Animal创建派生类Dog、Cat\由基类Animal创建派生类Dog、Cat\bin\Debug\由基类Animal创建派生类Dog、Cat.pdb
-C:\Users\Mr-Wu\Desktop\C#程序代码\由基类Animal创建派生类Dog、Cat\由基类Animal创建派生类Dog、Cat\obj\Debug\由基类Animal创建派生类Dog、Cat.csprojResolveAssemblyReference.cache
-C:\Users\Mr-Wu\Desktop\C#程序代码\由基类Animal创建派生类Dog、Cat\由基类Animal创建派生类Dog、Cat\obj\Debug\由基类Animal创建派生类Dog、Cat.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\由基类Animal创建派生类Dog、Cat\由基类Animal创建派生类Dog、Cat\obj\Debug\由基类Animal创建派生类Dog、Cat.pdb

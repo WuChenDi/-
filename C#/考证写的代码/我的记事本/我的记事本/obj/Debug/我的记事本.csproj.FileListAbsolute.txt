@@ -1,5 +1,0 @@
-H:\C#程序代码\我的记事本\我的记事本\bin\Debug\我的记事本.exe.config
-H:\C#程序代码\我的记事本\我的记事本\obj\Debug\我的记事本.csprojResolveAssemblyReference.cache
-H:\C#程序代码\我的记事本\我的记事本\obj\Debug\我的记事本.frmNotpad.resources
-H:\C#程序代码\我的记事本\我的记事本\obj\Debug\我的记事本.Properties.Resources.resources
-H:\C#程序代码\我的记事本\我的记事本\obj\Debug\我的记事本.csproj.GenerateResource.Cache

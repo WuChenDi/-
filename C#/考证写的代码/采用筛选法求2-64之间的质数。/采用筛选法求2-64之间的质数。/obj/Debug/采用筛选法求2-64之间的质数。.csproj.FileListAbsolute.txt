@@ -1,1 +1,0 @@
-C:\Users\Mr-Wu\Desktop\C#程序代码\采用筛选法求2-64之间的质数。\采用筛选法求2-64之间的质数。\bin\Debug\采用筛选法求2-64之间的质数。.exe.config

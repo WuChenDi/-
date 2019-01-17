@@ -1,6 +1,0 @@
-C:\Users\Mr-Wu\Desktop\C#程序代码\找出一个字符串中ASCLL码最小的字符\找出一个字符串中ASCLL码最小的字符\bin\Debug\找出一个字符串中ASCLL码最小的字符.exe.config
-C:\Users\Mr-Wu\Desktop\C#程序代码\找出一个字符串中ASCLL码最小的字符\找出一个字符串中ASCLL码最小的字符\bin\Debug\找出一个字符串中ASCLL码最小的字符.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\找出一个字符串中ASCLL码最小的字符\找出一个字符串中ASCLL码最小的字符\bin\Debug\找出一个字符串中ASCLL码最小的字符.pdb
-C:\Users\Mr-Wu\Desktop\C#程序代码\找出一个字符串中ASCLL码最小的字符\找出一个字符串中ASCLL码最小的字符\obj\Debug\找出一个字符串中ASCLL码最小的字符.csprojResolveAssemblyReference.cache
-C:\Users\Mr-Wu\Desktop\C#程序代码\找出一个字符串中ASCLL码最小的字符\找出一个字符串中ASCLL码最小的字符\obj\Debug\找出一个字符串中ASCLL码最小的字符.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\找出一个字符串中ASCLL码最小的字符\找出一个字符串中ASCLL码最小的字符\obj\Debug\找出一个字符串中ASCLL码最小的字符.pdb

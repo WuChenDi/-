@@ -1,2 +1,0 @@
-C:\Users\Mr-Wu\Desktop\C#程序代码\连接数据库、对数据库的增、删、改、查\连接数据库、对数据库的增、删、改、查\bin\Debug\连接数据库、对数据库的增、删、改、查.exe.config
-C:\Users\Mr-Wu\Desktop\C#程序代码\连接数据库、对数据库的增、删、改、查\连接数据库、对数据库的增、删、改、查\obj\Debug\连接数据库、对数据库的增、删、改、查.csprojResolveAssemblyReference.cache

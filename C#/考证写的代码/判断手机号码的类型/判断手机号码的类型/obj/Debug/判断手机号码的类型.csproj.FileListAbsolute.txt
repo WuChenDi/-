@@ -1,6 +1,0 @@
-C:\Users\Mr-Wu\Desktop\C#程序代码\判断手机号码的类型\判断手机号码的类型\bin\Debug\判断手机号码的类型.exe.config
-C:\Users\Mr-Wu\Desktop\C#程序代码\判断手机号码的类型\判断手机号码的类型\bin\Debug\判断手机号码的类型.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\判断手机号码的类型\判断手机号码的类型\bin\Debug\判断手机号码的类型.pdb
-C:\Users\Mr-Wu\Desktop\C#程序代码\判断手机号码的类型\判断手机号码的类型\obj\Debug\判断手机号码的类型.csprojResolveAssemblyReference.cache
-C:\Users\Mr-Wu\Desktop\C#程序代码\判断手机号码的类型\判断手机号码的类型\obj\Debug\判断手机号码的类型.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\判断手机号码的类型\判断手机号码的类型\obj\Debug\判断手机号码的类型.pdb

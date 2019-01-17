@@ -1,9 +1,0 @@
-C:\Users\Mr-Wu\Desktop\C#程序代码\窗体--大小\窗体--大小\bin\Debug\窗体--大小.exe.config
-C:\Users\Mr-Wu\Desktop\C#程序代码\窗体--大小\窗体--大小\bin\Debug\窗体--大小.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\窗体--大小\窗体--大小\bin\Debug\窗体--大小.pdb
-C:\Users\Mr-Wu\Desktop\C#程序代码\窗体--大小\窗体--大小\obj\Debug\窗体--大小.csprojResolveAssemblyReference.cache
-C:\Users\Mr-Wu\Desktop\C#程序代码\窗体--大小\窗体--大小\obj\Debug\窗体__大小.Form1.resources
-C:\Users\Mr-Wu\Desktop\C#程序代码\窗体--大小\窗体--大小\obj\Debug\窗体__大小.Properties.Resources.resources
-C:\Users\Mr-Wu\Desktop\C#程序代码\窗体--大小\窗体--大小\obj\Debug\窗体--大小.csproj.GenerateResource.Cache
-C:\Users\Mr-Wu\Desktop\C#程序代码\窗体--大小\窗体--大小\obj\Debug\窗体--大小.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\窗体--大小\窗体--大小\obj\Debug\窗体--大小.pdb

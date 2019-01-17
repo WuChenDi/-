@@ -1,6 +1,0 @@
-C:\Users\Mr-Wu\Desktop\C#程序代码\奇数、偶数之和\奇数、偶数之和\bin\Debug\奇数、偶数之和.exe.config
-C:\Users\Mr-Wu\Desktop\C#程序代码\奇数、偶数之和\奇数、偶数之和\bin\Debug\奇数、偶数之和.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\奇数、偶数之和\奇数、偶数之和\bin\Debug\奇数、偶数之和.pdb
-C:\Users\Mr-Wu\Desktop\C#程序代码\奇数、偶数之和\奇数、偶数之和\obj\Debug\奇数、偶数之和.csprojResolveAssemblyReference.cache
-C:\Users\Mr-Wu\Desktop\C#程序代码\奇数、偶数之和\奇数、偶数之和\obj\Debug\奇数、偶数之和.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\奇数、偶数之和\奇数、偶数之和\obj\Debug\奇数、偶数之和.pdb

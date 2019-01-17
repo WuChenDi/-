@@ -1,9 +1,0 @@
-C:\Users\Mr-Wu\Desktop\C#程序代码\绘图和打印\绘图和打印\bin\Debug\绘图和打印.exe.config
-C:\Users\Mr-Wu\Desktop\C#程序代码\绘图和打印\绘图和打印\bin\Debug\绘图和打印.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\绘图和打印\绘图和打印\bin\Debug\绘图和打印.pdb
-C:\Users\Mr-Wu\Desktop\C#程序代码\绘图和打印\绘图和打印\obj\Debug\绘图和打印.csprojResolveAssemblyReference.cache
-C:\Users\Mr-Wu\Desktop\C#程序代码\绘图和打印\绘图和打印\obj\Debug\绘图和打印.Form1.resources
-C:\Users\Mr-Wu\Desktop\C#程序代码\绘图和打印\绘图和打印\obj\Debug\绘图和打印.Properties.Resources.resources
-C:\Users\Mr-Wu\Desktop\C#程序代码\绘图和打印\绘图和打印\obj\Debug\绘图和打印.csproj.GenerateResource.Cache
-C:\Users\Mr-Wu\Desktop\C#程序代码\绘图和打印\绘图和打印\obj\Debug\绘图和打印.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\绘图和打印\绘图和打印\obj\Debug\绘图和打印.pdb

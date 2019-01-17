@@ -1,6 +1,0 @@
-C:\Users\Mr-Wu\Desktop\C#程序代码\计算装鸽子所需要的笼子数量\计算装鸽子所需要的笼子数量\bin\Debug\计算装鸽子所需要的笼子数量.exe.config
-C:\Users\Mr-Wu\Desktop\C#程序代码\计算装鸽子所需要的笼子数量\计算装鸽子所需要的笼子数量\bin\Debug\计算装鸽子所需要的笼子数量.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\计算装鸽子所需要的笼子数量\计算装鸽子所需要的笼子数量\bin\Debug\计算装鸽子所需要的笼子数量.pdb
-C:\Users\Mr-Wu\Desktop\C#程序代码\计算装鸽子所需要的笼子数量\计算装鸽子所需要的笼子数量\obj\Debug\计算装鸽子所需要的笼子数量.csprojResolveAssemblyReference.cache
-C:\Users\Mr-Wu\Desktop\C#程序代码\计算装鸽子所需要的笼子数量\计算装鸽子所需要的笼子数量\obj\Debug\计算装鸽子所需要的笼子数量.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\计算装鸽子所需要的笼子数量\计算装鸽子所需要的笼子数量\obj\Debug\计算装鸽子所需要的笼子数量.pdb

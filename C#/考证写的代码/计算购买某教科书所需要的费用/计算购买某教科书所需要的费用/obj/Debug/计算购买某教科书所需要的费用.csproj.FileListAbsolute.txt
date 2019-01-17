@@ -1,6 +1,0 @@
-C:\Users\Mr-Wu\Desktop\C#程序代码\计算购买某教科书所需要的费用\计算购买某教科书所需要的费用\bin\Debug\计算购买某教科书所需要的费用.exe.config
-C:\Users\Mr-Wu\Desktop\C#程序代码\计算购买某教科书所需要的费用\计算购买某教科书所需要的费用\obj\Debug\计算购买某教科书所需要的费用.csprojResolveAssemblyReference.cache
-C:\Users\Mr-Wu\Desktop\C#程序代码\计算购买某教科书所需要的费用\计算购买某教科书所需要的费用\bin\Debug\计算购买某教科书所需要的费用.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\计算购买某教科书所需要的费用\计算购买某教科书所需要的费用\bin\Debug\计算购买某教科书所需要的费用.pdb
-C:\Users\Mr-Wu\Desktop\C#程序代码\计算购买某教科书所需要的费用\计算购买某教科书所需要的费用\obj\Debug\计算购买某教科书所需要的费用.exe
-C:\Users\Mr-Wu\Desktop\C#程序代码\计算购买某教科书所需要的费用\计算购买某教科书所需要的费用\obj\Debug\计算购买某教科书所需要的费用.pdb
