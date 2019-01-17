@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			
+			//工厂方式：封装函数
+			
+			function createPerson(name){
+				var obj = new Object();
+				obj.name = name;
+				obj.showName = function(){
+					alert(this.name);
+				};
+				return obj;
+			}
+			//createPerson('wcd').showName();
+			//createPerson('dcw').showName();
+			var p1 = createPerson('wcd');
+			p1.showName();
+			var p2 = createPerson('dcw');
+			p2.showName();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

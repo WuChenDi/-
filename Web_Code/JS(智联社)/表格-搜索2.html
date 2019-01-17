@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>搜索--忽略大小写进行搜索</title>
+		<script>
+			window.onload=function()
+			{
+				var oTab=document.getElementById('tab1');
+				var oTxt=document.getElementById('name');
+				var oBtn=document.getElementById('btn1');
+				 oBtn.onclick=function()
+				 {
+				 		for(var i=0;i<oTab.tBodies[0].rows.length;i++)
+					{
+						var sTab=oTab.tBodies[0].rows[i].cells[1].innerHTML;
+						var sTxt=oTxt.value;
+						if(sTab.toLowerCase()==sTxt.toLowerCase())//toLowerCase可以把一个字符串中的大写转化成小写
+						{
+							oTab.tBodies[0].rows[i].style.background='yellow';
+						}
+						else
+						{
+							oTab.tBodies[0].rows[i].style.background='';
+						}
+					}
+				 }
+				
+				
+			}
+		</script>
+	</head>
+	<body>
+		姓名：<input id="name" type="text" />
+		<input id="btn1" type="button" value="搜索" />
+		<table id="tab1" border="1" width="500">
+			<thead>
+				<td>ID</td>
+				<td>姓名</td>
+				<td>年龄</td>
+				<td>操作</td>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>小一</td>
+					<td>16</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>小二</td>
+					<td>17</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>张三</td>
+					<td>18</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>李四</td>
+					<td>19</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>赵五</td>
+					<td>20</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>李六</td>
+					<td>21</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>WuChenDi</td>
+					<td>20</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

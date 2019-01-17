@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="JSON.js" ></script>
+		<script type="text/javascript">
+			/*
+			 JSON
+			 	ie7一下不兼容json，引用json.js处理
+			 
+			 
+			 */
+			//alert(JSON);
+			/*	
+				JSON.JS 提供两个方法
+					stringify : 可以把一个对象转成对应字符串
+					parse : 可以把字符串转成对应对象
+			*/
+			var arr = [1,2,3];
+			var j = {left:100};
+			
+			var s1 = '[100,200,300]';
+			var a1 = JSON.parse(s1);
+			var s2 = '{"left":100}';
+			var a2 = JSON.parse(s2);
+			//alert(JSON.stringify(arr));
+			//alert(JSON.stringify(j));
+			
+			//alert(a1[0]);
+			alert(a2.left);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

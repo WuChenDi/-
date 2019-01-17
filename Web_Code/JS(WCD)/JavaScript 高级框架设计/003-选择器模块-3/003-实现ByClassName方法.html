@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 400px;
+				height: 50px;
+				margin: 10px 0;
+			}
+			.c{border: 1px solid red;}
+			.c1{border: 1px solid green;}
+			.c2{border: 1px solid blue;}
+			.c3{border: 1px solid #000;}
+		</style>
+		<script type="text/javascript">
+			//Object.create()
+			var getClass = function( className,results ){
+				results = results || [];
+				
+				var tempArr , i;
+				
+				//首先判断系统所提供的方法是否可以实现改功能
+				if(document.getElementsByClassName){
+					//系统可以实现
+					results.push.apply(results,document.getElementsByClassName(className));
+				}else{
+					//自定义实现
+					//思路：首先获得所有元素，然后在元素中搜索符合要求的，在加入到数组中
+					var tempArr = document.getElementsByTagName('*');
+					//for 循环，判断是否符合要求
+					for (i=0;i<tempArr.length;i++) {
+						//tempArr[i].className === className  //多个样式不能处理
+						//tempArr[i].className.indexOf(className) != -1   //例如查找' c '类样式
+						
+						//兼容： className 或 getAttribute
+						if((' '+tempArr[i].className+' ').indexOf(' '+className+' ') >= 0){
+							results.push(tempArr[i]);
+						}
+					}
+				}
+				return results;
+			};
+		</script>
+	</head>
+	<body>
+		<div class="c"></div>
+		<div class="c1"></div>
+		<div class="c2"></div>
+		<div class="c3"></div>
+	</body>
+	<script type="text/javascript">
+		var list = getClass('c1');
+		//list[0].style.backgroundColor = 'yellow';
+		for(var k in list){
+			list[k].style.backgroundColor = 'pick';
+			console.log(list[k].style.backgroundColor);
+		}
+	</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 *阻止默认事件
+			 * 	普通写法：return false;
+			 * 	例子1：屏蔽右键菜单
+			 * 		弹出自定义右键菜单
+			 * 	例子2：只能输入数字的输入框
+			 * 		keydown 、 keyup事件的区别
+			 * 
+			 * */
+			window.onload = function(){
+				var oTxt = document.getElementById('txt1');
+				
+				oTxt.onkeydown = function(ev){
+					var oEvent = ev || event;
+					
+					//alert(oEvent.keyCode);
+					
+					//如果 用户按的 不是退格 并且 也不是数字
+					
+					if (oEvent.keyCode != 8 && (oEvent.keyCode < 48 || oEvent.keyCode > 57)) {
+						return false;
+					}
+				};
+			};
+			
+		</script>
+	</head>
+	<body>
+		<input type="text" name="" id="txt1" value="" />
+	</body>
+</html>

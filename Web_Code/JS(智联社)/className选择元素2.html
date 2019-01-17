@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+		function getByClass(oParent,sClass)//封装函数,用来选取元素（选取全部，筛选）
+		{
+			var aResult=[];
+			var aEle=oParent.getElementsByTagName('*');
+			for(var i=0;i<aEle.length;i++)
+			{
+				if(aEle[i].className==sClass)
+				{
+					aResult.push(aEle[i]);
+				}
+			}
+			return aResult;
+		}
+			window.onload=function()
+			{
+				var oU1=document.getElementById('ul1');
+				var aBox=getByClass(oU1,'box');//调用函数
+				
+				for(var i=0;i<aBox.length;i++)
+				{
+					aBox[i].style.background='red';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<ul id="ul1">
+			<li class="box"></li>
+			<li class="box"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li class="box"></li>
+			<li></li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>选项卡</title>
+		<style>
+			#box div {
+				width: 200px;
+				height: 200px;
+				border: 1px solid #FF0000;
+				display: none;
+			}
+			
+			.active {
+				background: lightskyblue;
+				color: #fff;
+			}
+			.div1{
+				background: yellow;
+			}
+			.div2{
+				background: blue;
+			}
+			.div3{
+				background: red;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				var oDiv = document.getElementById('box');
+				var aInput = document.getElementsByTagName('input');
+				var aCon = oDiv.getElementsByTagName('div');
+				for(var i = 0; i < aInput.length; i++) {
+					aInput[i].index = i;//为每个按钮标签设置一个index属性
+					aInput[i].onclick = function() {
+						for(var i = 0; i < aInput.length; i++) {
+							aInput[i].className = '';//将所有的className置为空，即没有哪个是高亮显示是当前选项卡是哪个
+							aCon[i].style.display = 'none';// 将当前的div全部隐藏起来
+						}
+						//alert(this.value);
+						this.className = 'active';//此处只显示一个高亮，即选中的那个选项卡
+						aCon[this.index].style.display = 'block';//显示当前的选项卡，主要通过index确定选定的选项卡是哪个
+					}
+				}
+			}
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id="box">
+			<input class="active" type="button" value="书籍" />
+			<input type="button" value="图片" />
+			<input type="button" value="专栏" />
+			
+			<div class="div1" style="display: block;">书籍</div>
+			<div class="div2">图片</div>
+			<div class="div3">专栏</div>
+		</div>
+	</body>
+
+</html>

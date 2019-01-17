@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			#box{
+				width: 100px;
+				height: 100px;
+				border: 1px solid #000;
+				padding: 100px;
+			}
+			#div{
+				width: 100px;
+				height: 100px;
+				background: red;
+				transition: 3s;
+				-webkit-transform-origin: 0 0;
+				transform-origin: left top;
+				/*移动端的都是要加上webkit*/
+			}
+			/*#box:hover #div{
+				-webkit-transform: ;
+				transform: ;
+			}*/
+		</style>
+		<script type="text/javascript">
+			document.addEventListener('touchstart',function(ev){
+				ev.preventDefault();
+			});
+			window.onload = function(){
+				var box = document.querySelector('#div');
+				div.addEventListener("touchend",function(){
+//					div.style.webkitTransform = div.style.transform = "skewX(20deg) skewY(20deg)";
+//					div.style.webkitTransform = div.style.transform = "skew(20deg,20deg)";
+//					div.style.webkitTransform = div.style.transform = "scale(.1,2)";
+					div.style.webkitTransform = div.style.transform = "rotate(360deg)";
+//					rotate(deg)
+				});
+				/*
+				 	rotate 旋转  (deg)
+				 		deg
+				 	skew 斜切  (deg)
+				 		skewX
+				 		skewY
+				 	scale 缩放  (原始大小的多少倍)(x,y)
+				 		scaleX
+				 		scaleY
+				 	translate 位移 px
+				 	 	translateX
+				 	 	translateY
+				 	 	
+				 	 	transform-origin:center center;会影响到rotate ， skew ， scale
+				 	 		关键字
+				 	 		百分比
+				 	 		距离单位(px,rm,rem...)
+				*/
+			};
+		</script>
+	</head>
+	<body>
+		<!--
+			transform 变换
+			-webkit-taransform
+		-->
+		<div id="box">
+			<div id="div">
+				
+			</div>
+		</div>
+	</body>
+</html>

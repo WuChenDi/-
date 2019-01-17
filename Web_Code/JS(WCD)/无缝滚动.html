@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>无缝滚动</title>
+		<style>
+			* {margin: 0;padding: 0;}
+			li { list-style:none; }
+			.scroll_wrap{width: 700px;margin: 0 auto;}
+			.prev,.next { width:35px; height:43px; position:absolute; top:70px; }
+			.prev { left:0; background:url(images/prev.png) no-repeat; }
+			.next { right:0; background:url(images/next.png) no-repeat;}
+			
+			.list_wrap { width:615px; margin:32px auto; overflow:hidden; position:relative;}
+			.list_wrap ul {  height:150px; position:relative; left:0;}
+			.list_wrap li { width:205px; float:left; }
+			.list_wrap a, .list_wrap p { width:145px; margin:0 auto; }
+			.list_wrap a { display:block; height:100px; }
+			.list_wrap p { line-height:14px; padding-top:10px; font-size:12px; color:#600; text-align:center; }
+		</style>
+		<script>
+			window.onload = function() {
+				var oRun = document.getElementById('run');
+				var oUl = oRun.getElementsByTagName('ul')[0];
+				var aLi = oUl.getElementsByTagName('li');
+
+				var oPrev = getByClass(oRun, 'prev')[0];
+				var oNext = getByClass(oRun, 'next')[0];
+
+				var iNow = 0;
+
+				oUl.innerHTML += oUl.innerHTML;
+				oUl.style.width = aLi.length * aLi[0].offsetWidth + 'px';
+				
+				//运动
+				function moveLeft(obj, old, now) {
+					clearInterval(obj.timer);
+					obj.timer = setInterval(function() {
+						//设置速度差，产生缓动的效果
+						var iSpeed = (now - old) / 10;
+						iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);//取整
+
+						if(now == old) {
+							clearInterval(obj.timer);
+						} else {
+							old += iSpeed;
+							obj.style.left = old + 'px';
+						}
+
+					}, 30);
+				}
+				
+				//封装，获取Class
+				function getByClass(oParent, sClass) {
+					var aEle = oParent.getElementsByTagName('*');
+					var arr = [];
+
+					for(var i = 0; i < aEle.length; i++) {
+						if(aEle[i].className == sClass) {
+							arr.push(aEle[i]);
+						}
+					}
+
+					return arr;
+				}
+				
+				oPrev.onclick = function() {
+
+					if(iNow == 0) {
+						iNow = aLi.length / 2;
+						oUl.style.left = -oUl.offsetWidth / 2 + 'px';
+					}
+					moveLeft(oUl, -iNow * aLi[0].offsetWidth, -(iNow - 1) * aLi[0].offsetWidth);
+					iNow--;
+				};
+
+				oNext.onclick = function() {
+					if(iNow == aLi.length / 2) {
+						iNow = 0;
+						oUl.style.left = 0;
+					}
+					moveLeft(oUl, -iNow * aLi[0].offsetWidth, -(iNow + 1) * aLi[0].offsetWidth);
+					iNow++;
+				};
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="run" class="scroll_wrap">
+			<a class="prev" href="javascript:;"></a>
+			<a class="next" href="javascript:;"></a>
+			<div class="list_wrap">
+				<ul>
+					<li>
+						<a href="#"><img src="images/1.jpg" alt="" /></a>
+						<p>Elegant MP3 player skin PSD download</p>
+					</li>
+					<li>
+						<a href="#"><img src="images/2.jpg" alt="" /></a>
+						<p>Download shopping bag & icons (PSD & PNG)</p>
+					</li>
+					<li>
+						<a href="#"><img src="images/3.jpg" alt="" /></a>
+						<p>High resolution abstract bokeh background</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</body>
+
+</html>

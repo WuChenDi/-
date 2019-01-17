@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content = "width=device-width,user-scalable=no">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			body,html{
+				height: 100%;
+				overflow: hidden;
+				position: relative;
+			}
+			header{
+				height: 40px;
+				font-size: 20px;
+				color: #fff;
+				text-align: center;
+				line-height: 40px;
+				background: lightseagreen;
+			}
+			#wrap{
+				position: absolute;
+				top: 40px;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				overflow: hidden;
+			}
+			#list{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			#list li{
+				height: 30px;
+				line-height: 30px;
+				border-bottom: 1px solid lightseagreen;
+				text-indent: 20px;
+				
+			}
+		</style>
+		<script type="text/javascript">
+			document.addEventListener('touchstart',function(ev){
+				ev.preventDefault();
+			});
+			function setListInner(){
+				var list = document.querySelector('#list');
+				var inner = "";
+				for (var i=0; i<100;i++) {
+					inner +="<li>这是第"+i+"个li</li>";
+				}
+				list.innerHTML = inner;
+			}
+			window.onload = function(){
+				setListInner();
+				var wrap = document.querySelector('#wrap');
+				var list = document.querySelector('#list');
+				var startPoint = 0;
+				var startEl = 0;
+				var elTranslateY = 0;
+				list.addEventListener("touchstart",function(ev){
+					startPoint = ev.changedTouches[0].pageY;
+					startEl = elTranslateY; 
+				});
+				list.addEventListener("touchmove",function(ev){
+					var nowtPoint = ev.changedTouches[0].pageY;
+					//console.log(nowtPoint - startPoint);
+					var dis = nowtPoint - startPoint;
+					elTranslateY = startEl + dis;
+					list.style.WebkitTransform = list.style.transform = "translateY("+elTranslateY+"px)";
+				});
+			}
+		</script>
+	</head>
+	<body>
+		<header>My name is WuChenDi</header>
+		<div id="wrap">
+			<ul id="list">
+				<li></li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>为ul插入li位置是第一个（排序）</title>
+		<script>
+			window.onload=function()
+			{
+				var oBtn=document.getElementById('btn1');
+				var oUl=document.getElementById('ul1');
+				var oTxt=document.getElementById('txt1');
+				oBtn.onclick=function()
+				{
+					var oLi= document.createElement('li');
+					var aLi=oUl.getElementsByTagName('li');
+					oLi.innerHTML=oTxt.value;
+					//oUl.appendChild(oLi);//父级.appendChild(子节点)
+					//oUl.insertBefore(oLi,aLi[0]);//父级.insertBefore(子节点，原有的节点（就是插在原有的节点之前）)IE不支持
+					if(aLi.length>0)
+					{
+						oUl.insertBefore(oLi,aLi[0]);//aLi[0]就是在第一位上插入元素
+					}
+					else
+					{
+						oUl.appendChild(oLi);
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input id="txt1" type="text" />
+		<input id="btn1" type="button" value="创建li" />
+		<ul id="ul1"></ul>
+	</body>
+</html>

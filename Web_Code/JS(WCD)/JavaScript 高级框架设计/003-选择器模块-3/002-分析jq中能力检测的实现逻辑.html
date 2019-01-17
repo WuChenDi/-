@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			document.getElementsByClassName = 123;
+			
+			var support = {};
+			
+			//support.getElementsByClassName = !!document.getElementsByClassName;
+			//在jq中不仅判断他是否存在，还要判断其能力是否符合要求
+			support.getElementsByClassName = (function(){
+				var isExist = !!document.getElementsByClassName;
+				if(isExist = typeof document.getElementsByClassName == 'function'){
+					//自己创建一些元素，并且加上class属性，看是否可以获得到加上的所有元素
+					var div = document.createElement('div'),
+						divWidthClass = document.createElement('div');
+					divWidthClass.className = 'c';
+					div.appendChild(divWidthClass);
+					return div.getElementsByClassName('c')[0] === divWidthClass;
+				}
+				return false;
+			})();
+			
+			if(support.getElementsByClassName){
+				//return node.getElementsByClassName(className);
+				alert('支持class');
+			}else{
+				//自己实现(className);
+				alert('不支持class');
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

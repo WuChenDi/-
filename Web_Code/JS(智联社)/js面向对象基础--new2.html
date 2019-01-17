@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function createPerson(name, qq) {	//构造函数
+				//原料
+				//var obj = new Object();
+				//加工
+				this.name = name;
+				this.qq = qq;
+
+				this.showName = function() {
+					alert('my name is:' + this.name);
+				};
+				this.showQQ = function() {
+					alert('my qq is:' + this.qq);
+				};
+				//出厂
+				//return obj;
+			}
+			var obj = new createPerson('wcd','996194720');
+			var obj2 = new createPerson('zhangsan','456987123');
+			alert(obj.showName == obj2.showName);
+		</script>
+	</head>
+
+	<body>
+	</body>
+
+</html>

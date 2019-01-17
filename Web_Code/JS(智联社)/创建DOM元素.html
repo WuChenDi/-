@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>为ul插入li</title>
+		<script>
+			window.onload=function()
+			{
+				var oBtn=document.getElementById('btn1');
+				var oUl=document.getElementById('ul1');
+				var oTxt=document.getElementById('txt1');
+			oBtn.onclick=function()
+			{
+				var oLi= document.createElement('li');
+				oLi.innerHTML=oTxt.value;
+				oUl.appendChild(oLi);//父级.appendChild(子节点)
+			}
+			}
+		</script>
+	</head>
+	<body>
+		<input id="txt1" type="text" />
+		<input id="btn1" type="button" value="创建li" />
+		<ul id="ul1"></ul>
+	</body>
+</html>

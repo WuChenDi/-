@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			window.onload=function()
+			{
+				/*首尾子节点(有兼容性问题)
+				firstChild , firstElementChild
+				lastChild , lastElementChild
+				兄弟节点(有兼容性问题)
+				nextSibling , nextElemtSibling
+				previousSibling , previousElementSibling*/
+				
+				var oU1=document.getElementById('ul1');
+				//oU1.firstChild.style.background='red';//firstChild -- 对于低版本的支持，IE8以下
+				//oU1.firstElementChild.style.background='red';//firstElementChild -- 适用于高版本的浏览器 、IE7以下不兼容
+				
+				if(oU1.firstElementChild)  //处理浏览器的兼容问题
+				{
+					oU1.firstElementChild.style.background='red';
+				}
+				else
+				{
+					oU1.firstChild.style.background='red';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<ul id="ul1">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</body>
+</html>

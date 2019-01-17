@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{ font-family: verdana, arial, helvetica, sans-serif; font-size: 12px; line-height: 1.5;}			
+			#menu ul{margin: 0 auto; padding: 0; list-style: none; width: 800px;}
+			#menu ul li{ background: #eee; height: 37px; line-height: 37px; border-bottom: 1px solid #CCCCCC; text-decoration: none; float: left; width: 154px; height: 37px;}
+			#menu ul li a{color: #000; text-decoration: none; display: block; width: 154px; height: 37px;}
+			#menu ul li a:hover{}
+			#menu ul li ul{display: none; width: 154px;}
+			#menu ul li.listshow ul{display: block;}
+			
+			#menu ul li ul li{ float: none; width: 154px; margin: 0;}
+			#menu ul li ul li a{ background: none; width: 154px;}
+			#menu ul li ul li a:hover{background:red; color: yellow;}
+			.clear{clear: both;}
+		</style>
+	</head>
+	<body>
+		<script>
+			function menuFix()
+			{
+				var sfElee=document.getElementById("menu").getElementsByTagName("li");
+				for(var i=0;i<sfElee.length;i++)
+				{
+					sfElee[i].onmouseover=function()
+					{
+						this.className +=(this.className.length>0?" ":"")+"listshow";
+					}
+					sfElee[i].onmouseout=function()
+					{
+						this.className=this.className.replace("listshow","");
+					}
+				}
+			}
+			window.onload=menuFix;
+		</script>
+		<div id="menu">
+			<ul>
+				<li><a href="#" id="on">div+css</a></li>
+				<li><a href="#">java</a>
+					<ul>
+						<li><a href="#">二级导航列表</a></li>
+						<li><a href="#">二级导航列表</a></li>
+						<li><a href="#">二级导航列表</a></li>
+						<li><a href="#">二级导航列表</a></li>
+						<li><a href="#">二级导航列表</a></li>
+						<li><a href="#">二级导航列表</a></li>
+					</ul>
+				</li>
+				<li><a href="#">.net</a></li>
+				<li><a href="#">php</a>
+					<ul>
+						<li><a href="#">二级导航列表</a></li>
+						<li><a href="#">二级导航列表</a></li>
+						<li><a href="#">二级导航列表</a></li>
+						<li><a href="#">二级导航列表</a></li>
+						<li><a href="#">二级导航列表</a></li>
+						<li><a href="#">二级导航列表</a></li>
+					</ul>
+				</li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+		
+	</body>
+</html>

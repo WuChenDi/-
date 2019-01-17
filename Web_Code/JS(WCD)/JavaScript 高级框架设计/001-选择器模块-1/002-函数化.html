@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+			div,
+			p {
+				width: 100px;
+				height: 30px;
+				border: 1px solid red;
+				margin: 10px 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div></div>
+		<div></div>
+		<p></p>
+		<p></p>
+	</body>
+	<script type="text/javascript">
+		//传统的处理方式，就是使用函数获得
+		var g = function(tag) {
+			return document.getElementsByTagName(tag);
+		};
+		//函数化
+		var divs = g('div');
+		var ps = g('p');
+		//性能
+		var each = function(arr) {
+			for(var i = 0; i < arr.length; i++) {
+				arr[i].style.backgroundColor = 'blue';
+			}
+		};
+		each(divs);
+		each(ps);
+	</script>
+
+</html>

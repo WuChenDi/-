@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+	#parent {
+		width: 500px;
+		height: 20px;
+		background: #ccc;
+		position: relative;
+		margin: 10px auto;
+	}
+
+	#div1 {
+		width: 20px;
+		height: 20px;
+		background: red;
+		position: absolute;
+		left: 0;
+		top: 0;
+		border-radius: 14px;
+	}
+</style>
+<script type="text/javascript">
+        var phoneWidth = parseInt(window.screen.width);
+        var phoneScale = phoneWidth / 750;
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)) {
+            var version = parseFloat(RegExp.$1);
+            if (version > 2.3)
+                document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+            else
+                document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
+        } else {
+            document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+</head>
+<body>
+	<div id="parent">
+		<div id="div1"></div>
+	</div>
+	<script>
+		var oParent = document.getElementById("parent");
+		var block = document.getElementById("div1");
+		var oW = 0;
+		block.addEventListener("touchstart", function(e) {
+			console.log(e);
+			var touches = e.touches[0];
+			oW = touches.clientX - block.offsetLeft;
+   			//阻止页面的滑动默认事件
+   			document.addEventListener("touchmove",defaultEvent,false);
+		},false)
+
+		block.addEventListener("touchmove", function(e) {
+			var touches = e.touches[0];
+			var oLeft = touches.clientX - oW;
+			if(oLeft < 0) {
+				oLeft = 0;
+			}else if(oLeft > oParent.offsetWidth - block.offsetWidth) {
+				oLeft = (oParent.offsetWidth - block.offsetWidth);
+			}
+			block.style.left = oLeft + "px";
+		},false);
+
+		block.addEventListener("touchend",function() {
+			document.removeEventListener("touchmove",defaultEvent,false);
+		},false);
+		function defaultEvent(e) {
+			e.preventDefault();
+		}
+	</script>
+</body>
+</html>

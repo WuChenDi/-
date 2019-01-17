@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			
+			body,
+			html {
+				height: 100%;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			header {
+				height: 40px;
+				line-height: 40px;
+				font-size: 20px;
+				color: #fff;
+				text-align: center;
+				background: dodgerblue;
+			}
+			
+			footer {
+				height: 40px;
+				line-height: 40px;
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				color: #fff;
+				text-align: center;
+				background: dodgerblue;
+			}
+			
+			#wrap {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 40px;
+				bottom: 40px;
+				overflow: hidden;
+			}
+			
+			#list {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			
+			#list li {
+				line-height: 30px;
+				text-indent: 20px;
+				font-size: 16px;
+				color: dodgerblue;
+				border-bottom: 1px solid dodgerblue;
+			}
+		</style>
+		<script type="text/javascript" src="m.Tween.js"></script>
+		<script type="text/javascript">
+			function createList() {
+				var list = document.querySelector('#list');
+				var inner = "";
+				for(var i = 0; i < 50; i++) {
+					inner += "<li>这是第" + i + "个li</li>";
+				}
+				list.innerHTML = inner;
+			}
+			document.addEventListener('touchstart', function(ev) {
+				ev.preventDefault();
+			});
+			window.onload = function() {
+				createList();
+				var wrap = document.querySelector('#wrap');
+				mScroll({
+					el: wrap,
+					offBar: true//为true滚动条不显示，false显示滚动条
+				})
+			};
+
+			function mScroll(init) {
+				if(!init.el) {
+					return;
+				}
+				var wrap = init.el;
+				var inner = init.el.children[0];
+				var inner = document.querySelector('#list');
+				var scrollBar = document.createElement("div");
+				var startPoint = 0;
+				var startEl = 0;
+				var lastY = 0;
+				var lastDis = 0; //获取最后一次的距离
+				var lastTime = 0;
+				var lastTimeDis = 0;
+				var maxTranslate = wrap.clientHeight - inner.offsetHeight;
+				var scale = wrap.clientHeight / inner.offsetHeight;
+				if(!init.offBar) {
+					inner.style.minHeight = "100%";
+					scrollBar.style.cssText = "width: 6px;background: rgba(0,0,0,.5);position: absolute;right: 0;top: 0;border-radius: 3px; opacity: 0;transition: .3 opacity;";
+					wrap.appendChild(scrollBar);
+				}
+				css(inner, "translateZ", 0.01);
+				inner.addEventListener('touchstart', function(ev) {
+					maxTranslate = wrap.clientHeight - inner.offsetHeight;
+					if(!init.offBar) {
+						if(maxTranslate >= 0) {
+							scrollBar.style.display = "none";
+						} else {
+							scrollBar.style.display = "block";
+						}
+						scale = wrap.clientHeight / inner.offsetHeight;
+						scrollBar.style.height = wrap.clientHeight * scale + "px";
+					}
+					clearInterval(inner.timer);
+					startPoint = ev.changedTouches[0].pageY;
+					startEl = css(inner, "translateY");
+					lastY = startEl;
+					lastTime = new Date().getTime();
+					lastTimeDis = lastDis = 0;
+					(init.offBar)||(scrollBar.style.opacity = 1);
+				});
+				inner.addEventListener('touchmove', function(ev) {
+					var notTime = new Date().getTime();
+					var nowPoint = ev.changedTouches[0].pageY;
+					var dis = nowPoint - startPoint;
+					var translateY = startEl + dis;
+					css(inner, "translateY", translateY);
+					(init.offBar)||css(scrollBar, "translateY", -translateY * scale);
+					lastDis = translateY - lastY;
+					lastY = translateY;
+					lastTimeDis = notTime - lastTime;
+					lastTime = notTime;
+				});
+				inner.addEventListener('touchend', function(ev) {
+					var type = "easeOut";
+					//console.log(lastDis,lastTimeDis);
+					var speed = Math.round(lastDis / lastTimeDis * 10);
+					speed = lastTimeDis <= 0 ? 0 : speed;
+					var target = Math.round(speed * 20 + css(inner, "translateY"));
+					//console.log(target);
+					if(target > 0) {
+						target = 0;
+						type = "backOut";
+					} else if(target < maxTranslate) {
+						target = maxTranslate;
+						type = "backOut";
+					}
+					console.log(target);
+					MTween({
+						el: inner,
+						target: {
+							translateY: target
+						},
+						time: Math.round(Math.abs(target - css(inner, "translateY")) * 3),
+						type: type,
+						callBack: function() {
+							(init.offBar)||(scrollBar.style.opacity = 0);
+						},
+						callIn: function() {
+							var translateY = css(inner, "translateY");
+							(init.offBar)||css(scrollBar, "translateY", -translateY * scale);
+						}
+					});
+				});
+			}
+		</script>
+	</head>
+
+	<body>
+		<header id="header">WuChenDi</header>
+		<section id="wrap">
+			<ul id="list">
+
+			</ul>
+		</section>
+		<footer id="footer">This is what I wrote移动端页面</footer>
+	</body>
+
+</html>

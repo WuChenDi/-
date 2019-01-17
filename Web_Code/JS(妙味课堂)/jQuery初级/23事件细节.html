@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	</head>
+
+	<body style="height:2000px;">
+		<div>div</div>
+		<span>span</span>
+
+		<script type="text/javascript">
+//			$('div').click(function(){
+//				ev:event 对象
+//				ev.pageX(相对于文档的) : clientX(相对于可视区)
+
+//				ev.whick :keyCode
+//				ev.preventDefault(); //阻止默认事件
+//				ev.stopPropagation(); //阻止冒泡的操作
+//				return false;		  //阻止默认事件 + 阻止冒泡的操作
+//			});
+			
+			//one 只执行事件一次
+			$('div').one('click' , function(){
+				alert(123);
+			});
+			
+			
+			
+		</script>
+	</body>
+
+</html>

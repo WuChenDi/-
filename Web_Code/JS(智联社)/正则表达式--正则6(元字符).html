@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload = function(){
+				var str = 'apc bpc cpc dpc epc';
+				var re = /[abc]pc/g;
+				/*
+				 *[abc]	任意字符 
+				 *[a-z]、[0-9]	范围	
+				 *[^a]	排除
+				 * 
+				 * */
+				alert(str.match(re));
+			};
+		</script>
+	</head>
+
+	<body>
+	</body>
+
+</html>

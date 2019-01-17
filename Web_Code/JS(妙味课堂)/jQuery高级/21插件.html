@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1{width: 100px;height: 100px;background: red;position: absolute;}
+		</style>
+		<script type="text/javascript" src="jquery-3.2.1.js" ></script>
+		<script type="text/javascript">
+			//$.trim();
+			//$.leftTrim();//自定义去掉左边空格
+			//$.extend(true, target object, object1);//扩展工具方法下的插件形式 $.xxx()   $.yyy()
+			//$.fn.extend();//扩展到JQ对象下的插件形式  $().xxx()   $().yyy()
+			$.extend({
+				//去掉左空格
+				leftTrim : function(str){
+					return	str.replace(/^\s+/,'');
+				},
+			});
+			$.fn.extend({
+				drag:function(){
+					//this:$('#div1')
+					var disX=0;
+					var disY=0;
+					var This = this;
+					this.mousedown(function(ev){
+						disX=ev.pageX - $(this).offset().left;
+						disY=ev.pageY - $(this).offset().top;
+						
+						$(document).mousemove(function(ev){
+							This.css('left',ev.pageX-disX);
+							This.css('top',ev.pageY-disY);
+						});
+						$(document).mouseup(function(){
+							$(this).off();
+						});
+						return false;
+					});
+				},
+			});
+		</script>
+		<script type="text/javascript">
+			$(function(){
+//				var str = '   hello   ';
+//				alert('('+str+')');
+//				alert('('+$.leftTrim(str)+')');
+				$('#div1').drag();
+			});
+
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			
+		</div>
+	</body>
+</html>

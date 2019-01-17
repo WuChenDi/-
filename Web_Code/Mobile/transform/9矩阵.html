@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content = "width=device-width,user-scalable=no">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			#box{
+				width: 100px;
+				border: 1px solid #000;
+				padding: 100px;
+			}
+			.div{
+				width: 100px;
+				height: 100px;
+				margin: 10px 0;
+				background: red;
+			}
+		</style>
+		<script type="text/javascript">
+			document.addEventListener('touchstart',function(ev){
+				ev.preventDefault();
+			});
+			window.onload = function(){
+				var div = document.querySelectorAll('.div');
+				div[0].style.webkitTransform = div[0].style.transform = "matrix(1, 0, 0, 1, 100, 50)";
+				
+			}
+		</script>
+	</head>
+	<body>
+		<!--
+			matrix(1, 0, 0, 1, 0, 0);  矩阵默认值
+			matrix(a, b, c, d, e, f);
+			
+			位移：
+				X轴位移 = e +X;
+				Y轴位移 = f +Y;
+		-->
+		<div id="box">
+			<div class="div"></div>
+		</div>
+	</body>
+</html>

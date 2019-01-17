@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				//console.log($('form').serialize());    //a=1&b=2&c=3
+				console.log($('form').serializeArray());
+			});
+		</script>
+	</head>
+
+	<body>
+		<form action="" method="post">
+			
+			<input type="text" name="a" value="1"/>
+			<input type="text" name="b" value="2"/>
+			<input type="text" name="c" value="3"/>
+			
+		</form>
+	</body>
+
+</html>

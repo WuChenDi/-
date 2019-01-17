@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		/*
+		    使用弹性盒模型，父元素必须加上display：box或display：inline-box
+		 
+		  box-orient定义盒模型的主轴方向
+		  flex：flex-direction row / column
+		  box：-webkit-box-orient：
+		  	horizontal 水平显示
+		  	vertical  垂直方向
+		  	
+		  	
+		  box-direction元素排列顺序
+		  flex：flex-direction：row-reverse / column-reverse;
+		  box：-webkit-box-direction：
+		  	normal正序
+		  	reverse反序
+		  
+		 */
+			body{
+				margin: 0;
+			}
+			#box{
+				height: 300px;
+				border: 1px solid #000;
+				/*新版弹性盒模型*/
+				/*display: flex;*/
+				
+				/*老版弹性盒模型*/
+				display: -webkit-box;
+			}
+			/*子元素的尺寸=盒子的尺寸*子元素的box-flex属性值/所有子元素的box-flex属性值的和*/
+			#box div{
+				
+				height: 50px;
+				width: 50px;
+				background-color: #f00;
+				font-size: 30px;
+				color: #fff;
+				/*border: 1px solid #000;
+				box-sizing: border-box;*/
+			}
+			#box div:nth-last-of-type(1){
+				/*数值越小越靠前，可以接受0或者负数*/
+				/*新版*/
+				/*order: 5;*/
+				
+				/*数值越小越靠前，最小值默认处理为1（变成1）*/
+				/*老版*/
+				-webkit-box-ordinal-group: 5;
+			}
+			#box div:nth-last-of-type(2){
+				/*order: 2;*/
+				-webkit-box-ordinal-group: 1;
+			}
+			#box div:nth-last-of-type(3){
+				/*order: 3;*/
+				-webkit-box-ordinal-group: 0;
+			}
+			#box div:nth-last-of-type(4){
+				/*order: -2;*/
+				-webkit-box-ordinal-group: 3;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+		</div>
+	</body>
+</html>

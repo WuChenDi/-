@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-3.2.1.js" ></script>
+	</head>
+	<body>
+		<ul>
+			<li class="box"></li>
+			<li title="hello"></li>
+			<li class="box"></li>
+			<li></li>
+			<li title="hello"></li>
+		</ul>
+		
+		
+		<script type="text/javascript">
+			//$('li:eq(2)').css('background','red');//eq下标从0开始
+			
+			//$('li:even').css('background','red');//奇数
+			//$('li:odd').css('background','red');//偶数
+			
+			//$('li').filter('.box').css('background','red');//多种筛选方法
+			$('li').filter('[title=hello]').css('background','red');
+		</script>
+	</body>
+</html>

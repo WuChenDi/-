@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//hasOwnProperty : 看是不是对象自身下面的属性
+			
+			var arr = [];
+			arr.num = 10;
+			Array.prototype.num2 = 20;
+			
+			//alert(arr.hasOwnProperty('num'));	//true
+			alert(arr.hasOwnProperty('num2'));	//false
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

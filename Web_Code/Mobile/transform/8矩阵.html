@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content = "width=device-width,user-scalable=no">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			#box{
+				width: 100px;
+				border: 1px solid #000;
+				padding: 100px;
+			}
+			.div{
+				width: 100px;
+				height: 100px;
+				margin: 10px 0;
+				background: red;
+			}
+		</style>
+		<script type="text/javascript">
+			document.addEventListener('touchstart',function(ev){
+				ev.preventDefault();
+			});
+			window.onload = function(){
+				var div = document.querySelectorAll('.div');
+				div[0].style.webkitTransform = div[0].style.transform = "scale(.5) translateX(100px)";
+				//console.log(getComputedStyle(div[0])["transform"]);
+				console.log(div[0].style.transform);
+			}
+		</script>
+	</head>
+	<body>
+		<!--
+			matrix(0.5, 0, 0, 0.5, 50, 0)  矩阵
+			
+		-->
+		<div id="box">
+			<div class="div"></div>
+		</div>
+	</body>
+</html>

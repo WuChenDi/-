@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			window.onload = function() {
+				var oBtn = document.getElementById('btn1');
+
+				if(oBtn.attachEvent) {	//IE
+					oBtn.attachEvent('onclick', function() {
+						alert('a');
+					});
+					oBtn.attachEvent('onclick', function() {
+						alert('b');
+					});
+				} else {	//FF Chrome
+					oBtn.addEventListener('click', function() {
+						alert('a');
+					}, false);
+					oBtn.addEventListener('click', function() {
+						alert('b');
+					}, false);
+				}
+				//IE
+				//attachEvent(事件名，函数)
+				
+				//FF 
+				//addEventListener(事件名，函数，false)
+				
+			};
+		</script>
+	</head>
+
+	<body>
+		<input type="button" name="btn1" id="btn1" value="按钮" />
+	</body>
+
+</html>

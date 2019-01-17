@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function createPerson(name, qq) {	//构造函数
+				var obj = new Object();
+				obj.name = name;
+				obj.qq = qq;
+
+				obj.showName = function() {
+					alert('my name is:' + this.name);
+				};
+				obj.showQQ = function() {
+					alert('my qq is:' + this.qq);
+				};
+				return obj;
+			}
+			var obj = createPerson('wcd','996194720');
+			obj.showName();
+			obj.showQQ();
+			
+			var obj2 = createPerson('zhangsan','456987123');
+			obj2.showName();
+			obj2.showQQ();
+		</script>
+	</head>
+
+	<body>
+	</body>
+
+</html>

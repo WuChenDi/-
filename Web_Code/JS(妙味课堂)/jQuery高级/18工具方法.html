@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+
+		</style>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				
+				//$().css();  $().html();  $().val(); $().index();//只能给JQ对象用
+				//$.xxx();   $.zzz();  $.yyy();  //不仅可以给JQ用，也可以给原生JS用，叫做工具方法
+				
+				//inArray():类型于  indexOf
+				//proxy() : 改变this指向的
+				
+				//var arr = ['a','b','c','d'];
+				//alert($.inArray('b',arr));
+				//alert($.inArray('w',arr));
+				function show(n1,n2){
+					alert(n1);
+					alert(n2);
+					alert(this);
+				}
+				//show();
+				//$.proxy(show , document)(3,4);
+				//$.proxy(show,document,3,4)();
+				//$.proxy(show , document,3)(4);
+				$(document).click($.proxy(show,window,3,4));
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="div1">
+			aaaa
+		</div>
+	</body>
+
+</html>

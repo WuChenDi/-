@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1 {
+				width: 100px;
+				height: 100px;
+				background: red;
+				position: absolute;
+			}
+		</style>
+		<script type="text/javascript">
+			/*
+				先变型：
+				尽量不要出现函数嵌套函数
+				可以有全局变量
+				吧onload中不是赋值语句放到单独函数中
+			
+			*/
+			var oDiv = null;
+			var disX = 0;
+			var disY = 0;
+			window.onload = function() {
+				
+				oDiv = document.getElementById('div1');
+				
+				init();
+			};
+			
+			function init(){
+				oDiv.onmousedown = fnDown;
+			}
+
+			function fnDown(ev) {
+				var ev = ev || window.event;
+				disX = ev.clientX - oDiv.offsetLeft;
+				disY = ev.clientY - oDiv.offsetTop;
+
+				document.onmousemove = fnMove;
+				document.onmouseup = fnUp;
+				return false;
+			}
+
+			function fnMove(ev) {
+				var ev = ev || window.event;
+				oDiv.style.left = ev.clientX - disX + 'px';
+				oDiv.style.top = ev.clientY - disY + 'px';
+			}
+
+			function fnUp() {
+				document.onmousemove = null;
+				document.onmouseup = null;
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="div1"></div>
+	</body>
+
+</html>

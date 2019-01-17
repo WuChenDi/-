@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//$('div').appendTo($('span'));
+				//$('span').get(0).appendChild($('div').get(0));
+				
+				//clone(): 可以接受一个参数,作用可以复制之前的操作行为
+				
+				//$('div').clone().appendTo($('span'));
+				
+				$('div').click(function(){
+					alert('wuchendi');
+				});
+				
+				$('div').clone(true).appendTo($('span'));
+			});
+		</script>
+	</head>
+	<body>
+		<div>div</div>
+		<span>span</span>
+	</body>
+</html>

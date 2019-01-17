@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			ul li {
+				list-style: none;
+			}
+			
+			.judge_newline {
+				background-color: #fff;
+				border-top: 1px solid #d9d9d9;
+				border-bottom: 1px solid #d9d9d9;
+				margin-top: 15px;
+				padding: 10px 3%;
+			}
+			
+			.judge_newline>label {
+				color: #525253;
+				min-width: 25%;
+				text-align: right;
+				font-size: 16px;
+				line-height: 1.5;
+				font-weight: 400;
+				margin-bottom: 0;
+				margin-right: 10px;
+			}
+			
+			.dropdown {
+				display: inline-block;
+				position: relative;
+				width: ;
+			}
+			
+			.btn {
+				color: #333;
+				background-color: #d4d4d4;
+				border-color: #bfbfbf;
+			}
+			
+			.dropdown-menu {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				z-index: 1000;
+				display: none;
+				float: left;
+				min-width: 160px;
+				padding: 5px 0;
+				margin: 2px 0 0;
+				list-style: none;
+				font-size: 14px;
+				text-align: left;
+				background-color: #fff;
+				border: 1px solid #ccc;
+				border: 1px solid rgba(0, 0, 0, 0.15);
+				border-radius: 4px;
+				-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+				box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+				-webkit-background-clip: padding-box;
+				background-clip: padding-box;
+			}
+			
+			.dropdown-menu li {
+				
+			}
+			
+			.dropdown-menu li a {
+				display: block;
+				padding: 3px 20px;
+				clear: both;
+				font-weight: normal;
+				line-height: 1.42857143;
+				color: #333;
+				white-space: nowrap;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="judge_newline">
+			<label>银行卡号</label>
+			<div class="dropdown">
+				<button class="btn" data-toggle="dropdown" aria-expanded="true">
+					<span data-choose-info-desc>选择转账银行卡</span>
+				</button>
+				<ul class="dropdown-menu">
+					<li data-id="4273" data-desc="**** **** **** *** 1014 [中国工商银行]">
+						<a>**** **** **** *** 1014 [中国工商银行]</a>
+					</li>
+				</ul>
+			</div>
+			<select name="">
+				<option value=""></option>
+			</select>
+		</div>
+		<script src="jquery-1.7.2.min.js"></script>
+		<script>
+			$(function() {
+				$(".box").click(function() {
+					$(".")
+				});
+			});
+			console.log(())
+			
+		</script>
+	</body>
+
+</html>

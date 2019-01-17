@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0; padding: 0;}
+			#text1{width: 200px; height: 20px; display: block;}
+			#text2{width: 200px; height: 20px;}
+		</style>
+		<script>
+			function Onkey(){
+				document.getElementById("text2").value=document.getElementById("text1").value;
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="text1" onkeyup="Onkey()"/>
+		<input type="text" id="text2" />
+	</body>
+</html>

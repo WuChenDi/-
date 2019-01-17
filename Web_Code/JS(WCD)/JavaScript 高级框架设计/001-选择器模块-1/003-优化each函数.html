@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+			div,
+			p {
+				width: 100px;
+				height: 30px;
+				border: 1px solid red;
+				margin: 10px 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div></div>
+		<div></div>
+		<p></p>
+		<p></p>
+	</body>
+	<script type="text/javascript">
+		//传统的处理方式，就是使用函数获得
+		var g = function(tag) {
+			return document.getElementsByTagName(tag);
+		};
+		//函数化
+		var divs = g('div');
+		var ps = g('p');
+		//性能
+		var each = function(arr) {
+			for(var i = 0; i < arr.length; i++) {
+				arr[i].style.backgroundColor = 'blue';
+			}
+		};
+		//如果你想遍历一个数组，是要对数组做什么事情？？？
+		//凡事涉及到遍历才可以完成的事情都应该可以做（ 修改 ，  查询 ）
+
+		var arr = [1, 2, 3, 4];
+		//要求：
+		//1，求和
+		var sum = 0;
+		for(var i = 0; i < arr.length; i++) {
+			sum += arr[i];
+		}
+		console.log(sum);
+		//2，求最大值
+		var max = arr[0];
+		for(var i = 0; i < arr.length; i++) {
+			if(arr[i] > max) {
+				max = arr[i];
+			}
+		}
+		console.log(max);
+		//3, 求最小值
+		var min = arr[0];
+		for(var i = 0; i < arr.length; i++) {
+			if(arr[i] < min) {
+				min = arr[i];
+			}
+		}
+		console.log(min);
+		//4, 查询3
+		var find1 = -1;
+		for(var i = 0; i < arr.length; i++) {
+			if(arr[i] === 3) {
+				find1 = i;
+				break;
+			}
+		}
+		//5， 查询5
+		var find1 = -1;
+		for(var i = 0; i < arr.length; i++) {
+			if(arr[i] === 5) {
+				find1 = i;
+				break;
+			}
+		}
+
+		//函数化
+		var each = function(arr, fn) {
+			for(var i = 0; i < arr.length; i++) {
+				fn(arr[i]);
+			}
+		};
+
+		each(arr, function(v) {
+			sum += v;
+		});
+
+		var max = arr[0];
+		each(arr, function(v) {
+			if(max < v) {
+				max = v;
+			}
+		})
+	</script>
+
+</html>

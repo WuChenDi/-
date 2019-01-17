@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0; padding: 0;list-style: none;}
+			#div1{
+				position: absolute;
+				width: 80px;
+				background: #ccc;
+				border: 1px solid black;
+				display: none;
+			}
+		</style>
+		<script type="text/javascript">
+			/*
+			 *阻止默认事件
+			 * 	普通写法：return false;
+			 * 	例子1：屏蔽右键菜单
+			 * 		弹出自定义右键菜单
+			 * 	例子2：只能输入数字的输入框
+			 * 		keydown 、 keyup事件的区别
+			 * 
+			 * */
+			document.oncontextmenu = function(ev){
+				var oEvent = ev || event;
+				var oDiv = document.getElementById('div1');
+				
+				oDiv.style.display = 'block';
+				oDiv.style.left = oEvent.clientX + 'px';
+				oDiv.style.top = oEvent.clientY + 'px';
+				
+				return false;
+			}
+			document.onclick = function(){
+				var oDiv = document.getElementById('div1');
+				
+				oDiv.style.display = 'none';
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			<ul>
+				<li>aaa</li>
+				<li>bbb</li>
+				<li>ccc</li>
+			</ul>
+		</div>
+	</body>
+</html>

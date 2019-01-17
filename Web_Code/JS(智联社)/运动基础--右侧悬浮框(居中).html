@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1{width: 100px; height: 150px; background: red; position: absolute; right: 0; bottom: 0;}
+		</style>
+		<script>
+		//潜在问题：目标值不是整数是，会出现一个像素的问题
+			window.onscroll=function()
+			{
+				var oDiv=document.getElementById('div1');
+				var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+				//oDiv.style.top=(document.documentElement.clientHeight-oDiv.offsetHeight)/2+scrollTop+'px';
+				starMove(parseInt((document.documentElement.clientHeight-oDiv.offsetHeight)/2+scrollTop));//除于2是让div居中,可把parseInt去掉发现问题
+			}
+			
+			var timer=null;
+			function starMove(iTarget)
+			{
+				var oDiv=document.getElementById('div1');
+				clearInterval(timer);
+				timer=setInterval(function(){
+					var speed=(iTarget-oDiv.offsetTop)/10;
+					speed=speed>0?Math.ceil(speed):Math.floor(speed);
+					if(oDiv.offsetTop==iTarget)
+					{
+						clearInterval(timer);
+					}
+					else
+					{
+						document.title=iTarget;//ITarget的值在当前文档的标题中显示
+						document.getElementById('txt1').value=oDiv.offsetTop;//对文本框赋值
+						oDiv.style.top=oDiv.offsetTop+speed+'px';
+					}
+				},30)
+			}
+		</script>
+	</head>
+	<body style="height: 2000px;">
+		<div id="div1"></div>
+		<input type="text" id="txt1" style="position: fixed; right: 0; top: 0;" />
+	</body>
+</html>

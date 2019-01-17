@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+
+		</style>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#div1').on('click',{name:'hello'},function(ev){
+					//alert(ev.data.name);
+					//alert(ev.target);
+					alert(ev.type);
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="div1">
+			aaaa
+		</div>
+	</body>
+
+</html>

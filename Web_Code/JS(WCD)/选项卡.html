@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style>
+			* {padding: 0;margin: 0;font-size: 14px;}
+			li{list-style: none;}
+			a{text-decoration: none;}
+			.newBox{padding: 0px 10px 0px 20px; overflow: hidden;  float: left;width: 633px;}
+			.newtitle{height: 30px;border-bottom: 2px solid #bfbfbf;}
+			.newtitle h3{height: 30px; width: 165px;float: left; line-height: 30px; display: block; font-size: 14px; color: #000000; margin-right: 18px; border-bottom: 2px solid #bc2d23; font-weight: 100;}
+			.newtitle h3 span{color: #ccc; font-family: Arial; font-size: 12px;}
+			#tab{margin-top: 15px; overflow: hidden;}
+			#tab_ul{float: left; margin-right: 20px; overflow: hidden;}
+			#tab_ul li{width: 178px; height: 50px; margin-bottom: 5px; font-weight: bold;}
+			#tab_ul li a{display: block; width: 178px; height: 50px; line-height: 50px;background-color: #DDD; color: #000;text-align: center; font-size: 14px;}
+			#tab_ul li a:hover{background-color: #A81C12;color: #fff;}
+			#tab_ul li.on{background-color: #A81C12;color: #fff;}
+			
+			#tab_div .box{float: left; width: 423px;/*display: none;*/}
+			#tab_div .box .on{/*display: block;*/}
+			.top{position: relative; padding-left: 90px; height: 63px;}
+			.top em{display: block; width: 50px;height: 35px; font-size: 1.2em; font-style: normal; position: absolute; top: 15px; line-height: 18px; left: 10px; font-weight: bold;}
+			.top .sp1{font-size: 1.6em;}
+			.top .sp2{font-size: 1.2em; padding-left: 30px;}
+			.top h3{font-weight: bold;}
+			.top h3 a{color: #bc2c22;}
+			.top p{color: #4c4c4c;line-height: 18px;}
+			.newList{float: left; margin-top: 5px;width: 100%;}
+			.newList dt{line-height: 30px; height: 30px; float: left; display: block; width: 100%;overflow: hidden;}
+			.newList dt a{color: #777777; display: block; height: 30px; line-height: 30px; float: left; padding-left: 20px;}
+			.newList dt em{display: block; color: #b8b8b8;float: right;font-style: normal;}
+			
+			/*#tab {width: 500px; height: 200px; border: 1px solid #ddd;margin: 10px auto;}
+			#tab_ul {width: 500px;height: 42px;}
+    		#tab_ul li {width: 99px;border: 1px solid #ddd;background: #fff;border-left:none;float: left;
+        	height: 40px;line-height: 40px;text-align: center;cursor: pointer;background: #f9f9f9;}
+    		#tab_ul li.on {border-bottom: 1px solid #fff;background: #fff;}  		
+			#tab_div {}
+    		#tab_div div {height: 200px;line-height: 200px;text-align: center;display: none;}
+			#tab_div div.on{display: block;}*/
+		</style>
+		<script>
+			window.onload = function() {
+				var oTabLli = document.getElementById("tab_ul").getElementsByTagName("li");
+				var oTabDiv = document.getElementById("tab_div").getElementsByTagName("div");
+				for (var i = 0; i < oTabLli.length; i++) {
+					oTabLli[i].onclick = function() {
+						var oindex = index(this, oTabLli);
+						for (var j = 0; j < oTabLli.length; j++) {
+							if (j == oindex) {
+								oTabLli[j].className = "on";
+								oTabDiv[j].className = "on";
+							} else {
+								oTabLli[j].removeAttribute("class");
+								oTabDiv[j].className = "block";
+							}
+						}
+					}
+				}
+				// 索引函数
+				function index(current, obj) {
+					for (var i = 0; i < obj.length; i++) {
+						if (obj[i] == current) {
+							return i;
+						}
+					}
+				}
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<div class="newBox">
+			<div class="newtitle">
+				<h3>
+					新闻资讯 
+					<span>/NEWS</span>
+				</h3>
+			</div>
+			<div id="tab">
+				<ul id="tab_ul">
+					<li>
+						<a href="#">新闻中心</a>
+					</li>
+					<li>
+						<a href="#">企业大事件</a>
+					</li>
+					<li>
+						<a href="#">社会责任</a>
+					</li>
+				</ul>
+				<div id="tab_div">
+					<!--新闻中心-->
+					<div class="box">
+						<div class="top">
+							<em>
+								<span class="sp1">03</span>
+								<br />
+								<span class="sp2">13</span>
+							</em>
+							<h3><a href="#">国地科技 “新三板”挂牌仪式在京隆重举行</a></h3>
+							<p>2017年3月8日广东国地规划科技股份有限公司（证券简称：国地科技，股票代码为870785）在北京市金融大街金阳大...</p>
+						</div>
+						<dl class="newList">
+							<dt>
+								<a href="#">研究新理论新技术新方法，推进国土资源科技创新</a>
+								<em>[2017-03-13]</em>
+							</dt>
+							<dt>
+								<a href="#">“凝聚匠心  砥砺前行” 国地顾问2016年终总结表彰大会</a>
+								<em>[2017-01-17]</em>
+							</dt>
+							<dt>
+								<a href="#">关于研究院获得2015年度广东省省级培育发展社会组织专...</a>
+								<em>[2016-01-25]</em>
+							</dt>
+						</dl>
+					</div>
+					<!--企业大事件-->
+					<div class="box">
+						<div class="top">
+							<em>
+								<span class="sp1">03</span>
+								<br />
+								<span class="sp2">13</span>
+							</em>
+							<h3><a href="#">国地科技 “新三板”挂牌仪式在京隆重举行</a></h3>
+							<p>2017年3月8日广东国地规划科技股份有限公司（证券简称：国地科技，股票代码为870785）在北京市金融大街金阳大...</p>
+						</div>
+						<dl class="newList">
+							<dt>
+								<a href="#">研究新理论新技术新方法，推进国土资源科技创新</a>
+								<em>[2017-03-13]</em>
+							</dt>
+							<dt>
+								<a href="#">“凝聚匠心  砥砺前行” 国地顾问2016年终总结表彰大会</a>
+								<em>[2017-01-17]</em>
+							</dt>
+							<dt>
+								<a href="#">关于研究院获得2015年度广东省省级培育发展社会组织专...</a>
+								<em>[2016-01-25]</em>
+							</dt>
+						</dl>
+					</div>
+					<!--社会责任-->
+					<div class="box">
+						<div class="top">
+							<em>
+								<span class="sp1">03</span>
+								<br />
+								<span class="sp2">13</span>
+							</em>
+							<h3><a href="#">国地科技 “新三板”挂牌仪式在京隆重举行</a></h3>
+							<p>2017年3月8日广东国地规划科技股份有限公司（证券简称：国地科技，股票代码为870785）在北京市金融大街金阳大...</p>
+						</div>
+						<dl class="newList">
+							<dt>
+								<a href="#">研究新理论新技术新方法，推进国土资源科技创新</a>
+								<em>[2017-03-13]</em>
+							</dt>
+							<dt>
+								<a href="#">“凝聚匠心  砥砺前行” 国地顾问2016年终总结表彰大会</a>
+								<em>[2017-01-17]</em>
+							</dt>
+							<dt>
+								<a href="#">关于研究院获得2015年度广东省省级培育发展社会组织专...</a>
+								<em>[2016-01-25]</em>
+							</dt>
+						</dl>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

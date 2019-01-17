@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	</head>
+
+	<body>
+		<div>div</div>
+		<span>span</span>
+
+		<script type="text/javascript">
+			
+			$(function(){
+//				insertBefore	before
+//				insertAfter		after
+//				appendTo		append
+//				prependTo		prepend
+				
+//				$('span').insertBefore($('div'));	//insertBefore   span添加到div的前面
+				
+//				$('div').insertAfter($('span'));	//insertAfter    div添加到span的后面
+				
+//				appendTo : appendChild
+				
+//				$('div').appendTo($('span'));	//appendTo	将div添加到span里面最后的位置
+				
+//				$('div').prependTo($('span'));	//prependTo	  将div添加到span里面最开始的位置
+				
+				//区别: 后续操作变了
+//				$('span').insertBefore($('div')).css('background','red');
+				$('div').before($('span')).css('background','red');		//before   div前面必须是span
+				
+			});
+			
+		</script>
+	</body>
+
+</html>

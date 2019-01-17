@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>事件流</title>
+		<style>
+			div{padding:100px;}
+		</style>
+	</head>
+	<body>
+		<div style="background:#CCC ;" onclick="alert(this.style.background);">
+			<div style="background: green;"onclick="alert(this.style.background);">
+				<div style="background: red;"onclick="alert(this.style.background);">
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

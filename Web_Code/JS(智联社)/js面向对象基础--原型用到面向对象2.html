@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function CreatePerson(name, qq) {	//构造函数
+				//原料
+				//系统偷偷替咱们做：
+				//var this = new Object();
+				
+				//加工
+				this.name = name;
+				this.qq = qq;
+				
+				//出厂
+				//也会偷偷做一些
+				//return this;
+			}
+			
+			CreatePerson.prototype.showName = function(){	//原型
+				alert('my name is:' + this.name);
+			};
+			CreatePerson.prototype.showQQ = function(){
+				alert('my qq is:' + this.qq);
+			};
+			
+			var obj = new CreatePerson('wcd','996194720');
+			var obj2 = new CreatePerson('zhangsan','456987123');
+			
+			/*obj.showName();
+			obj.showQQ();
+			
+			obj2.showName();
+			obj2.showQQ();*/
+			alert(obj.showName == obj2.showName);
+		</script>
+	</head>
+
+	<body>
+	</body>
+
+</html>

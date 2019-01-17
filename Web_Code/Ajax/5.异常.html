@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			
+			//alert(a);
+			
+			/*捕获异常 e表示错误信息
+			try{
+				
+			}catch(e){
+				
+			}
+			*/
+			try{
+				//代码尝试执行这个块中的内容，如果有错误，则会执行catch{}，并且传入错误信息传输
+				//alert(a);
+				throw new Error('错了错了');
+			}catch(e){
+				alert(2);
+			}
+			
+			alert('到这里了');
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			#box{
+				width: 100px;
+				height: 100px;
+				border: 1px solid #000;
+				padding: 100px;
+			}
+			#div{
+				width: 100px;
+				height: 100px;
+				background: red;
+				transition: 1s;
+			}
+			/*#box:hover #div{
+				-webkit-transform: ;
+				transform: ;
+			}*/
+		</style>
+		<script type="text/javascript">
+			document.addEventListener('touchstart',function(ev){
+				ev.preventDefault();
+			});
+			window.onload = function(){
+				var box = document.querySelector('#div');
+				div.addEventListener("touchend",function(){
+					div.style.webkitTransform = div.style.transform = "rotate(90deg)";
+//					rotate(deg)
+				});
+				/*
+				 	rotate 旋转
+				*/
+			};
+		</script>
+	</head>
+	<body>
+		<!--
+			transform 变换
+			-webkit-taransform
+		-->
+		<div id="box">
+			<div id="div">
+				
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+		window.onload=function()
+		{
+			var oUl=document.getElementById('ul1');
+			
+			//alert(oUl.children.length);
+			for (var i=0; i<oUl.children.length;i++)
+			{
+				oUl.children[i].style.background='red';//children只包括元素，不包括文本
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<ul id="ul1">
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+</html>

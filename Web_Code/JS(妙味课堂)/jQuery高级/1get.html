@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				//get() ：就是把JQ转化成原生JS
+				//document.getElementById('div1').innerHTML
+
+				//alert($('#div1').get(0).innerHTML);
+
+				//				for (var i=0;i<$('li').get().length;i++) {
+				//					$('li').get(i).style.background = 'red';
+				//				}
+
+				for(var i = 0; i < $('li').length; i++) {
+//					$('li').get(i).style.background = 'red';
+					$('li')[i].style.background = 'red';
+				}
+
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="div1">
+			div
+		</div>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+
+</html>

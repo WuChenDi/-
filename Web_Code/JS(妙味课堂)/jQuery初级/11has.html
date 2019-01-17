@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	</head>
+
+	<body>
+		<div>div1 <span class="box">span</span></div>
+		<div class="box">div2</div>
+		
+		
+		<script type="text/javascript">
+//			has:包含
+		
+			$(function(){
+
+				//$('div').has('span').css('background','red');
+				
+				//$('div').has('.box').css('background','red');
+				$('div').filter('.box').css('background','red');
+			});
+		
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//constructor: 查看对象的构造函数
+			
+			/*
+			function Aaa(){
+				
+			}
+			var a1 = new Aaa();
+			alert(a1.constructor);	//Aaa()函数
+			
+			var arr = [];
+			alert(arr.constructor); //Array()函数
+			alert(arr.constructor == Array); //ture
+			*/
+			
+			/*function Aaa(){
+				
+			}
+			//Aaa.prototype.constructor = Aaa;//每个函数都会自动生成的
+			var a1 = new Aaa();
+			alert(a1.constructor);*/
+			
+			/*function Aaa(){
+				
+			}
+			//Aaa.prototype.constructor = Aaa;//程序自动添加
+			Aaa.prototype.constructor = Array;
+			var a1 = new Aaa();
+			alert(a1.constructor);	//Array()函数*/
+			
+			/*function Aaa(){
+				
+			}
+			//Aaa.prototype.constructor = Aaa;//每个函数都会自动生成的
+			var a1 = new Aaa();
+			//alert(a1.hasOwnProperty);
+			alert(a1.hasOwnProperty == Object.prototype.hasOwnProperty);	//true
+			*/
+			
+			/*function Aaa(){
+				
+			}
+			Aaa.prototype.name = 'wcd';	//Aaa()
+			Aaa.prototype.age = 21;
+			
+			Aaa.prototype = {	//Object()
+				name:'wcd',
+				age:21
+			}
+			
+			Aaa.prototype = {	//Aaa()
+				constructor:Aaa,
+				name:'wcd',
+				age:21
+			}
+			
+			var a1 = new Aaa();
+			alert(a1.constructor);*/
+			
+			//for in 的时候有些属性是找不到的
+			function Aaa(){
+				
+			}
+			
+			Aaa.prototype.name = 10;
+			
+			for (var attr in Aaa.prototype) {
+				alert(attr);
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

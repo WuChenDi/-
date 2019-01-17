@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>封装函数</title>
+		<style>
+			#div1{width: 200px; height: 200px; background: red;}
+		</style>
+		<script>
+		function getStyle(obj,name)
+		{
+			if(obj.currentStyle)
+			{
+				return obj.currentStyle[name];
+			}
+			else
+			{
+				return getComputedStyle(obj,false)[name];
+			}
+		}
+			window.onload=function()
+			{
+				var oDiv=document.getElementById('div1');
+				//alert(getStyle(oDiv,'width'));
+				alert(getStyle(oDiv,'backgroundColor'));
+				//取不了复合样式，只能取单一样式
+				//复合样式：backgro、border
+				//单一样式：width、height、position
+				
+				
+			}
+		</script>
+	</head>
+	<body>
+		<div id=div1>
+			
+		</div>
+	</body>
+</html>

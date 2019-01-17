@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1{width: 100px; height: 100px;background: red;}
+			#div2{width: 100px;height: 100px;background: deepskyblue;}
+		</style>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#div1").hover(function(){
+					
+					//$(this).css('background','blue');
+					
+					//$('#div2').hide(1000);
+					
+					//$('#div2').fadeOut(1000);//淡出  默认是400
+					
+					//$('#div2').slideUp();//向上滑动的过渡动画效果
+					
+					$('#div2').fadeTo(1000,0.3);//将被选元素的不透明度逐渐地改变为指定的值 第一个参数是时间 第二个是数值
+					
+				},function(){
+					//$(this).css('background','red');
+					
+					//$('#div2').show(1000);
+					
+					//$('#div2').fadeIn(1000);//淡入	默认是400
+					
+					//$('#div2').slideDown();// 以滑动方式显示动画效果
+					
+					$('#div2').fadeTo(1000,1);
+					
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<div id="div2">
+			
+		</div>
+	</body>
+</html>

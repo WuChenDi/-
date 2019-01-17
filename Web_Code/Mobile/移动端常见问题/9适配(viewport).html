@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--<meta name="viewport" content="user-scalable=no，initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">-->
+		<title></title>
+		<script type="text/javascript">
+			(function(){
+				var w = window.screen.width;
+				//console.log(w);
+				var targetW = 320;
+				//当前尺寸/目标尺寸
+				var scale = w/targetW;
+				//console.log(scale);
+				var meta = document.createElement("meta");
+				meta.name = 'viewport';
+				meta.content = "user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+"";
+				document.head.appendChild(meta);
+			})();
+		</script>
+		<style type="text/css">
+			body{
+				margin: 0;
+				width: 100%;
+				overflow: hidden;
+			}
+			div{
+				width: 25%;
+				height: 100px;
+				float: left;
+				box-sizing: border-box;
+			}
+			.box1{
+				background: red;
+			}
+			.box2{
+				background: blue;
+			}
+			.box3{
+				background: green;
+			}
+			.box4{
+				background: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+	</body>
+</html>

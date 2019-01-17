@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1{width: 100px;height: 100px;background: red;display: none;}
+		</style>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				//detach() 会保留所有绑定的事件、附加的数据，这一点与 remove() 不同。
+				
+				$('div').click(function(){
+					alert(123);
+				});
+				
+				var oDiv = $('div').detach();
+				
+				$('body').append(oDiv);
+			});
+		</script>
+	</head>
+
+	<body>
+		<div>div1 <span>span</span></div>
+	</body>
+
+</html>

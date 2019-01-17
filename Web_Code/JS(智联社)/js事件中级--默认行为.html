@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0; padding: 0;}
+		</style>
+		<script type="text/javascript">
+			/*
+			 *阻止默认事件
+			 * 	普通写法：return false;
+			 * 	例子1：屏蔽右键菜单
+			 * 		弹出自定义右键菜单
+			 * 	例子2：只能输入数字的输入框
+			 * 		keydown 、 keyup事件的区别
+			 * 
+			 * */
+			
+			
+			
+			document.oncontextmenu = function(){
+				return false;	//阻止默认事件;
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			<ul>
+				<li>aaa</li>
+				<li>bbb</li>
+				<li>ccc</li>
+			</ul>
+		</div>
+	</body>
+</html>

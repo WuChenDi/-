@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>点击链接，隐藏整个li</title>
+		<script>
+			window.onload=function()
+			{
+				var aA=document.getElementsByTagName('a');
+				
+				for(var i=0;i<aA.length;i++)
+				{
+					aA[i].onclick=function()
+					{
+						this.parentNode.style.display='none';//parentNode 获取它父节点，在这里的this就是a，父节点就是li
+					}; 
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<ul id="ul1">
+			<li>abcd <a href="javascript:;">隐藏</a></li>
+			<li>efgh <a href="javascript:;">隐藏</a></li>
+			<li>ijkl <a href="javascript:;">隐藏</a></li>
+			<li>mnop <a href="javascript:;">隐藏</a></li>
+			<li>1234 <a href="javascript:;">隐藏</a></li>
+		</ul>
+	</body>
+</html>

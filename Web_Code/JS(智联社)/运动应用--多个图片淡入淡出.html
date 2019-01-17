@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>多个图片的淡入淡出</title>
+		<!--所有的东西都不能公用
+		属性和运动对象绑定：速度、其他属性值(如透明度等)-->
+		<style>
+			#div1{width: 178px; height: 108px; margin: 20px; float: left; background-image:url(img2/4.jpg); filter: alpha(opacity:30); opacity: 0.3;}
+			#div2{width: 178px; height: 108px; margin: 20px; float: left; background-image:url(img2/4.jpg); filter: alpha(opacity:30); opacity: 0.3;}
+			#div3{width: 178px; height: 108px; margin: 20px; float: left; background-image:url(img2/4.jpg); filter: alpha(opacity:30); opacity: 0.3;}
+			#div4{width: 178px; height: 108px; margin: 20px; float: left; background-image:url(img2/4.jpg); filter: alpha(opacity:30); opacity: 0.3;}
+		</style>
+		<script>
+		window.onload=function()
+		{
+			var aDiv=document.getElementsByTagName('div');
+//			var aDiv=document.getElementsByTagName('div1');
+//			var aDiv=document.getElementsByTagName('div2');
+//			var aDiv=document.getElementsByTagName('div3');
+//			var aDiv=document.getElementsByTagName('div4');
+//			var aDiv=document .getElementById('div1');
+//			var aDiv=document .getElementById('div2');
+//			var aDiv=document .getElementById('div3');
+//			var aDiv=document .getElementById('div4');
+			
+			for(var i=0;i<aDiv.length;i++)
+			{
+				aDiv[i].alpha=30;
+				aDiv[i].onmouseover=function()
+				{
+					startMove(this,100);
+				}
+				aDiv[i].onmouseout=function()
+				{
+					startMove(this,30);
+				}
+			}
+		}
+		//var alpha=30;//多物体的运动，都是不能够用的
+			function startMove(obj,iTarget)
+			{
+				clearInterval(obj.timer);
+				obj.timer=setInterval(function(){
+					var speed=(iTarget-obj.alpha)/6;
+					speed=speed>0?Math.ceil(speed):Math.floor(speed);
+					if(obj.alpha==iTarget)
+					{
+						clearInterval(obj.timer);
+					}
+					else
+					{
+						obj.alpha+=speed;
+						//obj.style.filter='alpha(opacity:'+alpha+')';
+						obj.style.filter='alpha(opacity:'+obj.alpha+')';
+						obj.style.opacity=obj.alpha/100;
+					}
+				},30)
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+		<div id="div4"></div>
+	</body>
+</html>

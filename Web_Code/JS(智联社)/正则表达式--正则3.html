@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			
+			/*
+			 *\d	数字					[0-9]
+			 *\w	英文、数字、下划线		[a-z0-9]
+			 *\s	空白字符				
+			 *
+			 * \D						[^0-9]
+			 * \W						[^a-z0-9]
+			 * \S 	非空白的字符
+			 * 
+			 * */
+			
+			var str = 'abcd 12 23 01 wcd';
+			var re = /\d/;
+			
+			alert(str.search(re));	//位置
+		</script>
+	</head>
+
+	<body>
+	</body>
+
+</html>

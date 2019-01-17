@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1{height:350px;}
+			#myImg{display:block;width:200px;height:200px;margin:0 auto;}
+			#div2{text-align: center;}
+			input{width:50px;height:30px;border:2px solid #000;background:yellow;border-radius: 50%;}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oImg=document.getElementById('myImg');
+				var aBtn=document.getElementsByTagName('input');
+				var maxW=oImg.width*1.5;
+				var minW=oImg.height*0.7;
+				aBtn[0].onclick=function(){
+					doChange(1);
+				}
+				aBtn[1].onclick=function(){
+					doChange(-1);
+				}
+				function doChange(iNum){
+					var iWidth=oImg.width;
+					var iHeight=oImg.height;
+					if (iNum==1&iWidth>maxW) {
+						alert('达到最大值');
+					} else if(iNum==-1&iWidth<minW){
+						alert('达到最小值');
+					}else{
+						oImg.style.width=iWidth*(10+iNum)/10+'px';
+						oImg.style.height=iHeight*(10+iNum)/10+'px';
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			<img id="myImg" src="images/video.png"/>
+		</div>
+		<div id="div2">
+			<input type="button" name="" id="" value="放大" />
+			<input type="button" name="" id="" value="缩小" />
+		</div>
+	</body>
+</html>

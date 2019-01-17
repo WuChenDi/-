@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1 {
+				width: 100px;
+				height: 100px;
+				background: red;
+				position: absolute;
+			}
+		</style>
+		<script type="text/javascript">
+			/*
+				改成面向对象
+				全局变量就是属性
+				函数就是方法
+				onload中创建对象
+				
+				改this指向问题：事件或者是定时器,尽量让面向对象this指向对象
+			*/
+			window.onload = function(){
+				 var dl = new Drag('div1');
+				 dl.init();
+			};
+			function Drag(id){
+				this.oDiv = document.getElementById(id);
+				this.disX = 0;
+				this.disY = 0;
+			}
+			Drag.prototype.init = function(){
+				
+				var This = this;
+				
+				this.oDiv.onmousedown = function(ev){
+					var ev = ev || window.event;
+					This.fnDown(ev);
+					
+					return false;
+				};
+			};
+			Drag.prototype.fnDown = function(ev){
+				var ev = ev || window.event;
+				var This = this;
+				this.disX = ev.clientX - this.oDiv.offsetLeft;
+				this.disY = ev.clientY - this.oDiv.offsetTop;
+				
+				document.onmousemove = function(ev){
+					var ev = ev || window.event;
+					This.fnMove(ev);
+				};
+				document.onmouseup = this.fnUp;
+				
+				return false;
+			};
+			Drag.prototype.fnMove = function(ev){
+				this.oDiv.style.left = ev.clientX - this.disX + 'px';
+				this.oDiv.style.top = ev.clientY - this.disY + 'px';
+			};
+			Drag.prototype.fnUp = function(ev){
+				document.onmousemove = null;
+				document.onmouseup = null;
+			};
+		</script>
+	</head>
+
+	<body>
+		<div id="div1"></div>
+	</body>
+
+</html>

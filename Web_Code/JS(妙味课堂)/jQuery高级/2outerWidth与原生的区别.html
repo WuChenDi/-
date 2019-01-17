@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1{width: 100px;height: 100px;background: red;display: none;}
+		</style>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				//outerWidth()
+				//offsetWidth:是获取不到隐藏元素的值    原生写法
+				
+				//alert($('#div1').get(0).offsetWidth);
+				
+				alert($('#div1').outerWidth());
+				
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="div1">
+			div
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			oDiv.onclick = function(){
+				this:oDiv
+			};
+			oDiv.onclick = show;
+			function show(){
+				this: oDiv
+			}
+			oDiv.onclick = function(){
+				show(;)
+			};
+			function show(){
+				this: window
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

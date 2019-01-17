@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+
+		</style>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(function() {
+//				$('#div1').on('click',function(){
+//					alert(123);
+//				});
+//				$('#div1').trigger('click');   //主动触发
+				$('#div1').on('show',function(){
+					alert(123);
+				});
+				$('#div1').on('show',function(){
+					alert(456);
+				});
+				$('#div1').trigger('show');
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="div1">
+			aaaa
+		</div>
+	</body>
+
+</html>

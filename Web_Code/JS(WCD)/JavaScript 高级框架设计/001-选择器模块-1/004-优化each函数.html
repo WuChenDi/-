@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div, p{
+			width: 100px; height: 30px; border: 1px solid red; margin: 10px 0;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<p></p>
+	<p></p>
+</body>
+<script type="text/javascript">
+	var arr = [1,2,3,4];
+	var each = function(arr,fn){
+		for (var i=0;i<arr.length;i++) {
+			if(fn(i, arr[i]) ===false){
+				break;
+			}
+		}
+	};
+	
+	each(arr,function(v){
+		sum += v;
+	});
+	
+	var max = arr[0];
+	each(arr,function(v){
+		if(max<v){
+			max = v;
+		}
+	});
+	
+	var index = -1;
+	each(arr,function(){
+		if(v === 3){
+			index = i;
+			return false;
+		}
+	})
+</script>
+</html>

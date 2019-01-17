@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			//siblings():找所有的兄弟节点,参数也是筛选功能
+			
+			//nextAll();下面所有的兄弟节点，参数也是筛选功能
+			
+			//prevAll（）;上面所有的兄弟节点，参数也是筛选功能
+			
+			//Until（）：截止  parentsUntil() nextUntil() prevUntil()
+			
+			$(function(){
+				
+				//$('span').siblings('em').css('background','red');
+				
+				$('span').nextUntil().css('background','red');
+			});
+		</script>
+	</head>
+	<body>
+		<div>div</div>
+		<span>span</span>
+		<p>p</p>
+		<h1>h1</h1>
+		<h2>h2</h2>
+		<em>em</em>
+	</body>
+</html>

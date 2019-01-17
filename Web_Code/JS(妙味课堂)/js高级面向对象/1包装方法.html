@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*function Aaa(){
+				this.name = 'wcd';
+			}
+			Aaa.prototype.showName = function(){
+				alert(this.name);
+			};
+			var a1 = new Aaa();
+			a1.showName();
+			
+			var arr = new Array();
+			arr.push();
+			arr.sort();
+			
+			//在JS源码 : 系统对象也是基于原型的程序
+			
+			function Array(){
+				this.lenglth = 0;
+			}
+			Array.prototype.push = function(){};
+			Array.prototype.sort = function(){};*/
+			
+			//不要去修改或者添加系统对象下面的方法和属性
+			
+			var arr = [1,2,3];
+			
+			Array.prototype.push = function(){
+				//this: 1,2,3
+				//arguments: 4,5,6
+				for (var i=0;i<arguments.length;i++) {
+					this[this.length] = arguments[i];
+				}
+				return this.length;
+			};
+			
+			arr.push(4,5,6);
+			
+			alert(arr);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

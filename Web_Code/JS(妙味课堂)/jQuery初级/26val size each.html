@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+//				alert($('input').val());
+//				
+//				$('input').val(456);
+				
+//				$('input').click(function(){
+//					alert($('li').size());	//4   现在不支持size这个方法， 用length
+//				});
+				
+				$('li').each(function(i,value){	//一参：下标 ， 二参： 每个元素  	each() JQ中的循环 类似原生for
+					$(value).html(i);
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<input type="button" name="" id="" value="123" />
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+</html>

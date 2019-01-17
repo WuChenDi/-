@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		/*
+		    使用弹性盒模型，父元素必须加上display：box或display：inline-box
+		 
+		  box-orient定义盒模型的主轴方向
+		  flex：flex-direction row / column
+		  box：-webkit-box-orient：
+		  	horizontal 水平显示
+		  	vertical  垂直方向
+		  	
+		  	
+		  box-direction元素排列顺序
+		  flex：flex-direction：row-reverse / column-reverse;
+		  box：-webkit-box-direction：
+		  	normal正序
+		  	reverse反序
+		  
+		 */
+			body{
+				margin: 0;
+			}
+			#box{
+				height: 300px;
+				border: 1px solid #000;
+				/*新版弹性盒模型*/
+				/*display: flex;*/
+				
+				/*元素在侧轴开始位置，富裕空间在侧轴的结束位置*/
+				/*align-items: flex-start;*/
+				
+				/*元素在侧轴结束位置，富裕空间在侧轴的开始位置*/
+				/*align-items: flex-end;*/
+				
+				/*元素在侧轴中间位置，富裕空间在侧轴两侧*/
+				/*align-items: center;*/
+				
+				/*根据侧轴方向上文字的基先对齐*/
+				/*align-items: baseline;*/
+				
+				
+				/*老版弹性盒模型*/
+				display: -webkit-box;
+				
+				/*元素在侧轴开始位置，富裕空间在侧轴的结束位置*/
+				/*-webkit-box-align: start;*/
+				
+				/*元素在侧轴结束位置，富裕空间在侧轴的开始位置*/
+				/*-webkit-box-align: end;*/
+				
+				/*元素在侧轴中间位置，富裕空间在侧轴两侧*/
+				-webkit-box-align: center;
+			}
+			#box div{
+				height: 50px;
+				width: 50px;
+				background-color: #f00;
+				font-size: 30px;
+				color: #fff;
+			}
+			#box div:nth-last-of-type(2){
+				line-height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+		</div>
+	</body>
+</html>

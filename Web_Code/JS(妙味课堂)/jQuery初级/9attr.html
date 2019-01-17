@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	</head>
+
+	<body>
+		<div title="123">div</div>
+		<script type="text/javascript">
+			
+			$(function(){
+				
+				alert($('div').attr('title'));
+				
+				$('div').attr('title','456');
+				$('div').attr('class','box');
+			});
+			
+		</script>
+	</body>
+
+</html>

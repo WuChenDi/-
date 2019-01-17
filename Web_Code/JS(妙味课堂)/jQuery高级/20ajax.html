@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-3.2.1.js" ></script>
+		<script type="text/javascript">
+//			$.ajax({
+//				type:"get",
+//				url:"xxx.php",
+//				async:true,
+//				data:'name=hello&age=20',
+//				success:function(data){
+//					alert(1);
+//				},
+//				error:function(){
+//					alert(2);
+//				}
+//			});
+//			$.get('xxx.php',function(){
+//				
+//			});
+//			$.post('xxx.php',function(){
+//				
+//			});
+			$.getJSON('xxx.php?callback=show',function(){
+				
+			});
+			show({});
+			$.getJSON('xxx.php?callback=?',function(data){
+				
+			});
+			随机({});
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

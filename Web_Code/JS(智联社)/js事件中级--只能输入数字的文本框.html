@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 *阻止默认事件
+			 * 	普通写法：return false;
+			 * 	例子1：屏蔽右键菜单
+			 * 		弹出自定义右键菜单
+			 * 	例子2：只能输入数字的输入框
+			 * 		keydown 、 keyup事件的区别
+			 * 
+			 * */
+			window.onload = function(){
+				var oTxt = document.getElementById('txt1');
+				
+				oTxt.onkeydown = function(){
+					return false;
+				};
+			};
+			
+		</script>
+	</head>
+	<body>
+		<input type="text" name="" id="txt1" value="" />
+	</body>
+</html>

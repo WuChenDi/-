@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1 , #div2{width: 100px;height: 100px; background: red; margin-top: 10px;}
+		</style>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				//animate() ： 第一个参数：{} 运动的值和属性
+				//			     第二个参数: 时间（运动快慢的）  默认时间是400
+				//            第三个参数： 运动形式 只有两种运动形式  （默认：swing(慢快慢) linear（匀速））
+				$('#div1').click(function(){
+					$(this).animate({width:300,height:300},4000,'linear',function(){
+						alert(123);
+					});
+					$('#div2').animate({width:300,height:300},4000,'swing');
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="div1">
+		
+		</div>
+		<div id="div2">
+			
+		</div>
+	</body>
+
+</html>

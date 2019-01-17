@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//1，如何判断浏览器不支持改方法
+			/*
+			node
+			if(node.getElementsByClassName){
+				return node.getElementsByClassName(className);
+			}else{
+				自己实现(className);
+			}
+			*/
+			
+			//在全局作用域中（最终都要变成沙箱）提供一个support对象
+			//里面提供所有的与方法名相同的属性，值均为Boolean
+			//在浏览器加载js的开始的时候，就进行能力判断，将于方法名相同的属性作为真和假进行存储
+			//那么凡事涉及到能力检查的时候就直接使用support即可
+			
+			var support = {};
+			support.getElementsByClassName = !!document.getElementsByClassName;
+			
+//			function xxx(){
+//				[native code]
+//			}
+			if(support.getElementsByClassName){
+				return node.getElementsByClassName(className);
+			}else{
+				自己实现(className);
+			}
+			
+			//2,如何实现改方法
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

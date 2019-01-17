@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		/*
+		    使用弹性盒模型，父元素必须加上display：box或display：inline-box
+		 
+		  box-orient定义盒模型的主轴方向
+		  flex：flex-direction row / column
+		  box：-webkit-box-orient：
+		  	horizontal 水平显示
+		  	vertical  垂直方向
+		  	
+		  	
+		  box-direction元素排列顺序
+		  flex：flex-direction：row-reverse / column-reverse;
+		  box：-webkit-box-direction：
+		  	normal正序
+		  	reverse反序
+		  
+		 */
+			body{
+				margin: 0;
+			}
+			#box{
+				height: 300px;
+				border: 1px solid #000;
+				/*新版弹性盒模型*/
+				/*display: flex;*/
+				/*flex-direction: row-reverse;*//*设置主轴方向为水平方向，元素排列为反序*/
+				/*flex-direction: column-reverse;*//*设置主轴方向为垂直方向，元素排列为反序*/
+				
+				/*老版弹性盒模型*/
+				display: -webkit-box;
+				/*-webkit-box-orient: horizontal;*//*设置主轴方向为水平方向*/
+				-webkit-box-orient: vertical;/*设置主轴方向为垂直方向*/
+				-webkit-box-direction: reverse;/*元素在主轴上排列为反序*/
+				/*-webkit-box-direction: normal;*//*元素在主轴上排列为正序*/
+			}
+			#box div{
+				height: 50px;
+				width: 50px;
+				background-color: #f00;
+				font-size: 40px;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+		</div>
+	</body>
+</html>

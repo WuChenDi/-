@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>获取元素在页面上的实际位置</title>
+		<style>
+		
+			#div1{width: 200px; height: 200px; background: #CCC;margin: 100px; position: relative;}/*position: relative绝对定位*/
+			
+			#div2{width: 100px; height: 100px;background: red; position: absolute; left: 50px; top: 50px;}
+			
+		</style>
+		<script>
+		window.onload=function()
+		{
+			var oDiv2=document.getElementById('div2');
+			
+			alert(oDiv2.offsetParent);//一层层的找父节点，直到body为止，不同于parentnode，他会根据样式的不同会发生变化
+		}
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			<div id="div2"></div>
+		</div>
+	</body>
+</html>

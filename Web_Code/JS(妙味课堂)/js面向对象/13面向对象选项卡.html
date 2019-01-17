@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1 div {
+				width: 200px;
+				height: 200px;
+				border: 1px solid #000;
+				display: none;
+			}
+			
+			.active {
+				background: red;
+			}
+		</style>
+		<script type="text/javascript">
+			/*
+				先变型：
+				尽量不要出现函数嵌套函数
+				可以有全局变量
+				吧onload中不是赋值语句放到单独函数中
+			
+			*/
+
+			var oParent = null;
+			var aInput = null;
+			var aDiv = null;
+
+			window.onload = function() {
+				oParent = document.getElementById('div1');
+				aInput = oParent.getElementsByTagName('input');
+				aDiv = oParent.getElementsByTagName('div');
+				
+				init();
+			};
+
+			function init() {
+				for(var i = 0; i < aInput.length; i++) {
+					aInput[i].index = i;
+					aInput[i].onclick = change;
+				}
+			}
+
+			function change() {
+				for(var i = 0; i < aInput.length; i++) {
+					aInput[i].className = "";
+					aDiv[i].style.display = 'none';
+				}
+				this.className = 'active';
+				aDiv[this.index].style.display = 'block';
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="div1">
+			<input class="active" type="button" name="" id="" value="1" />
+			<input type="button" name="" id="" value="2" />
+			<input type="button" name="" id="" value="3" />
+			<div style="display: block;">111</div>
+			<div>222</div>
+			<div>333</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				width: 100px;
+				height: 100px;
+				background: red;
+				padding: 10px;
+				border: 10px solid #000000;
+				margin: 10px;
+			}
+		</style>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	</head>
+
+	<body>
+		<div></div>
+
+		<script type="text/javascript">
+//			alert($('div').css('width'));
+			alert($('div').width());	//width
+			
+			alert($('div').innerWidth());	//width + padding
+			
+			alert($('div').outerWidth());	//width + padding + border
+			
+			alert($('div').outerWidth(true));	//width + padding + border + margin
+
+		</script>
+	</body>
+
+</html>
