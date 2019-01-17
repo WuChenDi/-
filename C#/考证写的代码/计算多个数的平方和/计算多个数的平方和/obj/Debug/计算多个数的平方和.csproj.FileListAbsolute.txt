@@ -1,0 +1,5 @@
+C:\Users\Mr-Wu\Desktop\C#程序代码\计算多个数的平方和\计算多个数的平方和\bin\Debug\计算多个数的平方和.exe.config
+C:\Users\Mr-Wu\Desktop\C#程序代码\计算多个数的平方和\计算多个数的平方和\bin\Debug\计算多个数的平方和.exe
+C:\Users\Mr-Wu\Desktop\C#程序代码\计算多个数的平方和\计算多个数的平方和\bin\Debug\计算多个数的平方和.pdb
+C:\Users\Mr-Wu\Desktop\C#程序代码\计算多个数的平方和\计算多个数的平方和\obj\Debug\计算多个数的平方和.exe
+C:\Users\Mr-Wu\Desktop\C#程序代码\计算多个数的平方和\计算多个数的平方和\obj\Debug\计算多个数的平方和.pdb

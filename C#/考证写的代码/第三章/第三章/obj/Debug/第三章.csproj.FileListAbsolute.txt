@@ -1,0 +1,9 @@
+C:\Users\Mr-Wu\Desktop\C#程序代码\第三章\第三章\bin\Debug\第三章.exe.config
+C:\Users\Mr-Wu\Desktop\C#程序代码\第三章\第三章\bin\Debug\第三章.exe
+C:\Users\Mr-Wu\Desktop\C#程序代码\第三章\第三章\bin\Debug\第三章.pdb
+C:\Users\Mr-Wu\Desktop\C#程序代码\第三章\第三章\obj\Debug\第三章.csprojResolveAssemblyReference.cache
+C:\Users\Mr-Wu\Desktop\C#程序代码\第三章\第三章\obj\Debug\第三章.Form1.resources
+C:\Users\Mr-Wu\Desktop\C#程序代码\第三章\第三章\obj\Debug\第三章.Properties.Resources.resources
+C:\Users\Mr-Wu\Desktop\C#程序代码\第三章\第三章\obj\Debug\第三章.csproj.GenerateResource.Cache
+C:\Users\Mr-Wu\Desktop\C#程序代码\第三章\第三章\obj\Debug\第三章.exe
+C:\Users\Mr-Wu\Desktop\C#程序代码\第三章\第三章\obj\Debug\第三章.pdb

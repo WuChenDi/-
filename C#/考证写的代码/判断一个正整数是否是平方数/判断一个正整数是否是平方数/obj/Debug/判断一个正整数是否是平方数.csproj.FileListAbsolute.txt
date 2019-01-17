@@ -1,0 +1,5 @@
+C:\Users\Mr-Wu\Desktop\C#程序代码\判断一个正整数是否是平方数\判断一个正整数是否是平方数\bin\Debug\判断一个正整数是否是平方数.exe.config
+C:\Users\Mr-Wu\Desktop\C#程序代码\判断一个正整数是否是平方数\判断一个正整数是否是平方数\bin\Debug\判断一个正整数是否是平方数.exe
+C:\Users\Mr-Wu\Desktop\C#程序代码\判断一个正整数是否是平方数\判断一个正整数是否是平方数\bin\Debug\判断一个正整数是否是平方数.pdb
+C:\Users\Mr-Wu\Desktop\C#程序代码\判断一个正整数是否是平方数\判断一个正整数是否是平方数\obj\Debug\判断一个正整数是否是平方数.exe
+C:\Users\Mr-Wu\Desktop\C#程序代码\判断一个正整数是否是平方数\判断一个正整数是否是平方数\obj\Debug\判断一个正整数是否是平方数.pdb

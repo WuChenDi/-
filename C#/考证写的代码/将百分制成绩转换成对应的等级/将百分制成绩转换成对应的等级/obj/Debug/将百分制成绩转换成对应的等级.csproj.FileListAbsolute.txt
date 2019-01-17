@@ -1,0 +1,6 @@
+C:\Users\Mr-Wu\Desktop\C#程序代码\将百分制成绩转换成对应的等级\将百分制成绩转换成对应的等级\bin\Debug\将百分制成绩转换成对应的等级.exe.config
+C:\Users\Mr-Wu\Desktop\C#程序代码\将百分制成绩转换成对应的等级\将百分制成绩转换成对应的等级\bin\Debug\将百分制成绩转换成对应的等级.exe
+C:\Users\Mr-Wu\Desktop\C#程序代码\将百分制成绩转换成对应的等级\将百分制成绩转换成对应的等级\bin\Debug\将百分制成绩转换成对应的等级.pdb
+C:\Users\Mr-Wu\Desktop\C#程序代码\将百分制成绩转换成对应的等级\将百分制成绩转换成对应的等级\obj\Debug\将百分制成绩转换成对应的等级.csprojResolveAssemblyReference.cache
+C:\Users\Mr-Wu\Desktop\C#程序代码\将百分制成绩转换成对应的等级\将百分制成绩转换成对应的等级\obj\Debug\将百分制成绩转换成对应的等级.exe
+C:\Users\Mr-Wu\Desktop\C#程序代码\将百分制成绩转换成对应的等级\将百分制成绩转换成对应的等级\obj\Debug\将百分制成绩转换成对应的等级.pdb

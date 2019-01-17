@@ -1,0 +1,6 @@
+C:\Users\Mr-Wu\Desktop\C#程序代码\第一章全部代码\第一章全部代码\bin\Debug\第一章全部代码.exe.config
+C:\Users\Mr-Wu\Desktop\C#程序代码\第一章全部代码\第一章全部代码\bin\Debug\第一章全部代码.exe
+C:\Users\Mr-Wu\Desktop\C#程序代码\第一章全部代码\第一章全部代码\bin\Debug\第一章全部代码.pdb
+C:\Users\Mr-Wu\Desktop\C#程序代码\第一章全部代码\第一章全部代码\obj\Debug\第一章全部代码.csprojResolveAssemblyReference.cache
+C:\Users\Mr-Wu\Desktop\C#程序代码\第一章全部代码\第一章全部代码\obj\Debug\第一章全部代码.exe
+C:\Users\Mr-Wu\Desktop\C#程序代码\第一章全部代码\第一章全部代码\obj\Debug\第一章全部代码.pdb

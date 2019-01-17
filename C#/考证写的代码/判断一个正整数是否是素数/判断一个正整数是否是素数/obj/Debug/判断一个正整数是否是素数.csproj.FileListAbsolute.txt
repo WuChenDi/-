@@ -1,0 +1,6 @@
+C:\Users\Mr-Wu\Desktop\C#程序代码\判断一个正整数是否是素数\判断一个正整数是否是素数\bin\Debug\判断一个正整数是否是素数.exe.config
+C:\Users\Mr-Wu\Desktop\C#程序代码\判断一个正整数是否是素数\判断一个正整数是否是素数\obj\Debug\判断一个正整数是否是素数.csprojResolveAssemblyReference.cache
+C:\Users\Mr-Wu\Desktop\C#程序代码\判断一个正整数是否是素数\判断一个正整数是否是素数\bin\Debug\判断一个正整数是否是素数.exe
+C:\Users\Mr-Wu\Desktop\C#程序代码\判断一个正整数是否是素数\判断一个正整数是否是素数\bin\Debug\判断一个正整数是否是素数.pdb
+C:\Users\Mr-Wu\Desktop\C#程序代码\判断一个正整数是否是素数\判断一个正整数是否是素数\obj\Debug\判断一个正整数是否是素数.exe
+C:\Users\Mr-Wu\Desktop\C#程序代码\判断一个正整数是否是素数\判断一个正整数是否是素数\obj\Debug\判断一个正整数是否是素数.pdb

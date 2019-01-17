@@ -1,0 +1,9 @@
+C:\Users\Mr-Wu\Desktop\标准Windows窗体控件\标准Windows窗体控件\bin\Debug\标准Windows窗体控件.exe.config
+C:\Users\Mr-Wu\Desktop\标准Windows窗体控件\标准Windows窗体控件\bin\Debug\标准Windows窗体控件.exe
+C:\Users\Mr-Wu\Desktop\标准Windows窗体控件\标准Windows窗体控件\bin\Debug\标准Windows窗体控件.pdb
+C:\Users\Mr-Wu\Desktop\标准Windows窗体控件\标准Windows窗体控件\obj\Debug\标准Windows窗体控件.csprojResolveAssemblyReference.cache
+C:\Users\Mr-Wu\Desktop\标准Windows窗体控件\标准Windows窗体控件\obj\Debug\标准Windows窗体控件.Form1.resources
+C:\Users\Mr-Wu\Desktop\标准Windows窗体控件\标准Windows窗体控件\obj\Debug\标准Windows窗体控件.Properties.Resources.resources
+C:\Users\Mr-Wu\Desktop\标准Windows窗体控件\标准Windows窗体控件\obj\Debug\标准Windows窗体控件.csproj.GenerateResource.Cache
+C:\Users\Mr-Wu\Desktop\标准Windows窗体控件\标准Windows窗体控件\obj\Debug\标准Windows窗体控件.exe
+C:\Users\Mr-Wu\Desktop\标准Windows窗体控件\标准Windows窗体控件\obj\Debug\标准Windows窗体控件.pdb

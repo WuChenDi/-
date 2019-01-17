@@ -1,0 +1,1 @@
+C:\Users\Mr-Wu\Desktop\C#程序代码\由基类Student创建派生类Undergraduate、Graduate\由基类Student创建派生类Undergraduate、Graduate\bin\Debug\由基类Student创建派生类Undergraduate、Graduate.exe.config

@@ -1,0 +1,6 @@
+C:\Users\Mr-Wu\Desktop\C#程序代码\计算两个正整数的最小公倍数\计算两个正整数的最小公倍数\bin\Debug\计算两个正整数的最小公倍数.exe.config
+C:\Users\Mr-Wu\Desktop\C#程序代码\计算两个正整数的最小公倍数\计算两个正整数的最小公倍数\bin\Debug\计算两个正整数的最小公倍数.exe
+C:\Users\Mr-Wu\Desktop\C#程序代码\计算两个正整数的最小公倍数\计算两个正整数的最小公倍数\bin\Debug\计算两个正整数的最小公倍数.pdb
+C:\Users\Mr-Wu\Desktop\C#程序代码\计算两个正整数的最小公倍数\计算两个正整数的最小公倍数\obj\Debug\计算两个正整数的最小公倍数.csprojResolveAssemblyReference.cache
+C:\Users\Mr-Wu\Desktop\C#程序代码\计算两个正整数的最小公倍数\计算两个正整数的最小公倍数\obj\Debug\计算两个正整数的最小公倍数.exe
+C:\Users\Mr-Wu\Desktop\C#程序代码\计算两个正整数的最小公倍数\计算两个正整数的最小公倍数\obj\Debug\计算两个正整数的最小公倍数.pdb
