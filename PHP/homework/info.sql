@@ -41,11 +41,11 @@ CREATE TABLE IF NOT EXISTS `info` (
 --
 
 INSERT INTO `info` (`id`, `PIC`, `name`, `sex`, `hobby`, `class`, `pwd`) VALUES
-(23, 'images/2.jpg', '施玉文', '男', '自由者', '信息系统一班', 123),
+(23, 'images/2.jpg', '施xiaoxiao', '男', '自由者', '信息系统一班', 123),
 (40, 'images/1.jpg', '李晓雪', '女', '看电影，逛街', '管理一班', 122),
 (11, 'images/3.jpg', '吴小四', '男', '自由演唱，歌颂者', '艺术设计er班', 123),
 (33, 'images/4.jpg', '曾小贤', '男', '唱反调2', '园林设计2', 123),
-(40, 'imges/5.jpg', '吴晨娣', '女', '兵乓球', '信息系统一班', 123);
+(40, 'imges/5.jpg', '吴chendi', '女', '兵乓球', '信息系统一班', 123);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
