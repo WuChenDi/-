@@ -1,0 +1,8 @@
+<?php
+function my_func(&$arg = NULL) {
+	if ($arg === NULL) {
+		echo "\$argÎª¿Õ";
+	}
+}
+my_func();
+?>
