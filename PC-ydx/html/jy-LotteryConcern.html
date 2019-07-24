@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>抽奖关怀</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/cssreset.css">
+<link rel="stylesheet" type="text/css" href="../css/global.css" />
+<link rel="stylesheet" type="text/css" href="../css/reveal.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script src="../js/js.js"></script>
+<script src="../js/jquery.reveal.js"></script>
+<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="../css/ie7.css"/>
+	<script src="../js/ie7.js"></script>
+<![endif]-->
+</head>
+
+<body>
+	<div class="TraderClock">
+		<!-- 菜单栏 -->
+		<div class="menu">
+			<div class="menuyy"></div>
+			<div class="menu_btn"><a href="javascript:;"></a></div>
+			<ul class="menu_con">
+				<li class="menu1">
+					<a href="javascript:;"><span></span><p>下单提醒</p></a>
+					<ol>
+						<a href="jy-Index.html"><li class="Order"><p></p><p class="menu_word">下单关怀</p></li></a>
+					</ol>
+				</li>
+				<li class="menu2">
+					<a href="javascript:;"><span></span><p>催付提醒</p></a>
+				</li>
+				<li class="bg_gray menu3">
+					<a href="javascript:;"><span></span><p>付款关怀</p></a>
+				</li>
+				<li class="menu4">
+					<a href="javascript:;"><span></span><p>物流提醒</p></a>
+					<ol>
+						<a href="jy-SendGoodsReminder.html"><li class="shipping_reminder"><p></p><p class="menu_word">发货提醒</p></li></a>
+						<a href="javascript:;"><li><p></p><p class="menu_word">延时发货提醒</p></li></a>
+						<a href="javascript:;"><li><p></p><p class="menu_word">物流异常通知</p></li></a>
+						<a href="javascript:;"><li><p></p><p class="menu_word">派件提醒</p></li></a>
+						<a href="javascript:;"><li><p></p><p class="menu_word">到达城市通知</p></li></a>
+						<a href="javascript:;"><li><p></p><p class="menu_word">签收提醒</p></li></a>
+					</ol>
+				</li>
+				<li class="bg_gray menu5">
+					<a href="javascript:;"><span></span><p>退款关怀</p></a>
+				</li>
+				<li class="menu6">
+					<a href="javascript:;"><span></span><p>评价提醒</p></a>
+				</li>
+				<li class="bg_gray menu7">
+					<a href="javascript:;"><span></span><p>售后关怀</p></a>
+				</li>
+				<li class="menu8  cur">
+					<a href="javascript:;"><span></span><p>抽奖关怀</p></a>
+					<ol>
+						<a  href="jy-LotteryConcern.html"><li class="shipping_reminder  cur"><p></p><p class="menu_word">抽奖关怀</p></li></a>
+						<a href="javascript:;"><li><p></p><p class="menu_word">中奖纪录查询</p></li></a>
+					</ol>
+				</li>
+				<li class="bg_gray menu9">
+					<a href="javascript:;"><span></span><p>卖家订单提醒</p></a>
+				</li>
+				<li class="menu10 template_management">
+					<a href="jy-SmsTemplateManagement.html"><span></span><p>短信模板管理</p></a>
+				</li>
+				<li class="bg_gray menu11">
+					<a href="javascript:;"><p></p></a>
+				</li>
+				<li class="menu11">
+					<a href="javascript:;"><p></p></a>
+				</li>
+				<li class="bg_gray menu11">
+					<a href="javascript:;"><p></p></a>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- 菜单栏 -->
+		<div class="trader_r">
+			<div class="page_navigation">
+				<span class="home_img"></span>
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="javascript:;"><span></span>交易提醒</a></li>
+					<li class="last"><a href="javascript:;"><span></span>抽奖关怀</a></li>
+				</ul>
+			</div>
+			<!-- 抽奖关怀 -->
+			<div class="TraderClock_scrol">
+				<div class="TraderClock_box lottery_box">
+						<div class="info_tit info_top">
+							<span class="fl"></span>
+							<p class="fl">抽奖活动管理</p>
+						</div>
+						<div class="lottery_manage">
+							<ul>
+								<li>
+									<div class="prize_level">
+										<span>一等奖</span>
+										<input type="text" placeholder="奖品名称">
+									</div>
+									<div class="prize_rate">
+										<span>中奖率（单次抽奖）</span>
+										<input type="text" placeholder="中奖率">
+										<span class="sign">%</span>
+									</div>
+									<div class="people_limited">
+										<span>中奖人数限制</span>
+										<input type="text" placeholder="几个">
+										<p>人</p>
+										<select name="" id="">
+											<option value="每天">每天</option>
+											<option value="每天">每小时</option>
+											<option value="每天">每半小时</option>
+										</select>
+									</div>
+									<div class="prize_pic">
+										<span>奖品图片</span>
+										<ol>
+											<li><img src="../images/product1.png" alt=""></li>
+											<li><img src="../images/product2.png" alt=""></li>
+											<li class="add_pic"><img src="../images/add_img.png" alt=""></li>
+										</ol>
+									</div>
+								</li>
+								<li>
+									<div class="prize_level">
+										<span>二等奖</span>
+										<input type="text" placeholder="奖品名称">
+									</div>
+									<div class="prize_rate">
+										<span>中奖率（单次抽奖）</span>
+										<input type="text" placeholder="中奖率">
+										<span class="sign">%</span>
+									</div>
+									<div class="people_limited">
+										<span>中奖人数限制</span>
+										<input type="text" placeholder="几个">
+										<p>人</p>
+										<select name="" id="">
+											<option value="每天">每天</option>
+											<option value="每天">每小时</option>
+											<option value="每天">每半小时</option>
+										</select>
+									</div>
+									<div class="prize_pic">
+										<span>奖品图片</span>
+										<ol>
+											<li class="add_pic"><img src="../images/add_img.png" alt=""></li>
+										</ol>
+									</div>
+								</li>
+								<li>
+									<div class="prize_level">
+										<span>三等奖</span>
+										<input type="text" placeholder="奖品名称">
+									</div>
+									<div class="prize_rate">
+										<span>中奖率（单次抽奖）</span>
+										<input type="text" placeholder="中奖率">
+										<span class="sign">%</span>
+									</div>
+									<div class="people_limited">
+										<span>中奖人数限制</span>
+										<input type="text" placeholder="几个">
+										<p>人</p>
+										<select name="" id="">
+											<option value="每天">每天</option>
+											<option value="每天">每小时</option>
+											<option value="每天">每半小时</option>
+										</select>
+									</div>
+									<div class="prize_pic">
+										<span>奖品图片</span>
+										<ol>
+											<li class="add_pic"><img src="../images/add_img.png" alt=""></li>
+										</ol>
+									</div>
+								</li>
+								<li>
+									<div class="prize_level">
+										<span>四等奖</span>
+										<input type="text" placeholder="奖品名称">
+									</div>
+									<div class="prize_rate">
+										<span>中奖率（单次抽奖）</span>
+										<input type="text" placeholder="中奖率">
+										<span class="sign">%</span>
+									</div>
+									<div class="people_limited">
+										<span>中奖人数限制</span>
+										<input type="text" placeholder="几个">
+										<p>人</p>
+										<select name="" id="">
+											<option value="每天">每天</option>
+											<option value="每天">每小时</option>
+											<option value="每天">每半小时</option>
+										</select>
+									</div>
+									<div class="prize_pic">
+										<span>奖品图片</span>
+										<ol>
+											<li class="add_pic"><img src="../images/add_img.png" alt=""></li>
+										</ol>
+									</div>
+								</li>
+								<li class="lottery_last">
+									<div class="prize_level">
+										<span>五等奖</span>
+										<input type="text" placeholder="奖品名称">
+									</div>
+									<div class="prize_rate">
+										<span>中奖率（单次抽奖）</span>
+										<input type="text" placeholder="中奖率">
+										<span class="sign">%</span>
+									</div>
+									<div class="people_limited">
+										<span>中奖人数限制</span>
+										<input type="text" placeholder="几个">
+										<p>人</p>
+										<select name="" id="">
+											<option value="每天">每天</option>
+											<option value="每天">每小时</option>
+											<option value="每天">每半小时</option>
+										</select>
+									</div>
+									<div class="prize_pic">
+										<span>奖品图片</span>
+										<ol>
+											<li class="add_pic"><img src="../images/add_img.png" alt=""></li>
+										</ol>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="care_config_con1 lottery_con">
+							<div class="info_tit">
+								<span class="fl"></span>
+								<p class="fl">抽奖条件设置</p>
+								<p class="question_tip bg_orange">?</p>
+							</div>
+							<form action="" class="lottery_setting">
+								<div class="sms_content_l fl">
+									<div class="remind_con">
+										<div class="remind_time advanced_options">
+											<div><span class="break_time">实付金额</span><input type="text" /><span class="to">至</span><input type="text" /><span class="to">元</span></div>
+										</div>
+										<div class="sms_template sms_template1 remind_type">
+											<p>所在地域</p>
+											<div class="radios_group">
+												<p><span class="radios radiosclick"><input type="radio"  class="remind" name="remind" value="不限" onclick=""/></span><label for="">不限</label></p>   
+			    								<p><span class="radios"><input type="radio" class="remind" checked name="remind" value="自定义" onclick=""/></span><label for="">自定义</label></p>
+			    							</div>
+										</div>
+										<div class="sms_template sms_template1 remind_type">
+											<p>订单来源 </p>
+											<div class="radios_group">
+												<p><span class="radios radiosclick"><input type="radio"  class="remind" name="remind" value="PC端" onclick=""/></span><label for="" class="pc">PC端</label></p>   
+			    								<p><span class="radios"><input type="radio" class="remind" checked name="remind" value="移动端" onclick=""/></span><label for="" class="mobile">移动端</label></p>
+			    								<p><span class="radios"><input type="radio" class="remind" checked name="source" value="聚划算" onclick=""/></span><label for="" class="huasuan">聚划算</label></p>
+			    							</div>
+			    							
+										</div>
+										
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="lottery_con sms_setting">
+								<div class="info_tit">
+									<span class="fl"></span>
+									<p class="fl">短信设置</p>
+								</div>
+								<form action="" class="sms_content" style="height: 514px;">
+									<div class="sms_content_l fl">
+										<div class="sms_con"> 
+											<div class="sms_template sms_template1 sms_test">
+											<p>订单来源 </p>
+											<div class="radios_group">
+												<p><span class="radios radiosclick"><input type="radio"  class="remind" name="remind" value="不限" onclick=""/></span><label for="">确认收货后5分钟</label></p>   
+			    								<p><span class="radios"><input type="radio" class="remind" checked name="remind" value="自定义" onclick=""/></span><label for="">确认收货后</label><input type="text" class="min">  <label for="">分钟</label><span class="c_orange fs">（确认收货后间隔此设置时间后发送短信）</span></p>
+			    							</div>
+										</div>
+											<div class="sms_template sms_template1">
+												<p>短信变量 </p>
+												<ul>
+													<li>店铺名称</li>
+													<li>抽奖链接</li>
+													<li>查询中奖信息</li>
+												</ul>
+												<textarea id="mysms" onkeyup="SwapTxt()" placeholder="亲，您好，您已成功在本店购买了小米六手机，我们将在24小时内为您发货，请注意查收！祝您生活愉快，身体健康！"></textarea>
+												<a href="javascript:;" class="save_template big-link"  data-animation="fade">另存为模板
+												</a>
+											</div>
+											
+											<div class="sms_template sms_template1 sms_test">
+												<p>短信测试</p>
+												<textarea placeholder="请输入测试手机号，多个号码以〝，〞号隔开"></textarea>
+												<a href="javascript:;" class="begin_testing big-link" data-animation="fade">开始测试</a>
+												<span> 
+													<p>您当前已输入</p><p class="c_blue fwb">94</p><p>个字符，将按照 </p><p class="c_blue fwb">2</p> <p>条短信计费，</p><p class="c_red">计费规则</p><p class="question_tip bg_orange">?</p>
+												</span>
+											</div>
+											<div class="sms_template seller_signature">
+												<p>卖家签名</p> <span>Admin</span><a href="javascript:;">修改签名</a>
+											</div>
+											<div class="sms_save">
+												<input type="button" value="确认" />
+												<input type="button" value="取消" />
+											</div>
+										</div>
+										
+									</div>
+									<div class="sms_content_r fl">
+										<div class="photo">
+											<img src="../images/phone.png" alt="" />
+											<div><span>【Admin】</span><div id="mysmsTo"></div></div>
+										</div>
+									</div>
+								</form>
+						</div>
+				</div>
+			</div>
+			<!-- 抽奖关怀结束 -->
+
+			<!-- 弹出框配置 -->
+			<div class="config_pop lottery_config_pop">
+				<div class="save_as_pop">
+					<p>请为保存的模板命名</p>
+					<input type="text" placeholder="请输入模版名称，最大长度20" />
+					<div class="sms_save save_as_btn">
+						<input type="button" value="确认" />
+						<input type="button" value="取消" />
+					</div>
+				</div>
+				<div class="begin_testing_pop">
+					<p class="mark"></p>
+					<p class="prompt">提示</p>
+					<p>请输入有效的手机号码</p>
+					<div class="sms_save save_as_btn">
+						<input type="button" class="know" value="知道了" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer footer_in">
+	        <p>粤ICP备11076613号</p>
+	        <p>增值电信业务经营许可证号B1.B2-20110560 粤网文[2015]1636-272号</p>
+	        <p>工商营业执照</p>
+	    </div>
+	</div>
+	 <div class="contact_service">
+		<ul>
+			<li><a class="kf" href="javascript:;"></a></li>
+			<li><a class="edit" href="javascript:;"></a></li>
+			<li><a class="to_top" href="javascript:;"></a></li>
+		</ul>
+    </div>
+<script type="text/javascript">
+  $(function(){
+    var _s_height = $(window).height()-175;
+    $(".TraderClock_scrol").height(_s_height);
+  })
+  $(window).resize(function () {
+        var _s_height = $(window).height()-175;
+    $(".TraderClock_scrol").height(_s_height);
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

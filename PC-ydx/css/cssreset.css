@@ -1,0 +1,71 @@
+/*麦可视觉设计*/
+
+/*reset*/
+html{
+	color:#000;
+	background:#FFF;
+	font-family: "微软雅黑";
+}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,footer,article,aside,header,section,nav,figure,figcaption,hgroup{
+	margin:0;
+	padding:0;
+	font-size: 14px;
+}table{
+	border-collapse:collapse;
+	border-spacing:0;
+}fieldset,img{
+	border:0;
+}address,caption,cite,code,dfn,em,strong,th,var{
+	font-style:normal;
+	font-weight:normal;
+}ol,ul{
+	list-style:none;
+}caption,th{
+	text-align:left;
+}h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:normal;
+}q:before,q:after{
+	content:'';
+}abbr,acronym{
+	border:0;
+	font-variant:normal;
+}sup{
+	vertical-align:text-top;
+}sub{
+	vertical-align:text-bottom;
+}input,textarea,select{
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+	*font-size:100%;
+}legend{
+	color:#000;
+}a {
+    text-decoration: none;
+    color: #232323;
+}
+input{
+	border: 1px solid #d1d1d1;
+    border-radius: 2px;
+}
+.clear:after{content: "";display: block; height: 0; clear: both;visibility: hidden; overflow: hidden;}
+.clear{zoom: 1;}
+.fl{float: left;}
+.fr{float: right;}
+.fs{font-size: 12px;}
+.dib{display: inline-block;}
+.oh{overflow: hidden;}
+.c_gray{color: #565656;}
+.c_orange{color: #f67b1f;}
+.c_ora{color: #fe5d15;}
+.c_pink{color: #f86c6b;}
+.c_yellow{color: #fff100;}
+.c_white{color: #fff;}
+.c_blue{color: #3b86f6;}
+.c_red{color: #ff0000;}
+.bg_gray{background: #d9e4f1;}]
+.bg_orange{background-color: #ff9c00;}
+.fwb{font-weight: bold;}
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+.clearfloat{zoom:1}
+.question_tip{width: 12px; height: 12px;text-align: center;line-height: 12px;border-radius: 7px; display: inline-block; color: #fff;cursor: pointer;}

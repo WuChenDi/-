@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<!-- <meta http-equiv="X-UA-COMPATIBLE" CONTENT="IE=edge,chrome=1"> -->
+		<title>数据分析--营销效果总览</title>
+		<link rel="stylesheet" type="text/css" href="../css/cssreset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/global.css" />
+		<link rel="stylesheet" type="text/css" href="../css/calendar.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<script src="../js/jquery-1.7.2.min.js"></script>
+		<!--[if lt IE 8]>
+			<link rel="stylesheet" type="text/css" href="../css/ie7.css"/>
+			<script>
+				$(function(){
+					$('.menu_btn').click(function(){
+						var w = parseInt($('.menu').width());
+						if(w < 60){
+							$('.trader_r').css({"width":"90%"});
+						}else{
+							$('.trader_r').css({"width":"97%"});
+						}
+					})
+				});
+			</script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="TraderClock">
+			<!-- 菜单栏 -->
+			<div class="menu">
+				<div class="menuyy"></div>
+				<div class="menu_btn"><a href="javascript:;"></a></div>
+				<ul class="menu_con  menu_con_sj">
+					<li class="menu1">
+						<a href="javascript:;"><span></span><p>RFM模型分析</p></a>
+						<ol>
+							<a href="sj-RFM_Model.html"><li class="Order"><p></p><p class="menu_word">RFM模型分析</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">R值分析</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">F值分析</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">M值分析</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">客户回购周期</p></li></a>
+						</ol>
+					</li>
+					<li class="menu2 cur">
+						<a href="javascript:;"><span></span><p>客户交易分析</p></a>
+						<ol>
+							<a href="sj-CustomerTransactions.html"><li class="Order"><p></p><p class="menu_word">客户交易数据分析</p></li></a>
+							<a href="sj-MarketingEffect.html"><li class="cur"><p></p><p class="menu_word">营销效果总览</p></li></a>
+							<a href="sj-MarketingActivities.html"><li><p></p><p class="menu_word">营销活动分析</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">重要指示分析</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">客户交易分析</p></li></a>
+						</ol>
+					</li>
+					<li class="bg_gray menu3">
+						<a href="javascript:;"><span></span><p>客户结构分析</p></a>
+						<ol>
+							<a href="sj-ClientStructure.html"><li class="Order"><p></p><p class="menu_word">客户结构分析</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">活跃客户分析</p></li></a>
+							<a href="sj-ActiveGrade.html"><li><p></p><p class="menu_word">活跃等级分析</p></li></a>
+						</ol>
+					</li>
+					<li class="menu4">
+						<a href="javascript:;"><span></span><p>交易商品分析</p></a>
+					</li>
+					<li class="bg_gray menu5">
+						<a href="javascript:;"><span></span><p>成交地域分析</p></a>
+					</li>
+					<li class="bg_gray menu11">
+						<a href="javascript:;"><p></p></a>
+					</li>
+					<li class="menu11">
+						<a href="javascript:;"><p></p></a>
+					</li>
+					<li class="bg_gray menu11">
+						<a href="javascript:;"><p></p></a>
+					</li>
+					
+				</ul>
+			</div>
+			<!-- 菜单栏 -->
+			<!--页面主体-->
+			<div class="trader_r">
+				<div class="page_navigation">
+					<span class="home_img"></span>
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<span></span>
+							<a href="javascript:;">客户交易分析</a>
+						</li>
+						<li class="last">
+							<span></span>
+							<a href="sj-MarketingEffect.html">营销效果总览</a>
+						</li>
+					</ul>
+				</div>
+				<!--数据分析》营销效果总览-->
+				<div class="TraderClock_scrol">
+					<div class="TraderClock_box Marketing_box">
+						<div class="Marketing_title">
+							<span></span>
+							<p>营销效果总览</p>
+						</div>
+						<div class="Marketing_wrap">
+							<div class="date">
+								<ul>
+									<li>
+										<span>选择来源</span>
+										<select name="">
+											<option value="">全部来源分析</option>
+											<option value="">自定义时间</option>
+										</select>
+									</li>
+									<li class="data_li2">
+										<span>选择时间</span>
+										<select name="">
+											<option value="">自定义时间</option>
+											<option value="">全部来源分析</option>
+										</select>
+										<div class="time_fa1">
+											<input type="text" placeholder="2017-4-20" id="dt"  class="inp1" value="" /><p class="time_img"></p><span>至</span>
+											<input type="text" placeholder="2017-4-20" id="dt1"  class="inp2" value="" /><p class="time_img1"></p>
+											<div id="dd"></div>
+											<div id="dd1"></div>
+											<div class="date_search">
+												<a class="search" href="#">立即查询</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="echarts">
+								<div id="echarts_left" style="height: 400px;"></div>
+								<div id="echarts_in" style="height: 400px;"></div>
+								<div id="echarts_right" style="height: 400px;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer footer_in marketing_effect_footer">
+		        <p>粤ICP备11076613号</p>
+		        <p>增值电信业务经营许可证号B1.B2-20110560 粤网文[2015]1636-272号</p>
+		        <p>工商营业执照</p>
+		    </div>
+		</div>
+		 <div class="contact_service">
+			<ul>
+				<li><a class="kf" href="javascript:;"></a></li>
+				<li><a class="edit" href="javascript:;"></a></li>
+				<li><a class="to_top" href="javascript:;"></a></li>
+			</ul>
+	    </div>
+
+	
+
+		<script src="../js/js.js"></script>
+		<script src="../js/jquery.reveal.js"></script>
+		
+		<script src="../js/calendar.js"></script>
+		<script>
+		   $('#dd').calendar({
+		        trigger: '#dt',
+		        zIndex: 999,
+				format: 'yyyy-mm-dd',
+				offset: [-460, -208],
+		        onSelected: function (view, date, data) {
+		            console.log('event: onSelected')
+		        },
+		        onClose: function (view, date, data) {
+		            console.log('event: onClose')
+		            console.log('view:' + view)
+		            console.log('date:' + date)
+		            console.log('data:' + (data || 'None'));
+		        }
+		    });
+		   $('#dd1').calendar({
+		        trigger: '#dt1',
+		        zIndex: 999,
+				format: 'yyyy-mm-dd',
+				offset: [-460, -208],
+		        onSelected: function (view, date, data) {
+		            console.log('event: onSelected')
+		        },
+		        onClose: function (view, date, data) {
+		            console.log('event: onClose')
+		            console.log('view:' + view)
+		            console.log('date:' + date)
+		            console.log('data:' + (data || 'None'));
+		        }
+		    });
+		</script>
+		<script src="../js/dist/echarts.js"></script>
+		
+		<script type="text/javascript">
+			require.config({
+				paths: {
+					echarts: '../js/dist'
+				}
+			});
+			require(
+				[
+					'echarts',
+					'echarts/chart/line', // 按需加载所需图表，如需动态类型切换功能，别忘了同时加载相应图表
+					//					'echarts/chart/bar'
+				],
+				function(ec) {
+					var myChart = ec.init(document.getElementById('echarts_left'));
+					option = {
+						tooltip: {
+							trigger: "item"
+						},
+						legend: {
+							data: ["营销成本（元）", "营销收益（元）"]
+						},
+						xAxis: [{
+							type: "category",
+							splitLine: {
+								show: false
+							},
+							data: ["第一天", "第二天", "第三天", "第四天", "第五天", "第六天", "第七天"]
+						}],
+						yAxis: [{
+							name: "金额",
+							type: "value"
+						}],
+						toolbox: {
+							show: false,
+							feature: {
+								mark: {
+									show: true
+								},
+								dataView: {
+									show: true,
+									readOnly: true
+								},
+								restore: {
+									show: true
+								},
+								saveAsImage: {
+									show: true
+								}
+							}
+						},
+						calculable: true,
+						series: [{
+								name: "营销成本（元）",
+								type: "line",
+								data: [1, 3, 9, 27, 81, 247, 741]
+
+							},
+							{
+								name: "营销收益（元）",
+								type: "line",
+								data: [1, 2, 4, 8, 16, 32, 64]
+
+							}
+						]
+					};
+					myChart.setOption(option);
+				});
+		</script>
+		<script type="text/javascript">
+			require.config({
+				paths: {
+					echarts: '../js/dist'
+				}
+			});
+			require(
+				[
+					'echarts',
+					'echarts/chart/pie', // 按需加载所需图表，如需动态类型切换功能，别忘了同时加载相应图表
+				],
+				function(ec) {
+					var myChart = ec.init(document.getElementById('echarts_in'));
+					var dataStyle = {
+						normal: {
+							label: {
+								show: false
+							},
+							labelLine: {
+								show: false
+							}
+						}
+					};
+					var placeHolderStyle = {
+						normal: {
+							color: 'rgba(255,255,255,0)',
+							label: {
+								show: false
+							},
+							labelLine: {
+								show: false
+							}
+						}
+					};
+					option = {
+						title: {
+							text: '营销总人次',
+							x: 'center',
+							y: 'top'
+						},
+						tooltip: {
+							show: true,
+							formatter: "{a} <br/>{b} : {c} ({d}%)"
+						},
+						legend: {
+							orient: 'vertical',
+							x: 'center',
+							y: 'center',
+							itemGap: 12,
+							data: ['未响应人数68%', '成功人数29%']
+						},
+						toolbox: {
+							show: false,
+							feature: {
+								mark: {
+									show: true
+								},
+								dataView: {
+									show: true,
+									readOnly: false
+								},
+								restore: {
+									show: true
+								},
+								saveAsImage: {
+									show: true
+								}
+							}
+						},
+						series: [{
+								name: '1',
+								type: 'pie',
+								clockWise: false,
+								radius: [125, 150],
+								itemStyle: dataStyle,
+								data: [{
+										value: 68,
+										name: '未响应人数68%'
+									},
+									{
+										value: 32,
+										name: 'invisible',
+										itemStyle: placeHolderStyle
+									}
+								]
+							},
+							{
+								name: '2',
+								type: 'pie',
+								clockWise: false,
+								radius: [100, 125],
+								itemStyle: dataStyle,
+								data: [{
+										value: 29,
+										name: '成功人数29%'
+									},
+									{
+										value: 71,
+										name: 'invisible',
+										itemStyle: placeHolderStyle
+									}
+								]
+							},
+
+						],
+						color: ['rgb(64,204,206)','rgb(188,177,255)']
+					};
+					myChart.setOption(option);
+				});
+		</script>
+		<script type="text/javascript">
+			require.config({
+				paths: {
+					echarts: '../js/dist'
+				}
+			});
+			require(
+				[
+					'echarts',
+					'echarts/chart/pie', // 按需加载所需图表，如需动态类型切换功能，别忘了同时加载相应图表
+				],
+				function(ec) {
+					var myChart = ec.init(document.getElementById('echarts_right'));
+					var dataStyle = {
+						normal: {
+							label: {
+								show: false
+							},
+							labelLine: {
+								show: false
+							}
+						}
+					};
+					var placeHolderStyle = {
+						normal: {
+							color: 'rgba(255,255,255,0)',
+							label: {
+								show: false
+							},
+							labelLine: {
+								show: false
+							}
+						}
+					};
+					option = {
+						title: {
+							text: '营销数量',
+							x: 'center',
+							y: 'top'
+						},
+						tooltip: {
+							show: true,
+							formatter: "{a} <br/>{b} : {c} ({d}%)"
+						},
+						legend: {
+							orient: 'vertical',
+							x: 'center',
+							y: 'center',
+							itemGap: 12,
+							data: ['短信58%', '邮件39%']
+						},
+						toolbox: {
+							show: false,
+							feature: {
+								mark: {
+									show: true
+								},
+								dataView: {
+									show: true,
+									readOnly: false
+								},
+								restore: {
+									show: true
+								},
+								saveAsImage: {
+									show: true
+								}
+							}
+						},
+						series: [{
+								name: '1',
+								type: 'pie',
+								clockWise: false,
+								radius: [125, 150],
+								itemStyle: dataStyle,
+								data: [{
+										value: 58,
+										name: '短信58%'
+									},
+									{
+										value: 32,
+										name: 'invisible',
+										itemStyle: placeHolderStyle
+									}
+								]
+							},
+							{
+								name: '2',
+								type: 'pie',
+								clockWise: false,
+								radius: [100, 125],
+								itemStyle: dataStyle,
+								data: [{
+										value: 39,
+										name: '邮件39%'
+									},
+									{
+										value: 71,
+										name: 'invisible',
+										itemStyle: placeHolderStyle
+									}
+								]
+							},
+
+						],
+						color: ['rgb(64,204,206)','rgb(188,177,255)']
+					};
+					myChart.setOption(option);
+				});
+		</script>
+		<script type="text/javascript">
+		  $(function(){
+		    var _s_height = $(window).height()-175;
+		    $(".TraderClock_scrol").height(_s_height);
+		  })
+		  $(window).resize(function () {
+		        var _s_height = $(window).height()-175;
+		    $(".TraderClock_scrol").height(_s_height);
+		    });
+		</script>
+	</body>
+
+</html>

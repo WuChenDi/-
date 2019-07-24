@@ -1,0 +1,25 @@
+/*麦可视觉设计*/
+
+/*云短信--基本信息设置*/
+
+.info_box{width: 100%;height: 100%;}
+.info_box_b{margin: 10px;background-color: #fff;}
+
+.info_title{height: 53px;font-size: 14px; font-weight: bold;border-bottom: 1px solid #ececec;position: relative;}
+.info_title>span{width: 3px;height: 15px;background-color: #34a5d0;display: inline-block;zoom: 1;margin: 19px 10px 0 2%;}
+.info_title>p{display: inline-block;zoom: 1;}
+
+.info_wrap{width: 100%;}
+.basic_wrap{}
+.basic_wrap_title{height: 60px;line-height: 60px;margin-left: 39px;}
+.basic_box{height: 286px; color: #878787;}
+.basic_box_bg{width: ; margin-left: 39px; background: #fcfdff;border: 1px solid #eeeeee;}
+.basic_box table{width: 100%;}
+.basic_box tbody{}
+.basic_box tr{height: 44px;line-height: 34px;}
+.td_one{padding-top: 30px;}
+.basic_box td:first-child{width: 88px; text-align: right;}
+.basic_box td:nth-child(2){padding-left: 22px;}
+.basic_box input{width: 307px;height: 32px;border: 1px solid #d1d1d1;color: #565656;padding-left: 22px;}
+#basic_button{padding: 26px 0 30px 22px;}
+#basic_button a{width: 107px;height: 29px; line-height: 3rem;border-radius: 11px; padding: 8px 26px;border: 1px solid #3b86f6;color: #3b86f6;}

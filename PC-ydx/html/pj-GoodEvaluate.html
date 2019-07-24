@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<!-- <meta http-equiv="X-UA-COMPATIBLE" CONTENT="IE=edge,chrome=1"> -->
+		<title>评价管理--好评宝贝提醒</title>
+		<link rel="stylesheet" type="text/css" href="../css/cssreset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/global.css" />
+		<link rel="stylesheet" type="text/css" href="../css/calendar.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<script src="../js/jquery-1.7.2.min.js"></script>
+		<!--[if lt IE 8]>
+			<link rel="stylesheet" type="text/css" href="../css/ie7.css"/>
+			<script>
+				$(function(){
+					$('.menu_btn').click(function(){
+						var w = parseInt($('.menu').width());
+						if(w < 60){
+							$('.trader_r').css({"width":"90%"});
+						}else{
+							$('.trader_r').css({"width":"97%"});
+						}
+					})
+				});
+			</script>
+		<![endif]-->
+			</head>
+	<body>
+		<div class="TraderClock">
+			<!-- 菜单栏 -->
+			<div class="menu">
+				<div class="menuyy"></div>
+				<div class="menu_btn"><a href="javascript:;"></a></div>
+				<ul class="menu_con menu_con_pj">
+					<li class="menu1">
+						<a href="javascript:;"><span></span><p>自动好评</p></a>
+					</li>
+					<li class="menu2 cur">
+						<a href="javascript:;"><span></span><p>好评宝贝提醒</p></a>
+						<ol>
+							<a style="wid" href="pj-GoodEvaluate.html"><li class="shipping_reminder cur"><p></p><p class="menu_word">好评宝贝提醒</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">好评宝贝提醒列表</p></li></a>
+						</ol>
+					</li>
+					<li class="bg_gray menu3">
+						<a href="javascript:;"><span></span><p>好评会员短信互动</p></a>
+					</li>
+					<li class="bg_gray menu11">
+						<a href="javascript:;"><p></p></a>
+					</li>
+					<li class="menu11">
+						<a href="javascript:;"><p></p></a>
+					</li>
+					<li class="bg_gray menu11">
+						<a href="javascript:;"><p></p></a>
+					</li>
+					
+				</ul>
+			</div>
+			<!-- 菜单栏 -->
+			<!--页面主体-->
+			<div class="trader_r">
+				<div class="page_navigation">
+					<span class="home_img"></span>
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<span></span>
+							<a href="javascript:;">评价管理</a>
+						</li>
+						<li class="last">
+							<span></span>
+							<a href="javascript:;">好评宝贝提醒</a>
+						</li>
+					</ul>
+				</div>
+				<!--评价管理》好评宝贝提醒-->
+				<div class="TraderClock_scrol">
+					<div class="TraderClock_box Good_box">
+						<div class="Good_title">
+							<span></span>
+							<p>条件设置</p>
+						</div>
+						<div class="Good_wrap">
+							<div class="Good_date ie7_z">
+								<div class="GoodTime time_fa3 ie7_out">
+									<span>好评时间</span>
+									<input type="text" placeholder="2017-4-20"  class="inp1" id="dt" /><p class="time_img"></p>至
+									<input type="text" placeholder="2017-4-20" class="inp2" id="dt1" /><p class="time_img1"></p>
+									<div id="dd"></div>
+									<div id="dd1"></div>
+								</div>
+								<div class="sms_template sms_template1 state">
+									<p>指定好评宝贝</p>
+									<div class="radios_group">
+										<p><span class="radios radiosclick"><input type="radio"  class="remind" name="remind" value="指定宝贝" onclick=""/></span><label for="">指定宝贝</label></p> 
+									</div>
+									<div class="Specify_box">
+										<div class="w">
+											<input type="text" placeholder="在此输入宝贝的连接地址，或者是宝贝的ID号">
+											<div class="Add_btn">
+												<a href="#">添加</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="sms_template sms_template1 gap">
+									<p>过滤已发送用户</p>
+									<div class="radios_group">
+										<p><span class="radios radiosclick"><input type="radio"  class="remind" name="remind" value="不过滤" onclick=""/></span><label for="">不过滤</label></p>   
+										<p><span class="radios"><input type="radio" class="remind" checked name="remind" value="今天" onclick=""/></span><label for="">今天</label></p>
+										<p><span class="radios"><input type="radio" class="remind" checked name="source" value="近3天" onclick=""/></span><label for="">近3天</label></p>
+										<p><span class="radios"><input type="radio" class="remind" checked name="source" value="近7天" onclick=""/></span><label for="">近7天</label></p>
+										<p><span class="radios"><input type="radio" class="remind" checked name="source" value="近15天" onclick=""/></span><label for="">近15天</label></p>
+									</div>
+								</div>
+								<div class="Good_btn">
+									<input type="button" name="" id="" class="inp10" value="立即刷选" />
+									<input type="button" name="" id="" class="inp10" value="清空条件" />
+								</div>
+							</div>
+						</div>
+						<div class="care_config_con1 care_config_sms">
+							<div class="Good_title">
+								<span></span>
+								<p>短信设置</p>
+							</div>
+							<form action="" class="sms_content">
+								<div class="sms_content_l fl">
+									<div class="sms_con">
+										<div class="sms_template">
+											<p>短信主题</p><input type="text" />
+										</div>
+										<div class="sms_template sms_template1 sms_test">
+											<p>短信内容</p>
+											<textarea id="mysms" onkeyup="SwapTxt()" placeholder="亲，您好，您已成功在本店购买了小米六手机，我们将在24小时内为您发货，请注意查收！祝您生活愉快，身体健康！"></textarea>
+											<span> 
+												<p>您当前已输入</p><p class="c_blue fwb">94</p><p>个字符，将按照 </p><p class="c_blue fwb">2</p> <p>条短信计费，</p><p class="c_red">计费规则</p>
+											</span>
+											<a href="javascript:;" class="explain">短信内容特别说明</a>
+										</div>
+										
+										<div class="sms_template seller_signature personal">
+											<p>个性化字段</p><a href="javascript:;">插入短链接</a>
+											<a href="javascript:;">插入淘宝短链接</a>
+										</div>
+										<div class="sms_template seller_signature">
+											<p>卖家签名</p> <span>Admin</span><a href="javascript:;">修改签名</a>
+										</div>
+										<div class="sms_template sms_template1 sms_test">
+											<p>发送时间</p>
+											<div class="radios_group">
+												<p><span class="radios radiosclick"><input type="radio"   name="remind" value="立即发送" onclick=""/></span><label for="">立即发送</label></p>   
+			    								<p><span class="radios"><input type="radio" checked name="remind" value="定时发送" onclick=""/></span><label for="">定时发送</label></p>
+			    							</div>
+										</div>
+										<div class="sms_save">
+											<input type="button" value="立即发送" />
+										</div>
+									</div>
+									
+								</div>
+								<div class="sms_content_r fl">
+									<div class="photo">
+										<img src="../images/phone.png" alt="" />
+										<div><span>【Admin】</span><div id="mysmsTo"></div></div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="footer footer_in">
+			        <p>粤ICP备11076613号</p>
+			        <p>增值电信业务经营许可证号B1.B2-20110560 粤网文[2015]1636-272号</p>
+			        <p>工商营业执照</p>
+			    </div>
+			</div>
+		</div>
+		 <div class="contact_service">
+			<ul>
+				<li><a class="kf" href="javascript:;"></a></li>
+				<li><a class="edit" href="javascript:;"></a></li>
+				<li><a class="to_top" href="javascript:;"></a></li>
+			</ul>
+	    </div>
+
+	<script src="../js/js.js"></script>
+	<script src="../js/jquery.reveal.js"></script>
+	<script src="../js/calendar.js"></script>
+	<script>
+	   $('#dd').calendar({
+	        trigger: '#dt',
+	        zIndex: 999,
+			format: 'yyyy-mm-dd',
+			offset: [-293, -146],
+	        onSelected: function (view, date, data) {
+	            console.log('event: onSelected')
+	        },
+	        onClose: function (view, date, data) {
+	            console.log('event: onClose')
+	            console.log('view:' + view)
+	            console.log('date:' + date)
+	            console.log('data:' + (data || 'None'));
+	        }
+	    });
+	   $('#dd1').calendar({
+	        trigger: '#dt1',
+	        zIndex: 999,
+			format: 'yyyy-mm-dd',
+			offset: [-293, -146],
+	        onSelected: function (view, date, data) {
+	            console.log('event: onSelected')
+	        },
+	        onClose: function (view, date, data) {
+	            console.log('event: onClose')
+	            console.log('view:' + view)
+	            console.log('date:' + date)
+	            console.log('data:' + (data || 'None'));
+	        }
+	    });
+	</script>
+
+
+	<script type="text/javascript">
+		  $(function(){
+		    var _s_height = $(window).height()-175;
+		    $(".TraderClock_scrol").height(_s_height);
+		  })
+		  $(window).resize(function () {
+		        var _s_height = $(window).height()-175;
+		    $(".TraderClock_scrol").height(_s_height);
+		    });
+		</script>
+	</body>
+
+</html>

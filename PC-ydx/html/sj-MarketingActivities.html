@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<!-- <meta http-equiv="X-UA-COMPATIBLE" CONTENT="IE=edge,chrome=1"> -->
+		<title>数据分析--营销活动分析</title>
+		<link rel="stylesheet" type="text/css" href="../css/cssreset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/global.css" />
+		<link rel="stylesheet" type="text/css" href="../css/calendar.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<script src="../js/jquery-1.7.2.min.js"></script>
+		<!--[if lt IE 8]>
+			<link rel="stylesheet" type="text/css" href="../css/ie7.css"/>
+			<script>
+				$(function(){
+					$('.menu_btn').click(function(){
+						var w = parseInt($('.menu').width());
+						if(w < 60){
+							$('.trader_r').css({"width":"90%"});
+						}else{
+							$('.trader_r').css({"width":"97%"});
+						}
+					})
+				});
+			</script>
+		<![endif]-->
+		<!--[if IE 8]>
+			<link rel="stylesheet" type="text/css" href="../css/ie8.css"/>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="TraderClock">
+			<!-- 菜单栏 -->
+			<div class="menu">
+				<div class="menuyy"></div>
+				<div class="menu_btn"><a href="javascript:;"></a></div>
+				<ul class="menu_con  menu_con_sj">
+					<li class="menu1">
+						<a href="javascript:;"><span></span><p>RFM模型分析</p></a>
+						<ol>
+							<a href="sj-RFM_Model.html"><li class="Order"><p></p><p class="menu_word">RFM模型分析</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">R值分析</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">F值分析</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">M值分析</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">客户回购周期</p></li></a>
+						</ol>
+					</li>
+					<li class="menu2 cur">
+						<a href="javascript:;"><span></span><p>客户交易分析</p></a>
+						<ol>
+							<a href="sj-CustomerTransactions.html"><li class="Order"><p></p><p class="menu_word">客户交易数据分析</p></li></a>
+							<a href="sj-MarketingEffect.html"><li><p></p><p class="menu_word">营销效果总览</p></li></a>
+							<a href="sj-MarketingActivities.html"><li class="cur"><p></p><p class="menu_word">营销活动分析</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">重要指示分析</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">客户交易分析</p></li></a>
+						</ol>
+					</li>
+					<li class="bg_gray menu3">
+						<a href="javascript:;"><span></span><p>客户结构分析</p></a>
+						<ol>
+							<a href="sj-ClientStructure.html"><li class="Order"><p></p><p class="menu_word">客户结构分析</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">活跃客户分析</p></li></a>
+							<a href="sj-ActiveGrade.html"><li><p></p><p class="menu_word">活跃等级分析</p></li></a>
+						</ol>
+					</li>
+					<li class="menu4">
+						<a href="javascript:;"><span></span><p>交易商品分析</p></a>
+					</li>
+					<li class="bg_gray menu5">
+						<a href="javascript:;"><span></span><p>成交地域分析</p></a>
+					</li>
+					<li class="bg_gray menu11">
+						<a href="javascript:;"><p></p></a>
+					</li>
+					<li class="menu11">
+						<a href="javascript:;"><p></p></a>
+					</li>
+					<li class="bg_gray menu11">
+						<a href="javascript:;"><p></p></a>
+					</li>
+					
+				</ul>
+			</div>
+			<!-- 菜单栏 -->
+			<!--页面主体-->
+			<div class="trader_r">
+				<div class="page_navigation">
+					<span class="home_img"></span>
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<span></span>
+							<a href="javascript:;">数据分析</a>
+						</li>
+						<li class="last">
+							<span></span>
+							<a href="sj-MarketingActivities.html">营销活动分析</a>
+						</li>
+					</ul>
+				</div>
+				<!--数据分析》客户结构分析-->
+				<div class="TraderClock_scrol">
+					<div class="TraderClock_box Marketing_box Marketing_box1" style="height: 100%;">
+						<div class="Marketing_title">
+							<span></span>
+							<p>营销活动分析</p>
+						</div>
+						<div class="Marketing_menu">
+							<a href="javascript:;" class="menu1 cur tab_menu1">效果分析</a>
+							<a href="javascript:;" class="menu2 tab_menu2">客户详情</a>
+							<a href="javascript:;" class="menu3 tab_menu3">商品详情</a>
+						</div>
+						<div class="Marketing_wrap tab_a">
+							<div class="date">
+								<div class="date_title">
+									<span class="dot"></span> 
+									数据统计
+								</div>
+								<ul>
+									<li>
+										<span>选择来源</span>
+										<select name="">
+											<option value="">全部来源分析</option>
+											<option value="">自定义时间</option>
+										</select>
+									</li>
+									<li class="data_li2">
+										<span>选择时间</span>
+										<select name="">
+											<option value="">自定义时间</option>
+											<option value="">全部来源分析</option>
+										</select>
+										<div class="time_fa1">
+											<input type="text" placeholder="2017-4-20" id="dt"  class="inp1" value="" /><p class="time_img"></p><span>至</span>
+											<input type="text" placeholder="2017-4-20" id="dt1"  class="inp2" value="" /><p class="time_img1"></p>
+											<div id="dd"></div>
+											<div id="dd1"></div>
+											<div class="date_search">
+												<a class="search" href="#">立即查询</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="statistics">
+								<div class="target one">
+									<ul>
+										<li>目标人群</li>
+										<li><label>邮件使用量 </label><span><b>0</b> 条</span></li>
+										<li><label>短信发送次数</label><span><b>0</b> 次</span></li>
+										<li><label>邮件营销成本</label><span><b>0</b> 元</span></li>
+										<li><label>短信使用量</label><span><b>0</b> 条</span></li>
+										<li><label>实际发送总人次</label><span><b>0</b> 人</span></li>
+										<li><label>短信营销成本</label><span><b>0</b> 元</span></li>
+										<li><label>邮件发送人次</label><span><b>0</b> 次</span></li>
+										<li class="last"><label>营销总成本 </label><span><b>0</b> 元</span></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="target one">
+									<ul>
+										<li>拍单客户</li>
+										<li><label>拍单响应率  </label><span><b>0</b> %</span></li>
+										<li><label>拍单客户数 </label><span><b>0</b> 人</span></li>
+										<li><label>拍下订单数 </label><span><b>0</b> 单</span></li>
+										<li><label>拍单总金额 </label><span><b>0</b> 元</span></li>
+										<li><label>拍下宝贝数 </label><span><b>0</b> 件</span></li>
+										<li><label>客单价 </label><span><b>0</b> 元</span></li>
+										<li><label>货单价 </label><span><b>0</b> 元</span></li>
+										<li><label>均单价  </label><span><b>0</b> 元</span></li>
+										<li><label>人均拍下商品数   </label><span><b>0</b> 件</span></li>
+									</ul>
+								</div>
+								<div class="payment one">
+									<ul>
+										<li>付款客户</li>
+										<li><label>付款响应率  </label><span><b>0</b> %</span></li>
+										<li><label>付款客户数 </label><span><b>0</b> 人</span></li>
+										<li><label>付款订单数 </label><span><b>0</b> 单</span></li>
+										<li><label>付款总金额 </label><span><b>0</b> 元</span></li>
+										<li><label>付款宝贝数 </label><span><b>0</b> 件</span></li>
+										<li><label>客单价 </label><span><b>0</b> 元</span></li>
+										<li><label>货单价 </label><span><b>0</b> 元</span></li>
+										<li><label>均单价  </label><span><b>0</b> 元</span></li>
+										<li><label>人均付款商品数   </label><span><b>0</b> 件</span></li>
+									</ul>
+								</div>
+								<div class="intention one">
+									<ul>
+										<li>意向客户</li>
+										<li><label>意向响应率  </label><span><b>0</b> %</span></li>
+										<li><label>意向客户数 </label><span><b>0</b> 人</span></li>
+										<li><label>未付款订单数 </label><span><b>0</b> 单</span></li>
+										<li><label>意向订单总金额 </label><span><b>0</b> 元</span></li>
+										<li><label>意向购买宝贝数 </label><span><b>0</b> 件</span></li>
+										<li><label>客单价 </label><span><b>0</b> 元</span></li>
+										<li><label>货单价 </label><span><b>0</b> 元</span></li>
+										<li><label>均单价  </label><span><b>0</b> 元</span></li>
+										<li><label>平均意向购买商品数   </label><span><b>0</b> 件</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="trend">
+								<div class="trend_title">
+									趋势分析
+								</div>
+								<ul>
+									<li>
+										<span>选择来源</span>
+										<select name="">
+											<option value="">全部来源分析</option>
+											<option value="">拍单客户</option>
+										</select>
+										<span class="sp1">客户分类</span>
+										<select name="">
+											<option value="">拍单客户</option>
+											<option value="">全部来源分析</option>
+										</select>
+										<div class="trend_btn">
+											<a class="search" href="#">立即分析</a>
+										</div>
+									</li>
+								</ul>
+								<!--echarts-->
+								<div id="echarts" style="height: 400px;"></div>
+							</div>
+						</div>
+						<div class="tab_b order_box Marketing_wrap">
+							<div class="date">
+								<ul>
+									<li>
+										<span>选择来源</span>
+										<select name="">
+											<option value="">全部来源分析</option>
+											<option value="">自定义时间</option>
+										</select>
+									</li>
+									<li class="data_li2">
+										<span>客户分类</span>
+										<select name="">
+											<option value="">自定义时间</option>
+											<option value="">全部来源分析</option>
+										</select>
+										<div class="time_fa1">
+											<input type="text" placeholder="2017-4-20" id="dt"  class="inp1" value="" /><p class="time_img"></p><span>至</span>
+											<input type="text" placeholder="2017-4-20" id="dt1"  class="inp2" value="" /><p class="time_img1"></p>
+											<div id="dd"></div>
+											<div id="dd1"></div>
+									</li>
+								</ul>
+							</div>
+							<div class="order_wrap" style="margin-left: 38px;">
+								<div class="number">
+									<p class="p1">旺旺昵称</p>
+									<input style="margin-left: 15px;" type="text" name="" class="inp inp3" value="" />
+									<p class="p1">姓名</p>
+									<input type="text" name="" class="inp inp4" value="" />
+									<p class="p1">手机号</p>
+									<input type="text" name="" class="inp inp5" value="" />
+									<p class="p1">邮箱</p>
+									<input type="text" name="" class="inp inp5" value="" />
+								</div>
+								<div class="order_wrap_btn">
+									<p></p>
+									<input type="button" name="" id="" value="立即查询" />
+								</div>
+							</div>
+						</div>
+						<div class="tab_c order_box Marketing_wrap">
+							<div class="date">
+								<ul>
+									<li>
+										<span>选择来源</span>
+										<select name="">
+											<option value="">全部来源分析</option>
+											<option value="">自定义时间</option>
+										</select>
+									</li>
+									<li class="data_li2">
+										<span>客户分类</span>
+										<select name="">
+											<option value="">自定义时间</option>
+											<option value="">全部来源分析</option>
+										</select>
+										<div class="time_fa1">
+											<input type="text" placeholder="2017-4-20" id="dt"  class="inp1" value="" /><p class="time_img"></p><span>至</span>
+											<input type="text" placeholder="2017-4-20" id="dt1"  class="inp2" value="" /><p class="time_img1"></p>
+											<div id="dd"></div>
+											<div id="dd1"></div>
+									</li>
+								</ul>
+							</div>
+							<div class="order_wrap" style="margin-left: 38px;">
+								
+								<div class="order_wrap_btn">
+									<p></p>
+									<input type="button" name="" id="" value="立即查询" />
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="footer footer_in">
+			        <p>粤ICP备11076613号</p>
+			        <p>增值电信业务经营许可证号B1.B2-20110560 粤网文[2015]1636-272号</p>
+			        <p>工商营业执照</p>
+			    </div>
+			</div>
+		</div>
+		 <div class="contact_service">
+			<ul>
+				<li><a class="kf" href="javascript:;"></a></li>
+				<li><a class="edit" href="javascript:;"></a></li>
+				<li><a class="to_top" href="javascript:;"></a></li>
+			</ul>
+	    </div>
+		<script src="../js/js.js"></script>
+		<script src="../js/jquery.reveal.js"></script>
+		<script src="../js/calendar.js"></script>
+		<script>
+		   $('#dd').calendar({
+		        trigger: '#dt',
+		        zIndex: 999,
+				format: 'yyyy-mm-dd',
+				offset: [-460, -270],
+		        onSelected: function (view, date, data) {
+		            console.log('event: onSelected')
+		        },
+		        onClose: function (view, date, data) {
+		            console.log('event: onClose')
+		            console.log('view:' + view)
+		            console.log('date:' + date)
+		            console.log('data:' + (data || 'None'));
+		        }
+		    });
+		   $('#dd1').calendar({
+		        trigger: '#dt1',
+		        zIndex: 999,
+				format: 'yyyy-mm-dd',
+				offset: [-460, -270],
+		        onSelected: function (view, date, data) {
+		            console.log('event: onSelected')
+		        },
+		        onClose: function (view, date, data) {
+		            console.log('event: onClose')
+		            console.log('view:' + view)
+		            console.log('date:' + date)
+		            console.log('data:' + (data || 'None'));
+		        }
+		    });
+		</script>
+
+  		<script src="../js/dist/echarts.js"></script>
+		
+		<script type="text/javascript">
+			require.config({
+				paths: {
+					echarts: '../js/dist'
+				}
+			});
+			require(
+				[
+					'echarts',
+					'echarts/chart/bar', // 按需加载所需图表，如需动态类型切换功能，别忘了同时加载相应图表
+//					'echarts/chart/bar'
+				],
+				function(ec) {
+					var myChart = ec.init(document.getElementById('echarts'));
+					option = {
+						color: ['#999eff','#53aff6'],
+						tooltip: { trigger: 'axis' },
+						toolbox: {
+							show: false,
+							feature: {
+								mark: {
+									show: true
+								},
+								dataView: {
+									show: true,
+									readOnly: false
+								},
+								magicType: {
+									show: true,
+									type: ['line', 'bar']
+								},
+								restore: {
+									show: true
+								},
+								saveAsImage: {
+									show: true
+								}
+							}
+						},
+						
+						calculable: true,
+						legend: {
+							data: ['客户数', '订单笔数','订单金额','客单价','货单价','订单数','人均商品数']
+						},
+						xAxis: [{
+//							lineStyle{color:'#e6e6e6',width:1,type:'dashed'},
+							splitLine:{show:false},//去掉背景X轴的线
+							type: 'category',
+							data: ['05-01', '06-01', '07-01', '08-01', '09-01', '10-01', '11-01']
+						}],
+						yAxis: [{
+								splitLine:{show:false},//去掉背景X轴的线
+								type: 'value',
+								name: '客户数'
+							},
+							{
+								type: 'value',
+								name: '订单笔数'
+							}
+						],
+						series: [
+
+							{
+								name: '客户数',
+								type: 'bar',
+								data: [23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0]
+							},
+							{
+								name: '订单笔数',
+								type: 'bar',
+								data: [26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8]
+							},
+							{
+								name: '平均温度',
+								type: 'line',
+								yAxisIndex: 1,
+								data: [4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0]
+							}
+						]
+					};
+
+					myChart.setOption(option);
+				});
+		</script>
+		<script type="text/javascript">
+		  $(function(){
+		    var _s_height = $(window).height()-175;
+		    $(".TraderClock_scrol").height(_s_height);
+		  })
+		  $(window).resize(function () {
+		        var _s_height = $(window).height()-175;
+		    $(".TraderClock_scrol").height(_s_height);
+		    });
+		</script>
+	</body>
+
+</html>

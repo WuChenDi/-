@@ -1,0 +1,720 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>短信模板管理</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/cssreset.css">
+<link rel="stylesheet" type="text/css" href="../css/global.css" />
+<link rel="stylesheet" type="text/css" href="../css/reveal.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script src="../js/js.js"></script>
+<script src="../js/jquery.reveal.js"></script>
+<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="../css/ie7.css"/>
+	<script src="../js/ie7.js"></script>
+<![endif]-->
+</head>
+
+<body>
+	<div class="TraderClock">
+		<!-- 菜单栏 -->
+		<div class="menu">
+			<div class="menuyy"></div>
+			<div class="menu_btn"><a href="javascript:;"></a></div>
+			<ul class="menu_con cur">
+				<li class="menu1">
+					<a href="javascript:;"><span></span><p>下单提醒</p></a>
+					<ol>
+						<a href="jy-Index.html"><li class="Order"><p></p><p class="menu_word">下单关怀</p></li></a>
+					</ol>
+				</li>
+				<li class="menu2">
+					<a href="javascript:;"><span></span><p>催付提醒</p></a>
+				</li>
+				<li class="bg_gray menu3">
+					<a href="javascript:;"><span></span><p>付款关怀</p></a>
+				</li>
+				<li class="menu4">
+					<a href="javascript:;"><span></span><p>物流提醒</p></a>
+					<ol>
+						<a href="jy-SendGoodsReminder.html"><li class="shipping_reminder"><p></p><p class="menu_word">发货提醒</p></li></a>
+						<a href="javascript:;"><li><p></p><p class="menu_word">延时发货提醒</p></li></a>
+						<a href="javascript:;"><li><p></p><p class="menu_word">物流异常通知</p></li></a>
+						<a href="javascript:;"><li><p></p><p class="menu_word">派件提醒</p></li></a>
+						<a href="javascript:;"><li><p></p><p class="menu_word">到达城市通知</p></li></a>
+						<a href="javascript:;"><li><p></p><p class="menu_word">签收提醒</p></li></a>
+					</ol>
+				</li>
+				<li class="bg_gray menu5">
+					<a href="javascript:;"><span></span><p>退款关怀</p></a>
+				</li>
+				<li class="menu6">
+					<a href="javascript:;"><span></span><p>评价提醒</p></a>
+				</li>
+				<li class="bg_gray menu7">
+					<a href="javascript:;"><span></span><p>售后关怀</p></a>
+				</li>
+				<li class="menu8">
+					<a href="javascript:;"><span></span><p>抽奖关怀</p></a>
+					<ol>
+						<a style="wid" href="jy-LotteryConcern.html"><li class="shipping_reminder"><p></p><p class="menu_word">抽奖关怀</p></li></a>
+						<a href="javascript:;"><li><p></p><p class="menu_word">中奖纪录查询</p></li></a>
+					</ol>
+				</li>
+				<li class="bg_gray menu9">
+					<a href="javascript:;"><span></span><p>卖家订单提醒</p></a>
+				</li>
+				<li class="menu10 template_management cur">
+					<a href="jy-SmsTemplateManagement.html"><span></span><p>短信模板管理</p></a>
+				</li>
+				<li class="bg_gray menu11">
+					<a href="javascript:;"><p></p></a>
+				</li>
+				<li class="menu11">
+					<a href="javascript:;"><p></p></a>
+				</li>
+				<li class="bg_gray menu11">
+					<a href="javascript:;"><p></p></a>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- 菜单栏 -->
+		<div class="trader_r">
+			<div class="page_navigation">
+				<span class="home_img"></span>
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="javascript:;"><span></span>交易提醒</a></li>
+					<li class="last"><a href="javascript:;"><span></span>短信模板管理</a></li>
+				</ul>
+			</div>
+			<div class="TraderClock_scrol">
+				<div class="TraderClock_box SmsTemplate_box">
+					<!-- 短信模板管理 -->
+					<div class="TemplateSelect SmsTemplate">
+						<div class="info_tit info_tit2">
+								<span class="fl"></span>
+								<p class="fl">短信模板管理</p>
+							</div>
+						<div class="order_con">
+							<div class="sms_all" id="tab3">
+
+								<div class="tmplate_a">
+									<select name="" id="">
+										<option value="">催付提醒</option>
+										<option value="">发货提醒</option>
+										<option value="">评价提醒</option>
+									</select>
+									<a href="#" class="tmplate_a1 create_template"><i class="icon_4"></i>新建短信模版</a>
+								</div>
+
+							    <h2>
+							    	<span class="cur h2_span">系统模版</span>
+							        <span class="h2_span">自定义模版</span>
+							        <span class="h2_span">创意模版</span>
+							        <span class="h2_span">幽默模版</span>
+							        <span class="h2_span">可爱模版</span>
+							    </h2>
+								<ul class="tab_ul">
+								  	<li class="cur">
+								  		<div class="data_list">
+											<table>
+												<tbody>
+													<tr class="t_header">
+														<th class="t_fir">标题</th>
+														<th>内容</th>
+														<th class="t_fir">操作</th>
+													</tr>
+													<tr>
+														<td class="t_fir">严肃版</td>
+														<td>亲，您好，您在（店铺名称）购买的（商品名）宝贝共计（订单总价）元，还没有付款哦，付款链接（付款链接），为了避免错过心爱的宝贝，请您尽快付款！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">卖萌版</td>
+														<td>亲爱的，为您服务是小妹的荣幸呢，能不能点击满意度评价给小妹的个人服务做一个评价呢，谢谢您了呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">专业版</td>
+														<td>，您好，您在（店铺名称）购买的（商品名）宝贝共计（订单总价）元，还没有付款哦，付款链接（付款链接），为了避免错过心爱的宝贝，请您尽快付款！祝您天天有好运、更是财运滚滚、发大财哟，还麻烦您动动小手点击右下角“+”选择【满意度】给妹子的服务做一个评价哟！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">文艺版</td>
+														<td>亲爱的，我们一定会尽快给您配送的呢，我们肯定也想快点给您送达的呢，小妹也理解您着急收到宝贝的冲动，我们一定尽最大的努力给您送货的。</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">清新版</td>
+														<td>您先别着急，喝口小水，小等下妹子啦，这边查询中呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">严肃版</td>
+														<td>亲，您好，您在（店铺名称）购买的（商品名）宝贝共计（订单总价）元，还没有付款哦，付款链接（付款链接），为了避免错过心爱的宝贝，请您尽快付款！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">卖萌版</td>
+														<td> 亲爱的，为您服务是小妹的荣幸呢，能不能点击满意度评价给小妹的个人服务做一个评价呢，谢谢您了呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">专业版</td>
+														<td>亲爱的，您的订单正在送往您地址途中，到达站点后就会更新物流信息，配送员也会立即联系您的呢，现在正在加紧给您配送，麻烦您稍等一下。</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">文艺版</td>
+														<td>欢迎咨询在线客服，本次由“小美客服（配送）”为您解答，感谢您的支持！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">清新版</td>
+														<td>亲爱的，您的订单正在送往您地址途中，到达站点后就会更新物流信息，配送员也会立即联系您的呢，现在正在加紧给您配送，麻烦您稍等一下。</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+												</tbody>
+											</table>
+
+											<div class="data_down">
+												<div class="data_tip fl">
+													<p>显示 1 至 10 条 共 <span class="c_ora">40</span> 条</p>
+												</div>
+												<div class="data_page fr">
+													<ol>
+														<li><a href="javascript:;" class="first_page"></a></li>
+														<li><a href="javascript:;" class="previous_page"></a></li>
+														<li><a href="javascript:;">1</a></li>
+														<li><a href="javascript:;">2</a></li>
+														<li><a href="javascript:;">3</a></li>
+														<li><a href="javascript:;">4</a></li>
+														<li><a href="javascript:;">5</a></li>
+														<li><a href="javascript:;" class="next_page"></a></li>
+														<li><a href="javascript:;" class="last_page"></a></li>
+													</ol>
+													<div class="goto">
+														<p>跳转到</p>
+														<select>
+														  <option value ="volvo">2</option>
+														  <option value ="volvo">3</option>
+														  <option value ="saab">4</option>
+														  <option value="opel">5</option>
+														</select>
+													</div>
+													<div class="show_rows">
+														<p>每页显示条数</p>
+														<select>
+														  <option value ="volvo">5</option>
+														  <option value ="volvo">10</option>
+														  <option value ="saab">15</option>
+														  <option value="opel">20</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+								  	</li>
+								  	<li>
+								  		<div class="data_list">
+											<table>
+												<tbody>
+													<tr class="t_header">
+														<th class="t_fir">标题</th>
+														<th>内容</th>
+														<th class="t_fir">操作</th>
+													</tr>
+													
+													<tr>
+														<td class="t_fir">卖萌版</td>
+														<td>亲爱的，为您服务是小妹的荣幸呢，能不能点击满意度评价给小妹的个人服务做一个评价呢，谢谢您了呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">严肃版</td>
+														<td>亲，您好，您在（店铺名称）购买的（商品名）宝贝共计（订单总价）元，还没有付款哦，付款链接（付款链接），为了避免错过心爱的宝贝，请您尽快付款！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">专业版</td>
+														<td>，您好，您在（店铺名称）购买的（商品名）宝贝共计（订单总价）元，还没有付款哦，付款链接（付款链接），为了避免错过心爱的宝贝，请您尽快付款！祝您天天有好运、更是财运滚滚、发大财哟，还麻烦您动动小手点击右下角“+”选择【满意度】给妹子的服务做一个评价哟！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">文艺版</td>
+														<td>亲爱的，我们一定会尽快给您配送的呢，我们肯定也想快点给您送达的呢，小妹也理解您着急收到宝贝的冲动，我们一定尽最大的努力给您送货的。</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">清新版</td>
+														<td>您先别着急，喝口小水，小等下妹子啦，这边查询中呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">文艺版</td>
+														<td>欢迎咨询在线客服，本次由“小美客服（配送）”为您解答，感谢您的支持！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">卖萌版</td>
+														<td> 亲爱的，为您服务是小妹的荣幸呢，能不能点击满意度评价给小妹的个人服务做一个评价呢，谢谢您了呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">专业版</td>
+														<td>亲爱的，您的订单正在送往您地址途中，到达站点后就会更新物流信息，配送员也会立即联系您的呢，现在正在加紧给您配送，麻烦您稍等一下。</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													
+													<tr>
+														<td class="t_fir">清新版</td>
+														<td>亲爱的，您的订单正在送往您地址途中，到达站点后就会更新物流信息，配送员也会立即联系您的呢，现在正在加紧给您配送，麻烦您稍等一下。</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr class="placeholder"></tr>
+												</tbody>
+											</table>
+
+											<div class="data_down">
+												<div class="data_tip fl">
+													<p>显示 1 至 10 条 共 <span class="c_ora">40</span> 条</p>
+												</div>
+												<div class="data_page fr">
+													<ol>
+														<li><a href="javascript:;" class="first_page"></a></li>
+														<li><a href="javascript:;" class="previous_page"></a></li>
+														<li><a href="javascript:;">1</a></li>
+														<li><a href="javascript:;">2</a></li>
+														<li><a href="javascript:;">3</a></li>
+														<li><a href="javascript:;">4</a></li>
+														<li><a href="javascript:;">5</a></li>
+														<li><a href="javascript:;" class="next_page"></a></li>
+														<li><a href="javascript:;" class="last_page"></a></li>
+													</ol>
+													<div class="goto">
+														<p>跳转到</p>
+														<select>
+														  <option value ="volvo">2</option>
+														  <option value ="volvo">3</option>
+														  <option value ="saab">4</option>
+														  <option value="opel">5</option>
+														</select>
+													</div>
+													<div class="show_rows">
+														<p>每页显示条数</p>
+														<select>
+														  <option value ="volvo">5</option>
+														  <option value ="volvo">10</option>
+														  <option value ="saab">15</option>
+														  <option value="opel">20</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+								  	</li>
+								  	<li>
+								  		<div class="data_list">
+											<table>
+												<tbody>
+													<tr class="t_header">
+														<th class="t_fir">标题</th>
+														<th>内容</th>
+														<th class="t_fir">操作</th>
+													</tr>
+													
+													<tr>
+														<td class="t_fir">文艺版</td>
+														<td>亲爱的，我们一定会尽快给您配送的呢，我们肯定也想快点给您送达的呢，小妹也理解您着急收到宝贝的冲动，我们一定尽最大的努力给您送货的。</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">清新版</td>
+														<td>您先别着急，喝口小水，小等下妹子啦，这边查询中呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">严肃版</td>
+														<td>亲，您好，您在（店铺名称）购买的（商品名）宝贝共计（订单总价）元，还没有付款哦，付款链接（付款链接），为了避免错过心爱的宝贝，请您尽快付款！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">卖萌版</td>
+														<td> 亲爱的，为您服务是小妹的荣幸呢，能不能点击满意度评价给小妹的个人服务做一个评价呢，谢谢您了呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">严肃版</td>
+														<td>亲，您好，您在（店铺名称）购买的（商品名）宝贝共计（订单总价）元，还没有付款哦，付款链接（付款链接），为了避免错过心爱的宝贝，请您尽快付款！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">卖萌版</td>
+														<td>亲爱的，为您服务是小妹的荣幸呢，能不能点击满意度评价给小妹的个人服务做一个评价呢，谢谢您了呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">专业版</td>
+														<td>，您好，您在（店铺名称）购买的（商品名）宝贝共计（订单总价）元，还没有付款哦，付款链接（付款链接），为了避免错过心爱的宝贝，请您尽快付款！祝您天天有好运、更是财运滚滚、发大财哟，还麻烦您动动小手点击右下角“+”选择【满意度】给妹子的服务做一个评价哟！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">专业版</td>
+														<td>亲爱的，您的订单正在送往您地址途中，到达站点后就会更新物流信息，配送员也会立即联系您的呢，现在正在加紧给您配送，麻烦您稍等一下。</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr class="placeholder"></tr>
+													<tr class="placeholder"></tr>
+												</tbody>
+											</table>
+
+											<div class="data_down">
+												<div class="data_tip fl">
+													<p>显示 1 至 10 条 共 <span class="c_ora">40</span> 条</p>
+												</div>
+												<div class="data_page fr">
+													<ol>
+														<li><a href="javascript:;" class="first_page"></a></li>
+														<li><a href="javascript:;" class="previous_page"></a></li>
+														<li><a href="javascript:;">1</a></li>
+														<li><a href="javascript:;">2</a></li>
+														<li><a href="javascript:;">3</a></li>
+														<li><a href="javascript:;">4</a></li>
+														<li><a href="javascript:;">5</a></li>
+														<li><a href="javascript:;" class="next_page"></a></li>
+														<li><a href="javascript:;" class="last_page"></a></li>
+													</ol>
+													<div class="goto">
+														<p>跳转到</p>
+														<select>
+														  <option value ="volvo">2</option>
+														  <option value ="volvo">3</option>
+														  <option value ="saab">4</option>
+														  <option value="opel">5</option>
+														</select>
+													</div>
+													<div class="show_rows">
+														<p>每页显示条数</p>
+														<select>
+														  <option value ="volvo">5</option>
+														  <option value ="volvo">10</option>
+														  <option value ="saab">15</option>
+														  <option value="opel">20</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+								  	</li>
+								  	<li>
+								  		<div class="data_list">
+											<table>
+												<tbody>
+													<tr class="t_header">
+														<th class="t_fir">标题</th>
+														<th>内容</th>
+														<th class="t_fir">操作</th>
+													</tr>
+													
+													<tr>
+														<td class="t_fir">清新版</td>
+														<td>您先别着急，喝口小水，小等下妹子啦，这边查询中呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">严肃版</td>
+														<td>亲，您好，您在（店铺名称）购买的（商品名）宝贝共计（订单总价）元，还没有付款哦，付款链接（付款链接），为了避免错过心爱的宝贝，请您尽快付款！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">卖萌版</td>
+														<td> 亲爱的，为您服务是小妹的荣幸呢，能不能点击满意度评价给小妹的个人服务做一个评价呢，谢谢您了呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">严肃版</td>
+														<td>亲，您好，您在（店铺名称）购买的（商品名）宝贝共计（订单总价）元，还没有付款哦，付款链接（付款链接），为了避免错过心爱的宝贝，请您尽快付款！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">卖萌版</td>
+														<td>亲爱的，为您服务是小妹的荣幸呢，能不能点击满意度评价给小妹的个人服务做一个评价呢，谢谢您了呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">专业版</td>
+														<td>，您好，您在（店铺名称）购买的（商品名）宝贝共计（订单总价）元，还没有付款哦，付款链接（付款链接），为了避免错过心爱的宝贝，请您尽快付款！祝您天天有好运、更是财运滚滚、发大财哟，还麻烦您动动小手点击右下角“+”选择【满意度】给妹子的服务做一个评价哟！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">文艺版</td>
+														<td>亲爱的，我们一定会尽快给您配送的呢，我们肯定也想快点给您送达的呢，小妹也理解您着急收到宝贝的冲动，我们一定尽最大的努力给您送货的。</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">专业版</td>
+														<td>亲爱的，您的订单正在送往您地址途中，到达站点后就会更新物流信息，配送员也会立即联系您的呢，现在正在加紧给您配送，麻烦您稍等一下。</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">文艺版</td>
+														<td>欢迎咨询在线客服，本次由“小美客服（配送）”为您解答，感谢您的支持！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">清新版</td>
+														<td>亲爱的，您的订单正在送往您地址途中，到达站点后就会更新物流信息，配送员也会立即联系您的呢，现在正在加紧给您配送，麻烦您稍等一下。</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+												</tbody>
+											</table>
+
+											<div class="data_down">
+												<div class="data_tip fl">
+													<p>显示 1 至 10 条 共 <span class="c_ora">40</span> 条</p>
+												</div>
+												<div class="data_page fr">
+													<ol>
+														<li><a href="javascript:;" class="first_page"></a></li>
+														<li><a href="javascript:;" class="previous_page"></a></li>
+														<li><a href="javascript:;">1</a></li>
+														<li><a href="javascript:;">2</a></li>
+														<li><a href="javascript:;">3</a></li>
+														<li><a href="javascript:;">4</a></li>
+														<li><a href="javascript:;">5</a></li>
+														<li><a href="javascript:;" class="next_page"></a></li>
+														<li><a href="javascript:;" class="last_page"></a></li>
+													</ol>
+													<div class="goto">
+														<p>跳转到</p>
+														<select>
+														  <option value ="volvo">2</option>
+														  <option value ="volvo">3</option>
+														  <option value ="saab">4</option>
+														  <option value="opel">5</option>
+														</select>
+													</div>
+													<div class="show_rows">
+														<p>每页显示条数</p>
+														<select>
+														  <option value ="volvo">5</option>
+														  <option value ="volvo">10</option>
+														  <option value ="saab">15</option>
+														  <option value="opel">20</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+								  	</li>
+								  	<li>
+								  		<div class="data_list">
+											<table>
+												<tbody>
+													<tr class="t_header">
+														<th class="t_fir">标题</th>
+														<th>内容</th>
+														<th class="t_fir">操作</th>
+													</tr>
+													<tr>
+														<td class="t_fir">文艺版</td>
+														<td>亲爱的，我们一定会尽快给您配送的呢，我们肯定也想快点给您送达的呢，小妹也理解您着急收到宝贝的冲动，我们一定尽最大的努力给您送货的。</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">清新版</td>
+														<td>您先别着急，喝口小水，小等下妹子啦，这边查询中呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">严肃版</td>
+														<td>亲，您好，您在（店铺名称）购买的（商品名）宝贝共计（订单总价）元，还没有付款哦，付款链接（付款链接），为了避免错过心爱的宝贝，请您尽快付款！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">卖萌版</td>
+														<td>亲爱的，为您服务是小妹的荣幸呢，能不能点击满意度评价给小妹的个人服务做一个评价呢，谢谢您了呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">专业版</td>
+														<td>，您好，您在（店铺名称）购买的（商品名）宝贝共计（订单总价）元，还没有付款哦，付款链接（付款链接），为了避免错过心爱的宝贝，请您尽快付款！祝您天天有好运、更是财运滚滚、发大财哟，还麻烦您动动小手点击右下角“+”选择【满意度】给妹子的服务做一个评价哟！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">严肃版</td>
+														<td>亲，您好，您在（店铺名称）购买的（商品名）宝贝共计（订单总价）元，还没有付款哦，付款链接（付款链接），为了避免错过心爱的宝贝，请您尽快付款！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">卖萌版</td>
+														<td> 亲爱的，为您服务是小妹的荣幸呢，能不能点击满意度评价给小妹的个人服务做一个评价呢，谢谢您了呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">专业版</td>
+														<td>亲爱的，您的订单正在送往您地址途中，到达站点后就会更新物流信息，配送员也会立即联系您的呢，现在正在加紧给您配送，麻烦您稍等一下。</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">文艺版</td>
+														<td>欢迎咨询在线客服，本次由“小美客服（配送）”为您解答，感谢您的支持！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+													<tr>
+														<td class="t_fir">卖萌版</td>
+														<td> 亲爱的，为您服务是小妹的荣幸呢，能不能点击满意度评价给小妹的个人服务做一个评价呢，谢谢您了呢！</td>
+														<td class="t_fir"><input class="edit" type="button" value="" /><input class="delete" type="button" value="" /></td>
+													</tr>
+												</tbody>
+											</table>
+
+											<div class="data_down">
+												<div class="data_tip fl">
+													<p>显示 1 至 10 条 共 <span class="c_ora">40</span> 条</p>
+												</div>
+												<div class="data_page fr">
+													<ol>
+														<li><a href="javascript:;" class="first_page"></a></li>
+														<li><a href="javascript:;" class="previous_page"></a></li>
+														<li><a href="javascript:;">1</a></li>
+														<li><a href="javascript:;">2</a></li>
+														<li><a href="javascript:;">3</a></li>
+														<li><a href="javascript:;">4</a></li>
+														<li><a href="javascript:;">5</a></li>
+														<li><a href="javascript:;" class="next_page"></a></li>
+														<li><a href="javascript:;" class="last_page"></a></li>
+													</ol>
+													<div class="goto">
+														<p>跳转到</p>
+														<select>
+														  <option value ="volvo">2</option>
+														  <option value ="volvo">3</option>
+														  <option value ="saab">4</option>
+														  <option value="opel">5</option>
+														</select>
+													</div>
+													<div class="show_rows">
+														<p>每页显示条数</p>
+														<select>
+														  <option value ="volvo">5</option>
+														  <option value ="volvo">10</option>
+														  <option value ="saab">15</option>
+														  <option value="opel">20</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+								  	</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer footer_in">
+			        <p>粤ICP备11076613号</p>
+			        <p>增值电信业务经营许可证号B1.B2-20110560 粤网文[2015]1636-272号</p>
+			        <p>工商营业执照</p>
+			    </div>
+			</div>
+			<div class="SmsTemplate_config">
+					<div class="order_care order_care1">
+					<div class="info_tit config_tit">
+						<span class="fl"></span>
+						<p class="fl">新建短信模板</p>
+						<div class="config_close "></div>
+					</div>
+					<div  class="config_body">
+							<div class="care_config_con1">
+								<form action="" class="sms_content">
+									<div class="sms_content_l fl">
+										<div class="sms_con">
+											<div class="sms_template">
+												<p class="task_name">模版名称 </p><input type="text" />
+											</div>
+											<div class="sms_template sms_template1">
+												<p>模版变量</p>
+												<ul>
+													<li>店铺名称</li>
+													<li>买家昵称</li>
+													<li>买家姓名</li>
+													<li>商品名</li>
+													<li>订单总价</li>
+													<li>付款链接</li>
+												</ul>
+											</div>
+											<div class="sms_template sms_template1">
+												<p>模版内容</p>
+												<textarea id="mysms" onkeyup="SwapTxt()" placeholder="亲，您好，您已成功在本店购买了小米六手机，我们将在24小时内为您发货，请注意查收！祝您生活愉快，身体健康！"></textarea>
+													<div class="tip">
+														<p class="sms_tip">您当前已输入</p><p class="c_blue fwb">94</p><p>个字符，将按照 </p><p class="c_blue fwb">2</p> <p>条短信计费，</p><p class="c_red">计费规则</p><p class="question_tip bg_orange">?</p>
+													</div>
+													
+												</span>
+											</div>
+											<div class="sms_template seller_signature">
+												<p>短信签名</p> <span>Admin</span><a href="javascript:;">修改签名</a>
+											</div>
+											<div class="sms_save">
+												<input type="button" value="确认" />
+											</div>
+										</div>
+										
+									</div>
+									<div class="sms_content_r fl">
+										<div class="photo">
+											<img src="../images/phone.png" alt="" />
+											<div><span>【Admin】</span><div id="mysmsTo"></div></div>
+										</div>
+									</div>
+								</form>
+							</div>
+							</div>
+				<div class="reveal-modal-bg config_pop_bg"></div>
+			</div>
+
+
+			
+		</div>
+	</div>
+	 <div class="contact_service">
+		<ul>
+			<li><a class="kf" href="javascript:;"></a></li>
+			<li><a class="edit" href="javascript:;"></a></li>
+			<li><a class="to_top" href="javascript:;"></a></li>
+		</ul>
+    </div>
+
+	
+<script type="text/javascript">
+ function SwapTxt()
+  {
+      var txt = document.getElementById("mysms").value;
+      document.getElementById("mysmsTo").innerHTML=txt;
+  }
+</script>
+<script type="text/javascript">
+  $(function(){
+    var _s_height = $(window).height()-175;
+    $(".TraderClock_scrol").height(_s_height);
+  })
+  $(window).resize(function () {
+        var _s_height = $(window).height()-175;
+    $(".TraderClock_scrol").height(_s_height);
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

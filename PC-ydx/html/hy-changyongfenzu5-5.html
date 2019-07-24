@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>智能分组</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../css/cssreset.css">
+<link rel="stylesheet" type="text/css" href="../css/global.css" />
+<link rel="stylesheet" type="text/css" href="../css/reveal.css">
+<link rel="stylesheet" type="text/css" href="../css/calendar.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/less.css"/>
+<script src="../js/jquery-1.7.2.min.js"></script>
+<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="../css/ie7.css"/>
+	<script>
+		$(function(){
+			$('.menu_btn').click(function(){
+				var w = parseInt($('.menu').width());
+				if(w < 60){
+					$('.trader_r').css({"width":"90%"});
+				}else{
+					$('.trader_r').css({"width":"97%"});
+				}
+			})
+		});
+	</script>
+<![endif]-->
+</head>
+<body>
+<div class="TraderClock">
+		<div class="menu">
+			<div class="menuyy"></div>
+			<div class="menu_btn"><a href="javascript:;"></a></div>
+			<ul class="menu_con menu_con_xin_1">
+				<li class="menu20">
+					<a href="hy-changyongfenzu5-4.html"><span></span><p>会员列表</p></a>
+				</li>
+				<li class="menu21">
+					<a href="hy-changyongfenzu5-1.html"><span></span><p>常用分组</p></a>
+				</li>
+				<li class="bg_gray menu22">
+					<a href="javascript:;"><span></span><p>会员互动</p></a>
+				</li>
+				<li class="menu23">
+					<a href="javascript:;"><span></span><p>外部导入用户分组</p></a>
+				</li>
+				<li class="bg_gray menu24">
+					<a href="hy-changyongfenzu5-3.html"><span></span><p>会员等级优惠</p></a>
+				</li>
+				<li class="menu25 cur">
+					<a href="hy-changyongfenzu5-5.html"><span></span><p>智能分组</p></a>
+				</li>
+				<li class="bg_gray menu26">
+					<a href="javascript:;"><span></span><p>黑名单列表</p></a>
+				</li>
+				<li class="menu27">
+					<a href="hy-changyongfenzu5-2.html"><span></span><p>导入历史交易数据</p></a>
+					
+				</li>
+				<li class="bg_gray menu28">
+					<a href="javascript:;"><span></span><p>导入外部联系人数据</p></a>
+				</li>
+			</ul>
+		</div>
+		<div class="trader_r">
+			<div class="page_navigation">
+				<span class="home_img"></span>
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="javascript:;"><span></span>会员管理   </a></li>
+					<li class="last"><a href="javascript:;"><span></span>智能分组 </a></li>
+				</ul>
+			</div>
+			<div class="TraderClock_scrol">
+				<div class="through">
+					<div class="through-v">
+						<div class="through-b">
+							<div class="info_tit">
+								<span class="fl"></span>
+								<p class="fl">智能分组<a href="javascript:void(0);"><i class="icon_whao"></i></a></p>
+							</div>
+							<div class="tmplate">
+								<div class="tmplate_d">
+									<form action="" method="post">
+										<div class="tmplate_dx time_fa2">
+											<input type="text" placeholder="2017-4-20" id="dt"  class="tmplate_chaxuan" /><p class="time_img"></p>
+											<div id="dd" style="position: absolute;left: 0;top: 20px;"></div>
+											<label for="">至</label>
+											<input type="text" id="dt1" placeholder="2017-4-20" class="tmplate_chaxuan" /><p class="time_img1"></p>
+											<div id="dd1"></div>
+										</div>
+										<input type="submit" value="确定" class="tmplate_submit tmplate_submit1"/>
+										<span class="tmplate_dspan tmplate_dspan1">
+											<a href="javascript:void(0);">最近7天</a>
+											<a href="javascript:void(0);">最近一个月</a>
+										</span>
+										<div class="tmplate_a">
+											<span class="tmplate_aspan tmplate_aspan1">
+												会员消费
+												<span>
+													0.00
+												</span>
+												元
+											</span>
+											<span class="tmplate_aspan">
+												会员平均消费
+												<span>
+													0.00
+												</span>
+												元
+											</span>
+											<span class="tmplate_aspan">
+												会员总数
+												<span>
+													0
+												</span>
+												人
+											</span>
+										</div>
+									</form>
+									
+								</div>
+							</div>
+						<table border="0" class="fixed-f-table">
+			         	 	<tr class="tr_tit">
+							  <th>会员等级</th>
+							  <th>销售贡献度</th>
+							  <th>消费总计</th>
+							  <th>占比/会员数 </th>
+							  <th width="20%">创建营销活动</th>
+							</tr>
+							<tr>
+							  <th>砖石</th>
+							  <th>40%</th>
+							  <th>0.00元</th>
+							  <th>0%/0人 </th>
+							  <th>
+							  	<div class="tmplate_dspan">
+							  	<a href="javascript:void(0);">发短信</a>
+								<a href="javascript:void(0);">发邮件</a>
+							    </div>
+							  </th>
+							</tr>   
+							<tr>
+							  <th>砖石</th>
+							  <th>40%</th>
+							  <th>0.00元</th>
+							  <th>0%/0人 </th>
+							  <th>
+							  	<div class="tmplate_dspan">
+							  	<a href="javascript:void(0);">发短信</a>
+								<a href="javascript:void(0);">发邮件</a>
+							    </div>
+							  </th>
+							</tr> 
+							<tr>
+							  <th>砖石</th>
+							  <th>40%</th>
+							  <th>0.00元</th>
+							  <th>0%/0人 </th>
+							  <th>
+							  	<div class="tmplate_dspan">
+							  	<a href="javascript:void(0);">发短信</a>
+								<a href="javascript:void(0);">发邮件</a>
+							    </div>
+							  </th>
+							</tr>  
+						</table>
+						<div class="screen-div_2">
+									<a href="javascript:void(0);"  class="tmplate_a1" data-reveal-id="myModal5" data-animation="fade">立即调整</a>
+									<span>如果您觉得系统默认的各等级的贡献度比例不符合店铺情况，您可以重新调整。</span>
+								</div>
+						</div>
+						<div id="echarts" style="height: 400px;">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer footer_in">
+	        <p>粤ICP备11076613号</p>
+	        <p>增值电信业务经营许可证号B1.B2-20110560 粤网文[2015]1636-272号</p>
+	        <p>工商营业执照</p>
+        </div>
+    
+</div>
+ <div class="contact_service">
+		<ul>
+			<li><a class="kf" href="javascript:;"></a></li>
+			<li><a class="edit" href="javascript:;"></a></li>
+			<li><a class="to_top" href="javascript:;"></a></li>
+		</ul>
+    </div>
+
+<div class="save_as_pop add_contact_people adjust reveal-modal" id="myModal5">
+	<div class="info_tit config_tit">
+		<p class="fl">会员等级/销售贡献度</p>
+		<strong class="c_ora fs">注意：占比设置总和必须为100%</strong>
+	</div>
+	<div class="config_attribute">
+		<p>钻石 </p>
+		<input class="attribute_in" placeholder="40" type="text">
+		<span>%</span>
+	</div>
+	<div class="config_attribute">
+		<p>白金 </p>
+		<input class="attribute_in" placeholder="30" type="text">
+		<span>%</span>
+	</div>
+	<div class="config_attribute">
+		<p>黄金 </p>
+		<input class="attribute_in" placeholder="20" type="text">
+		<span>%</span>
+	</div>
+	<div class="config_attribute">
+		<p>一般</p>
+		<input class="attribute_in" placeholder="10" type="text">
+		<span>%</span>
+	</div>
+	<div class="sms_save save_as_btn">
+		<input type="button" value="重新计算" />
+		<input type="button" value="取消" />
+	</div>
+</div>
+<script src="../js/js.js"></script>
+<script src="../js/jquery.reveal.js"></script>
+<script src="../js/less.js"></script>
+<script src="../js/calendar.js"></script>
+<script>
+   $('#dd').calendar({
+        trigger: '#dt',
+        zIndex: 999,
+		format: 'yyyy-mm-dd',
+		offset: [-240, -130],
+        onSelected: function (view, date, data) {
+            console.log('event: onSelected')
+        },
+        onClose: function (view, date, data) {
+            console.log('event: onClose')
+            console.log('view:' + view)
+            console.log('date:' + date)
+            console.log('data:' + (data || 'None'));
+        }
+    });
+   $('#dd1').calendar({
+        trigger: '#dt1',
+        zIndex: 999,
+		format: 'yyyy-mm-dd',
+		offset: [-240, -130],
+        onSelected: function (view, date, data) {
+            console.log('event: onSelected')
+        },
+        onClose: function (view, date, data) {
+            console.log('event: onClose')
+            console.log('view:' + view)
+            console.log('date:' + date)
+            console.log('data:' + (data || 'None'));
+        }
+    });
+</script>
+
+
+<script src="../js/dist/echarts.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	
+			require.config({
+				paths: {
+					echarts: '../js/dist'
+				}
+			});
+			require(
+				[
+					'echarts',
+					'echarts/chart/bar', // 按需加载所需图表，如需动态类型切换功能，别忘了同时加载相应图表
+//					'echarts/chart/bar'
+				],
+				function(ec) {
+					var myChart = ec.init(document.getElementById('echarts'));
+					option = {
+						color: ['#999eff','#53aff6'],
+						tooltip: { trigger: 'axis' },
+						toolbox: {
+							show: true
+						},
+						
+						calculable: true,
+						legend: {
+							data: ['贡献宽占比度', '会员人数',]
+						},
+						xAxis: [{
+//							lineStyle{color:'#e6e6e6',width:1,type:'dashed'},
+							splitLine:{show:false},//去掉背景X轴的线
+							type: 'category',
+							data: ['钻石会员', '白金会员', '黄金会员', '普通会员']
+						}],
+						yAxis: [{
+								splitLine:{show:false},//去掉背景X轴的线
+								type: 'value',
+								name: '贡献宽占比度',
+							},
+							{
+								type: 'value',
+								name: '会员人数',
+							}
+						],
+						series: [
+
+							{
+								name: '客户数',
+								type: 'bar',
+								data: [23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0]
+							},
+							{
+								name: '订单笔数',
+								type: 'bar',
+								data: [26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8]
+							},
+							{
+								name: '平均温度',
+								type: 'line',
+								yAxisIndex: 1,
+								data: [4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0]
+							}
+						]
+					};
+
+					myChart.setOption(option);
+				});
+		
+</script>
+<script type="text/javascript">
+		  $(function(){
+		    var _s_height = $(window).height()-175;
+		    $(".TraderClock_scrol").height(_s_height);
+		  })
+		  $(window).resize(function () {
+		        var _s_height = $(window).height()-175;
+		    $(".TraderClock_scrol").height(_s_height);
+		    });
+		</script>
+</body>
+</html>

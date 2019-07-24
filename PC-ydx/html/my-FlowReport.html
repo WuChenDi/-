@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<!-- <meta http-equiv="X-UA-COMPATIBLE" CONTENT="IE=edge,chrome=1"> -->
+		<title>云短信--流量报告</title>
+		<link rel="stylesheet" type="text/css" href="../css/cssreset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/global.css" />
+		<link rel="stylesheet" type="text/css" href="../css/calendar.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<script src="../js/jquery-1.7.2.min.js"></script>
+		<!--[if lt IE 8]>
+			<link rel="stylesheet" type="text/css" href="../css/ie7.css"/>
+			<script>
+				$(function(){
+					$('.menu_btn').click(function(){
+						var w = parseInt($('.menu').width());
+						if(w < 60){
+							$('.trader_r').css({"width":"90%"});
+						}else{
+							$('.trader_r').css({"width":"97%"});
+						}
+					})
+				});
+			</script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="TraderClock">
+			<!-- 菜单栏 -->
+			<div class="menu">
+				<div class="menuyy"></div>
+				<div class="menu_btn"><a href="javascript:;"></a></div>
+				<ul class="menu_con menu_con_my">
+					<li class="menu1">
+						<a href="my-OrderInquiry.html"><span></span><p>订单查询</p></a>
+					</li>
+					<li class="menu2">
+						<a href="javascript:;"><span></span><p>关联子店铺</p></a>
+					</li>
+					<li class="bg_gray menu3 cur">
+						<a href="my-FlowReport.html"><span></span><p>流量报告</p></a>
+					</li>
+					<li class="menu4">
+						<a href="javascript:;"><span></span><p>充值中心</p></a>
+					</li>
+					<li class="bg_gray menu5">
+						<a href="javascript:;"><span></span><p>账户设置</p></a>				
+						<ol>
+							<a href="my-info.html"><li class="shipping_reminder"><p></p><p class="menu_word">基本信息设置</p></li></a>
+							<a href="javascript:;"><li><p></p><p class="menu_word">提醒设置</p></li></a>
+						</ol>
+					</li>
+					<li class="menu6">
+						<a href="javascript:;"><span></span><p>意见反馈</p></a>
+					</li>
+					<li class="bg_gray menu7">
+						<a href="javascript:;"><span></span><p>消息提醒</p></a>
+					</li>
+					<li class="menu8">
+						<a href="javascript:;"><span></span><p>功能更新列表</p></a>
+					</li>
+					<li class="bg_gray menu9">
+						<a href="javascript:;"><span></span><p>邀请赚现金</p></a>
+					</li>
+					<li class="bg_gray menu11">
+						<a href="javascript:;"><p></p></a>
+					</li>
+					<li class="menu11">
+						<a href="javascript:;"><p></p></a>
+					</li>
+					<li class="bg_gray menu11">
+						<a href="javascript:;"><p></p></a>
+					</li>
+					
+				</ul>
+			</div>
+			<!-- 菜单栏 -->
+			<!--页面主体-->
+			<div class="trader_r">
+				<div class="page_navigation">
+					<span class="home_img"></span>
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<span></span>
+							<a href="javascript:;">数据分析</a>
+						</li>
+						<li class="last">
+							<span></span>
+							<a href="javascript:;">活跃等级分析</a>
+						</li>
+					</ul>
+				</div>
+				<!--云短信》流量报告-->
+				<div class="TraderClock_scrol">
+					<div class="TraderClock_box Marketing_box flow_box">
+						<div class="flow_title">
+							<div class="b">
+								<span></span>
+								<p>流量报告</p>
+							</div>
+							<div class="flow_menu Marketing_menu" style="padding-top: 0;">
+								<a href="javascript:;" class="menu1 cur tab_menu1">短信</a>
+								<a href="javascript:;" class="menu2 tab_menu2">邮件</a>
+								<a href="javascript:;" class="menu3 tab_menu3">每日流量提醒设置</a>
+							</div>
+						</div>
+						<div class="tab_a">
+							<div class="flow_wrap ie7_z">
+								<div class="sms_template p_gap1">
+									<p>展示统计类型</p>
+									<div class="radios_group">
+										<p><span class="radios radiosclick"><input type="radio"  class="remind" name="remind" value="按日展示" onclick=""/></span><label for="">按日展示</label></p>   
+										<p><span class="radios"><input type="radio" class="remind" checked name="remind" value="按月展示" onclick=""/></span><label for="">按月展示</label></p>
+										<p><span class="radios"><input type="radio" class="remind" checked name="source" value="按年展示" onclick=""/></span><label for="">按年展示</label></p>
+									</div>
+								</div>
+								<div class="QueryTime time_fa6 ie7_out">
+									<span>选择查询时间</span>
+									<input type="text" placeholder="2017-4-20" class="inp4" id="dt" /><p class="time_img"></p>至
+									<input type="text" placeholder="2017-4-20" class="inp4" id="dt1" /><p class="time_img1"></p>
+									<div id="dd"></div>
+									<div id="dd1"></div>
+								</div>
+								<div class="flux">
+									<div class="sms_template p_gap1">
+									<p>选择流量类型</p>
+									<div class="radios_group">
+										<p><span class="radios radiosclick"><input type="radio"  class="remind" name="remind" value="不区分类型" onclick=""/></span><label for="">不区分类型</label></p>   
+										<p><span class="radios"><input type="radio" class="remind" checked name="remind" value="自定义类型" onclick=""/></span><label for="">自定义类型</label></p>
+									</div>
+								</div>
+
+
+									<!-- <span>选择流量类型</span>
+									<form action="" method="post">
+										<input type="radio" name="optionsRadios" value="" class="inp6" />
+										<span>不区分类型</span>
+										<input type="radio" name="optionsRadios" value="" class="inp7" />
+										<span>自定义类型</span>
+									</form> -->
+									<div class="flux_choice state">
+										<div class="flux_choice_box">
+											<div class="radios_group">
+												<p><span class="radios radiosclick"><input type="radio"  class="remind" name="remind" value="全选" onclick=""/></span><label for="">全选</label></p>   
+												<p><span class="radios"><input type="radio" class="remind" checked name="remind" value="取消全选" onclick=""/></span><label for="">取消全选</label></p>
+											</div>
+
+
+											<!-- <form action="" method="post">
+												<input type="radio" name="optionsRadios" value="" class="inp8" />
+												<span>全选</span>
+												<input type="radio" name="optionsRadios" value="" class="inp9" />
+												<span>取消全选</span>
+											</form> -->
+											<ul>
+												<li>短信营销<p></p></li>
+												<li>节假日营销<p></p></li>
+												<li>个性化短信发送<p></p></li>
+												<li>好评短信营销<p></p></li>
+												<li>在线营销-短信<p></p></li>
+												<li>会员互动<p></p></li>
+												<li>手动订单提醒<p></p></li>
+												<li>指定号码发送<p></p></li>
+												<li>手工输入号码发送<p></p></li>
+												<li>催付提醒<p></p></li>
+												<li>派件提醒<p></p></li>
+												<li>到达提醒<p></p></li>
+
+												<li>下单关怀（货到付款）<p></p></li>
+												<li>节假日营销<p></p></li>
+												<li>个性化短信发送<p></p></li>
+												<li>好评短信营销<p></p></li>
+												<li>在线营销-短信<p></p></li>
+												<li>聚划算催付<p></p></li>
+												<li>手动订单提醒<p></p></li>
+												<li>指定号码发送<p></p></li>
+												<li>手工输入号码发送<p></p></li>
+												<li>第二轮关怀<p></p></li>
+												<li>派件提醒<p></p></li>
+												<li>退款等待退货<p></p></li>
+
+												<li>短信营销<p></p></li>
+												<li>评价提醒<p></p></li>
+												<li>退款等待修改<p></p></li>
+												<li>好评短信营销<p></p></li>
+												<li>在线营销-短信<p></p></li>
+												<li>会员互动<p></p></li>
+												<li>手动订单提醒<p></p></li>
+												<li>好评会员互动<p></p></li>
+												<li>手工输入号码发送<p></p></li>
+												<li>催付提醒<p></p></li>
+												<li>派件提醒<p></p></li>
+												<li>到达提醒<p></p></li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+								<div class="flow_btn">
+									<span></span>
+									<input type="button" name="" id="" value="立即查询" />
+								</div>
+							</div>
+							<div class="data_list data_list_my">
+								<table>
+									<tbody>
+										<tr>
+											<th>时间</th>
+											<th>营销</th>
+											<th>通知</th>
+											<th>总计</th>
+										</tr>
+										<tr>
+											<td>2017-04-26 ~ 2017-05-15</td>
+											<td>500 </td>
+											<td>10</td>
+											<td>510</td>
+										</tr>
+										<tr>
+											<td>2017-04-26 ~ 2017-05-15</td>
+											<td>500 </td>
+											<td>10</td>
+											<td>510</td>
+										</tr>
+										<tr>
+											<td>2017-04-26 ~ 2017-05-15</td>
+											<td>500 </td>
+											<td>10</td>
+											<td>510</td>
+										</tr>
+										<tr>
+											<td>2017-04-26 ~ 2017-05-15</td>
+											<td>500 </td>
+											<td>10</td>
+											<td>510</td>
+										</tr>
+										<tr>
+											<td>2017-04-26 ~ 2017-05-15</td>
+											<td>500 </td>
+											<td>10</td>
+											<td>510</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="data_down">
+									<div class="data_tip fl">
+										<p>显示 1 至 10 条 共 <span class="c_ora">40</span> 条</p>
+									</div>
+									<div class="data_page fr">
+										<ol>
+											<li><a href="javascript:;" class="first_page"></a></li>
+											<li><a href="javascript:;" class="previous_page"></a></li>
+											<li><a href="javascript:;">1</a></li>
+											<li><a href="javascript:;">2</a></li>
+											<li><a href="javascript:;">3</a></li>
+											<li><a href="javascript:;">4</a></li>
+											<li><a href="javascript:;">5</a></li>
+											<li><a href="javascript:;" class="next_page"></a></li>
+											<li><a href="javascript:;" class="last_page"></a></li>
+										</ol>
+										<div class="goto">
+											<p>跳转到</p>
+											<select>
+											  <option value ="volvo">2</option>
+											  <option value ="volvo">3</option>
+											  <option value ="saab">4</option>
+											  <option value="opel">5</option>
+											</select>
+										</div>
+										<div class="show_rows">
+											<p>每页显示条数</p>
+											<select>
+											  <option value ="volvo">5</option>
+											  <option value ="volvo">10</option>
+											  <option value ="saab">15</option>
+											  <option value="opel">20</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab_b">
+							<div class="flow_wrap">
+								<div class="sms_template p_gap1">
+									<p>展示统计类型</p>
+									<div class="radios_group">
+										<p><span class="radios radiosclick"><input type="radio"  class="remind" name="remind" value="按日展示" onclick=""/></span><label for="">按日展示</label></p>   
+										<p><span class="radios"><input type="radio" class="remind" checked name="remind" value="按月展示" onclick=""/></span><label for="">按月展示</label></p>
+										<p><span class="radios"><input type="radio" class="remind" checked name="source" value="按年展示" onclick=""/></span><label for="">按年展示</label></p>
+									</div>
+								</div>
+								<div class="QueryTime time_fa6">
+									<span>选择查询时间</span>
+									<input type="text" placeholder="2017-4-20" class="inp4" id="dt" /><p class="time_img"></p>至
+									<input type="text" placeholder="2017-4-20" class="inp4" id="dt1" /><p class="time_img1"></p>
+									<div id="dd"></div>
+									<div id="dd1"></div>
+								</div>
+								<div class="flux">
+									<div class="sms_template p_gap1">
+									<p>选择流量类型</p>
+									<div class="radios_group">
+										<p><span class="radios radiosclick"><input type="radio"  class="remind" name="remind" value="不区分类型" onclick=""/></span><label for="">不区分类型</label></p>   
+										<p><span class="radios"><input type="radio" class="remind" checked name="remind" value="自定义类型" onclick=""/></span><label for="">自定义类型</label></p>
+									</div>
+								</div>
+									<div class="flux_choice state">
+										<div class="flux_choice_box">
+											<div class="radios_group">
+												<p><span class="radios radiosclick"><input type="radio"  class="remind" name="remind" value="全选" onclick=""/></span><label for="">全选</label></p>   
+												<p><span class="radios"><input type="radio" class="remind" checked name="remind" value="取消全选" onclick=""/></span><label for="">取消全选</label></p>
+											</div>
+
+											<ul>
+												<li>短信营销<p></p></li>
+												<li>节假日营销<p></p></li>
+												<li>个性化短信发送<p></p></li>
+												<li>好评短信营销<p></p></li>
+												<li>在线营销-短信<p></p></li>
+												<li>会员互动<p></p></li>
+												<li>手动订单提醒<p></p></li>
+												<li>指定号码发送<p></p></li>
+												<li>手工输入号码发送<p></p></li>
+												<li>催付提醒<p></p></li>
+												<li>派件提醒<p></p></li>
+												<li>到达提醒<p></p></li>
+
+												<li>下单关怀（货到付款）<p></p></li>
+												<li>节假日营销<p></p></li>
+												<li>个性化短信发送<p></p></li>
+												<li>好评短信营销<p></p></li>
+												<li>在线营销-短信<p></p></li>
+												<li>聚划算催付<p></p></li>
+												<li>手动订单提醒<p></p></li>
+												<li>指定号码发送<p></p></li>
+												<li>手工输入号码发送<p></p></li>
+												<li>第二轮关怀<p></p></li>
+												<li>派件提醒<p></p></li>
+												<li>退款等待退货<p></p></li>
+
+												<li>短信营销<p></p></li>
+												<li>评价提醒<p></p></li>
+												<li>退款等待修改<p></p></li>
+												<li>好评短信营销<p></p></li>
+												<li>在线营销-短信<p></p></li>
+												<li>会员互动<p></p></li>
+												<li>手动订单提醒<p></p></li>
+												<li>好评会员互动<p></p></li>
+												<li>手工输入号码发送<p></p></li>
+												<li>催付提醒<p></p></li>
+												<li>派件提醒<p></p></li>
+												<li>到达提醒<p></p></li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+								<div class="flow_btn">
+									<span></span>
+									<input type="button" name="" id="" value="立即查询" />
+								</div>
+							</div>
+							<div class="data_list data_list_my">
+								<table>
+									<tbody>
+										<tr>
+											<th>时间</th>
+											<th>营销</th>
+											<th>通知</th>
+											<th>总计</th>
+										</tr>
+										<tr>
+											<td>2017-04-26 ~ 2017-05-15</td>
+											<td>500 </td>
+											<td>10</td>
+											<td>510</td>
+										</tr>
+										<tr>
+											<td>2017-04-26 ~ 2017-05-15</td>
+											<td>500 </td>
+											<td>10</td>
+											<td>510</td>
+										</tr>
+										<tr>
+											<td>2017-04-26 ~ 2017-05-15</td>
+											<td>500 </td>
+											<td>10</td>
+											<td>510</td>
+										</tr>
+										<tr>
+											<td>2017-04-26 ~ 2017-05-15</td>
+											<td>500 </td>
+											<td>10</td>
+											<td>510</td>
+										</tr>
+										<tr>
+											<td>2017-04-26 ~ 2017-05-15</td>
+											<td>500 </td>
+											<td>10</td>
+											<td>510</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="data_down">
+									<div class="data_tip fl">
+										<p>显示 1 至 10 条 共 <span class="c_ora">40</span> 条</p>
+									</div>
+									<div class="data_page fr">
+										<ol>
+											<li><a href="javascript:;" class="first_page"></a></li>
+											<li><a href="javascript:;" class="previous_page"></a></li>
+											<li><a href="javascript:;">1</a></li>
+											<li><a href="javascript:;">2</a></li>
+											<li><a href="javascript:;">3</a></li>
+											<li><a href="javascript:;">4</a></li>
+											<li><a href="javascript:;">5</a></li>
+											<li><a href="javascript:;" class="next_page"></a></li>
+											<li><a href="javascript:;" class="last_page"></a></li>
+										</ol>
+										<div class="goto">
+											<p>跳转到</p>
+											<select>
+											  <option value ="volvo">2</option>
+											  <option value ="volvo">3</option>
+											  <option value ="saab">4</option>
+											  <option value="opel">5</option>
+											</select>
+										</div>
+										<div class="show_rows">
+											<p>每页显示条数</p>
+											<select>
+											  <option value ="volvo">5</option>
+											  <option value ="volvo">10</option>
+											  <option value ="saab">15</option>
+											  <option value="opel">20</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab_c">
+							<div class="flow_wrap">
+								<div class="word-1"><p class="fl">每日流量提醒</p><p class="fs">（开启功能后，短信使用量超过100条，店铺预留的手机将会收到流量报表）</p></div>
+								<div class="sms_template p_gap1">
+									<p>自动发送</p>
+									<div class="radios_group">
+										<p><span class="radios radiosclick"><input type="radio"  class="remind" name="remind" value="是" onclick=""/></span><label for="">是</label></p>   
+										<p><span class="radios"><input type="radio" class="remind" checked name="remind" value="否" onclick=""/></span><label for="">否</label></p>
+									</div>
+								</div>
+								<div class="word-2">每 日 提 醒 时 间：每日09:30发送</div>
+								<div class="word-2">默认接收手机号： 13828244012 修改号码</div>
+							</div>
+							<div class="flow_btn" style="padding-bottom: 368px;">
+								<span></span>
+								<input type="button" name="" id="" value="保存设置" />
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+				<div class="footer footer_in">
+			        <p>粤ICP备11076613号</p>
+			        <p>增值电信业务经营许可证号B1.B2-20110560 粤网文[2015]1636-272号</p>
+			        <p>工商营业执照</p>
+			    </div>
+			</div>
+			
+		</div>
+		 <div class="contact_service">
+		<ul>
+			<li><a class="kf" href="javascript:;"></a></li>
+			<li><a class="edit" href="javascript:;"></a></li>
+			<li><a class="to_top" href="javascript:;"></a></li>
+		</ul>
+    </div>
+
+		<script src="../js/js.js"></script>
+		<script src="../js/calendar.js"></script>
+		<script>
+		   $('#dd').calendar({
+		        trigger: '#dt',
+		        zIndex: 999,
+				format: 'yyyy-mm-dd',
+				offset: [-248, -227],
+		        onSelected: function (view, date, data) {
+		            console.log('event: onSelected')
+		        },
+		        onClose: function (view, date, data) {
+		            console.log('event: onClose')
+		            console.log('view:' + view)
+		            console.log('date:' + date)
+		            console.log('data:' + (data || 'None'));
+		        }
+		    });
+		   $('#dd1').calendar({
+		        trigger: '#dt1',
+		        zIndex: 999,
+				format: 'yyyy-mm-dd',
+				offset: [-248, -227],
+		        onSelected: function (view, date, data) {
+		            console.log('event: onSelected')
+		        },
+		        onClose: function (view, date, data) {
+		            console.log('event: onClose')
+		            console.log('view:' + view)
+		            console.log('date:' + date)
+		            console.log('data:' + (data || 'None'));
+		        }
+		    });
+		</script>
+
+		<script type="text/javascript">
+		  $(function(){
+		    var _s_height = $(window).height()-175;
+		    $(".TraderClock_scrol").height(_s_height);
+		  })
+		  $(window).resize(function () {
+		        var _s_height = $(window).height()-175;
+		    $(".TraderClock_scrol").height(_s_height);
+		    });
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,239 @@
+.btn_task > DIV{
+	width:110px;
+}
+.btn_task > DIV.new_task{
+	width: 121px;
+}
+.rank{
+	line-height:26px;
+	text-align: center;
+	padding-left:0;
+}
+.sms_all FORM INPUT{
+	line-height:30px;
+	/*padding:0 10px;*/
+}
+
+.TraderClock_scrol{*position:relative;*left:0;*top:145px;}
+
+
+/*首页*/
+
+
+body{*position:relative;*left:0;*top:0;height: 100%;}
+.notice{width: auto;}
+.user_face a >div.user_face1{margin-top: 85px;}
+.main_right  div.data_sum{height: 302px;}
+.user_name{margin-bottom: 81px;}
+.case_plate li{margin-left: -5px;margin-right: 10px;}
+.case_plate li p.plate_contrast{width: 147px;margin-right: 0px;}
+.main{position: relative; padding:0; }
+.footer{z-index: 10;}
+
+.main_left {width: 25.5%;margin:0.5% 0.5% 0 0.5%;}
+.main_right {margin-top: 0.5%;}
+.submenu LI{height: 65px;}
+.main_right{width: 72%;}
+.submenu{width: 76%;}
+.user_mes UL LI{width: 90%;}
+.case_plate LI{margin-right: 13px;}
+.common_functions{height: 156px;}
+.sms_all .time_task INPUT{width: 150px;}
+.sms_all FORM .task_name_in{width: 317px;}
+
+/*菜单*/
+.menu_con > LI > OL{margin-top: -38px;}
+.menu_con OL LI .menu_word{width: 130px;}
+.menu_con > LI > A{height: 33px;}
+
+/*下单关怀*/
+.trader_r{width: 90%;}
+.btn_task{padding-top: 0;}
+.btn_task > DIV{height: 22px;}
+.sms_content_l .sms_con{position: relative;}
+.trader_r > DIV.order_care_config{overflow-y: auto;/*margin-left: -200px;*/}
+.sms_content_l{position: relative;}
+.TraderClock_scrol{top: 50px; overflow-x: hidden;}
+.info_con > DIV > UL > LI > A{height: 20px;}
+.info13 > A,.info07 > A,.info01 > A,.info15 > A,.info09 > A,.info05 > A{height: 25px;}
+.order{width: 99%;height: 91%;}
+.sms_all UL{width: 93%;}
+.page_navigation{padding-top: 14px;height: 33px;}
+.page_navigation .home_img{display: block;float: left;margin-top: 4px;}
+.page_navigation > UL{display: block;float: left;}
+.config_body{background-color: #fff;}
+.care_config_con1{height: 270px;position: relative;}
+.save_config{height: 150px;}
+.save_config{margin-top: 40px;}
+.sms_content{height: 570px;}
+.save_template{margin-left: 75px;}
+.sms_template .remind_tip > A{height: 16px;}
+.remind_content{height: 503px;}
+/*.sms_template A{margin-left: 75px;}*/
+.save_as_pop,.begin_testing_pop,.custom_pop{position: fixed; display: none; margin-left: -222px; width: 444px;height: 180px;margin-top: -90px; background-color: #fff;padding:23px 0 0 30px;left: 50%; top:50%;border:2px solid #8dbafd;border-radius: 5px;}
+.save_as_pop,.begin_testing_pop{margin-top: -700px;}
+.save_as_pop{width: 414px;}
+.save_as_pop > INPUT{margin-left: 30px;}
+.begin_testing_pop{width: 414px;height: 280px;}
+.begin_testing_pop > P.mark{margin-left: 138px;}
+.begin_testing_pop > P.prompt{margin-right: 80px;}
+.begin_testing_pop > P{margin-right: 50px;}
+.custom_pop{z-index: 101;visibility:visible;width: 671px;height: 522px;padding:0;margin-top: -320px;}
+.select_province > .remind_tip > A{width: 44px;}
+.sms_template .remind_tip > A{height: 16px;width: 4px;}
+.sms_template .flag > A.flag1,.sms_template .flag > A.flag2,.sms_template .flag > A.flag3,.sms_template .flag > A.flag4,.sms_template .flag > A.flag5{width: 4px;height: 12px; }
+
+.add_right .search > DIV,.add_right .search > DIV{height: 34px;}
+.add_pop{top: 60px;left: 200px;height: 580px;}
+.TemplateSelect_in .order_con{margin-top: 0;}
+.sms_all{width: 96%;}
+.TemplateSelect .data_list TD.t_fir{width: 15%;}
+.remind_tip > SPAN{bottom: 0;}
+#shipping_reminder UL.sms_ul{width: 530px;}
+#shipping_reminder .care_config_sms .sms_content_l{height: 660px;}
+#shipping_reminder .sms_template1 TEXTAREA{width: 528px;}
+.message_recorder .immediately_query{height: 22px;}
+.sms_template .remind_tip > A.overtime{width: auto;}
+
+/*抽奖关怀*/
+.lottery_manage LI > DIV{height: 61px;}
+.lottery_manage UL > LI{width: 16%;margin-right: 2%;}
+.prize_pic LI > IMG{width: 70%;}
+.prize_pic LI{width: 24%;}
+.prize_pic LI > IMG{width: 70%;}
+.lottery_con >.sms_content{height: 611px;}
+.sms_template1 TEXTAREA{height: 51px;}
+.lottery_box .remind_time{width: 491px;}
+.lottery_box .remind_time > DIV .break_time{margin-left: 40px;}
+.lottery_config_pop .save_as_pop,.lottery_config_pop .begin_testing_pop{margin-top:-130px;}
+.TemplateSelect_in .config_tit{top: 0;position: relative;}
+.SmsTemplate_config .config_tit{position: relative;}
+
+/*自动营销*/
+.mting .mting-ul .mting-li .mting-div DIV{left: 0;}
+/*.rup-divs LABEL .rupselect{height: 21px;zoom:1;display: inline;}
+*/
+
+
+/*营销管理*/
+.through .through-v .smssettings .smssettingsul .smssettingsli .smssettingsr .smssettingsposi .smssettingsselect{height: 21px;}
+.textarea_text{height: 30px;}
+.through .through-v .smssettings .smssettingsul .smssettingsli .smssettingsr{width: 582px;}
+.smssettingsr TEXTAREA{width: 575px;}
+.file .file-input .file-inputs{filter:alpha(opacity=0);}
+.through .through-v .smssettings .smssettingsul .smssettingsli .smssettingsr{margin-top: -20px;}
+.through .through-v .smssettings .smssettingsul .smssettingsli .smssettingsr .textposi .jsgz{margin-top: -20px;}
+.through .through-v .smssettings .smssettingsul .smssettingsli .smssettingsr .textposi .jsgz{margin-bottom: 30px;}
+.through-b-group .sms_test1 > DIV{margin-left: 0;}
+.calendar-d .view-date,.through-b .date-items OL{background-color: #ffffff;}
+.through-b-group .sms_test1 > DIV{margin-top: 0;}
+.sms_template1 textarea.caixin_text{margin-left: -32px;}
+
+/*邮件高级营销*/
+.screen .email_ds .ds_right{float: left;}
+.text_tongs{margin-left: -54px;}
+.grouping-div{width: 47%;}
+.grouping-div_2 .grouping-div_ul LI .grouping-div_2div{float: left;}
+
+
+/*常用分组*/
+.member_pop{position: absolute;top: 360px;bottom: 0;left: 50%;right: 0;margin:auto;margin-left: -351px;margin-top: -305px; height: 610px;}
+.member_pop .sms_content{height: auto;}
+
+/*会员列表*/
+.fixed-f-table{width:98%;}
+.add_contact_people{width: 630px; height: 280px;}
+.add_contact_people1{margin-top: -700px;}
+
+.vip-la > .vip-la-d{width: 22%;}
+.vip-la .vip-la-up{width: 99%;}
+.tmplate_dspan1 A{display: block;float: left;}
+.tmplate .tmplate_d .tmplate_dx,.tmplate_d .tmplate_submit1,.tmplate_dspan{float: left;}
+
+.sms_template1 TEXTAREA{width: 542px;}
+.Model_box .Model_form .data_hover{width: 100%;height: 100%;padding:0;}
+.Model_box .Model_form .data_hover a{width: 34%;margin:12px 4%;}
+.Model_box .Model_form .data_hover a.fir{margin-right: 0;}
+.Customer_box .Customer_btn > A{padding:3px 17px;}
+
+.Customer_box .result LI.result_first{position: relative;}
+.Customer_box .result LI.result_first .question_tip{position: absolute;top: 23px;left: 94px;}
+.Customer_box .result LABEL{float: left;}
+.Customer_box .result LI{position: relative;}
+.Customer_box .result SPAN{position: absolute;right: 5px;bottom: 0;}
+.Customer_box .result LI.result_first{width: 96%;}
+
+.Customer_box .result LI.result_first{height: 53px;line-height: 53px;}
+
+.Customer_box .result LI{height: 50px;line-height: 50px;}
+.Customer_box .vs li{height: 54px;line-height: 54px;}
+.Marketing_box1 .statistics{height: 72%;}
+
+.Marketing_box1 .one LABEL{float: left;}
+.order_box .order_wrap_btn{margin-left: 17px;}
+.order_box .order_wrap_btn > P{left: 74px;}
+.Marketing_box1 .order_wrap_btn > P{left: 60px;}
+
+.order_box .order_wrap_btn > INPUT{margin-left: -24px;line-height: 26px;}
+.Marketing_box1 .order_wrap_btn > INPUT{margin-left: 0px;}
+
+.sms_tit .tit{float: left;}
+.time_fa3 > P{top: 15px;}
+#shipping_reminder .sms_tit{width: 90%;}
+.rup-divs LABEL .rupselect{height: 21px;}
+.sms_test .remind_tip > A,.p_gap .remind_tip > A{width: auto;}
+.tmplate_submit{float: left;}
+.tmplate_dspan A{display: block;float: left;margin-left: 2px;height: 18px;line-height: 18px;}
+/*.tmplate_dspan1 A{height: 19px;line-height: 19px;}
+*/.tmplate_dspan{margin-left: 0.5%;}
+.tmplate_d .tmplate_submit1{margin-left: 0.5%;height: 30px;line-height: 18px;margin-top: 1px;}
+.Good_box .inp10{line-height: 26px;}
+.grouping-a A I,.tmplate .tmplate_d .tmplate_a A I{margin-bottom: 3px;}
+.add_contact_people .sms_template .remind_tip > A{width: auto;}
+.add_contact_people .hint{width: 100%;}
+.add_contact_people{width: 630px;}
+.add_contact_people2{width: 793px;height: 383px;}
+.add_contact_people2 .order_con{height: 252px;} 
+
+.config_pop_bg{position: fixed;left: 0;}
+.TemplateSelect_in_bg{position: fixed;left: 0; background-color:#000;filter:alpha(opacity=80); }
+.reveal-modal-bg{ background-color:#000;filter:alpha(opacity=80); }
+.order_care_config .config_close{z-index: 101;}
+.SmsTemplate_box .tmplate_a I{margin-bottom: 3px;}
+.SmsTemplate_box .tmplate_a1{display: block;margin-top: 4px;float: left;}
+.SmsTemplate_box .tmplate_a SELECT{float: left;}
+.SmsTemplate .sms_all{width: 96%;}
+
+.calendar-ct{position: relative;z-index: 666;}
+.calendar .date-items{position: relative;z-index: 666;}
+.fixed-f-table TR TH{border-bottom: 1px dotted #e4e4e4;}
+#tab5{width: 99%;}
+
+.ie7_z .advanced_options,.ie7_z .sms_template{position: relative;z-index: 1;}
+.ie7_z .ie7_out{position: relative;z-index: 666;}
+
+.tmplate_dx #dd1,.tmplate_dx #dd{position: absolute;margin-left: 200px;margin-top: 100px;}
+.tab_a .statistics{display: block;height: 560px;}
+.flow_box .inp4{height: 26px;padding-top: 4px;}
+.flow_box .flow_btn INPUT{line-height: 26px;}
+
+.info_con>div>a>span,.info_con>div>ul span{background: url(../images/ie_inform.png) no-repeat -2px -2px;}
+.info_arr{margin:0 0;}
+.info21 > A{height: 25px;}
+
+
+ .Marketing_box1 .time_fa1 DIV{float: right;}
+ .Marketing_box1 .time_fa1 .date_search{float: left;}
+.calendar-display .m{float: none;}
+.calendar .calendar-inner{height: 340px;}
+.Marketing_box1 .calendar-d .view-date{height: 340px;}
+.tmplate .tmplate_d .tmplate_a{margin-right: 50px;}
+.TemplateSelect_in .sms_all{width: 90%;}
+.message_recorder .search_time1{margin-top: 0;}
+#shipping_reminder .message_recorder SELECT{margin-top: 0;height: 32px;}
+
+
+
+.TraderClock_scrol_main{top: 0;}
+
+

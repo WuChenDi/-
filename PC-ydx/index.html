@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>云短信</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- <script type="Text/Javascript" language="JavaScript">
+if (window.top != window) {
+    window.top.location.href = document.location.href;
+}
+</script> -->
+
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<!--[if lt IE 8]>
+   <script src="js/ie7.js"></script>
+<![endif]-->
+		<script src="js/js.js"></script>
+		<!--[if lt IE 9]>
+
+<script>
+    $(document).ready(function(){
+        setTimeout(function () {
+            $('.nav1').trigger('click');
+        }, 0);
+    })
+</script>
+<![endif]-->
+
+	</head>
+
+	<body>
+
+		<div class="header oh" id="header">
+			<div class="header_left fl">
+				<div class="logo fl">
+					<a href="javascript:;"><img src="images/logo.png" width="154" height="38" alt="云短信" /></a>
+				</div>
+				<ul class="submenu fl">
+					<li class="nav1 current">
+						<a href="javascript:;">首页</a>
+					</li>
+					<li class="nav2">
+						<a href="javascript:;">交易提醒</a>
+					</li>
+					<li class="nav3">
+						<a href="javascript:;">自动营销</a>
+					</li>
+					<li class="nav4">
+						<a href="javascript:;">营销管理</a>
+					</li>
+					<li class="nav5">
+						<a href="javascript:;">会员管理</a>
+					</li>
+					<li class="nav6">
+						<a href="javascript:;">评价管理</a>
+					</li>
+					<li class="nav7">
+						<a href="javascript:;">数据分析</a>
+					</li>
+					<li class="nav8">
+						<a href="javascript:;">我的云短信</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="header_right fr">
+				<li class="news_tip">
+					<a href="javascript:;">新消息</a>
+					<p>5</p>
+				</li>
+				<li class="user">
+					<a href="javascript:;">Admin</a>
+				</li>
+				<li class="exit">
+					<a href="javascript:;"></a>
+				</li>
+			</ul>
+		</div>
+		<iframe id="myiframe" src="html/main.html" allowtransparency="true" frameborder="0" width="100%" height="100%" marginheight="0" marginwidth="0" scrolling="no" onload="changeFrameHeight()" style=""></iframe>
+		<script>
+			function changeFrameHeight() {
+				var ifm = document.getElementById("myiframe");
+				ifm.height = document.documentElement.clientHeight;
+			}
+			window.onresize = function() {
+				changeFrameHeight();
+			};
+		</script>
+
+	</body>
+
+</html>
